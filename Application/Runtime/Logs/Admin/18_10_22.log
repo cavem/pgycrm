@@ -1,0 +1,1976 @@
+[ 2018-10-22T08:36:59+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0139s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.0752s ]
+SQL: SELECT * FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID desc LIMIT 0,15   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0133s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼小机房' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='嘉兴机房' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿城机房' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿迁联通' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='丽水机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='大连小鸟云机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='盐城机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州武进机房' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='凤凰美地' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='山东-枣庄机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0169s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000247s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001887s ]
+
+[ 2018-10-22T08:37:08+08:00 ] 127.0.0.1 /Service/view.html?servid=18685
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `servers` WHERE ( ID=18685 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `server_update_log` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `server_update_log` WHERE ( svnid=18685 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `server_transfer_log` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `server_transfer_log` WHERE ( svnid=18685 )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `servipupdatelog` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `servipupdatelog` WHERE ( Servers_ID=18685 )  [ RunTime:0.4248s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 226 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 257 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050506s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000642s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2018-10-22T08:49:10+08:00 ] 127.0.0.1 /Finan/list.html?cname=%E5%AE%A2%E6%88%B71
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1' LIMIT 1   [ RunTime:0.0516s ]
+SQL: SELECT * FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1' ORDER BY nid desc LIMIT 0,15   [ RunTime:0.0691s ]
+SQL: SELECT `money`,`fee_end_at` FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1'  [ RunTime:0.0430s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1' LIMIT 1   [ RunTime:0.0409s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1' AND ( state='款到确认' ) LIMIT 1   [ RunTime:0.0413s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1' AND ( state='已确认' ) LIMIT 1   [ RunTime:0.0411s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND `cname` = '客户1' AND ( state='已付款' ) LIMIT 1   [ RunTime:0.0411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014161s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2018-10-22T08:49:14+08:00 ] 127.0.0.1 /Finan/list.html?keyword=&bank_recv_at=&fee_begin_at=&fee_end_at=&recvtype=&ordertype=&paycycle=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) LIMIT 1   [ RunTime:0.0576s ]
+SQL: SELECT * FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) ORDER BY nid desc LIMIT 0,15   [ RunTime:0.0011s ]
+SQL: SELECT `money`,`fee_end_at` FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' )  [ RunTime:0.0956s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) LIMIT 1   [ RunTime:0.0467s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND ( state='款到确认' ) LIMIT 1   [ RunTime:0.0408s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND ( state='已确认' ) LIMIT 1   [ RunTime:0.0466s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE (  `cname` LIKE '%%' OR `type` LIKE '%%' OR `state` LIKE '%%' OR `recvtype` LIKE '%%' OR `paycycle` LIKE '%%' OR `ipaddr` LIKE '%%' OR `salesman` LIKE '%%' OR `committer` LIKE '%%' OR `paysureby` LIKE '%%' OR `managersureby` LIKE '%%' ) AND ( state='已付款' ) LIMIT 1   [ RunTime:0.0413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2018-10-22T08:49:23+08:00 ] 127.0.0.1 /Finan/view_order.html?id=DD201810-21-031437
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `orders` WHERE ( id='DD201810-21-031437' ) LIMIT 1   [ RunTime:0.2128s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042615s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2018-10-22T08:49:38+08:00 ] 127.0.0.1 /Finan/view_finan.html?nid=45347
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000452s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0135s ]
+SQL: SELECT * FROM `finances` WHERE ( nid=45347 ) LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001483s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001598s ]
+
+[ 2018-10-22T08:50:24+08:00 ] 127.0.0.1 /Depart/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `department` LIMIT 1   [ RunTime:0.0214s ]
+SQL: SELECT * FROM `department` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000850s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000886s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2018-10-22T08:50:27+08:00 ] 127.0.0.1 /Role/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `roles` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `roles` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT * FROM `roles` WHERE `name` LIKE '%%' LIMIT 0,15   [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001542s ]
+
+[ 2018-10-22T08:50:28+08:00 ] 127.0.0.1 /Account/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 1   [ RunTime:0.0458s ]
+SQL: SELECT * FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 0,10   [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001684s ]
+
+[ 2018-10-22T08:50:34+08:00 ] 127.0.0.1 /Level/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `level` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `level` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT * FROM `level` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000913s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001563s ]
+
+[ 2018-10-22T08:50:47+08:00 ] 127.0.0.1 /Account/view.html?name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `accounts` WHERE ( name='' ) LIMIT 1   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\956ecadebd0f6bd832e80a4249df91a0.php 第 136 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\956ecadebd0f6bd832e80a4249df91a0.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001521s ]
+
+[ 2018-10-22T08:57:41+08:00 ] 127.0.0.1 /Ipsegs/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000832s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' LIMIT 1   [ RunTime:0.0205s ]
+SQL: SELECT * FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0362s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.1180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0211s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0182s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.0' AND state=0 ) LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.16' AND state=0 ) LIMIT 1   [ RunTime:0.0186s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000832s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2018-10-22T08:57:43+08:00 ] 127.0.0.1 /Room/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0237s ]
+SQL: SELECT * FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021298s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000679s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2018-10-22T08:58:58+08:00 ] 127.0.0.1 /Room/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024417s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-10-22T08:59:19+08:00 ] 127.0.0.1 /Product/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT * FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001602s ]
+
+[ 2018-10-22T08:59:20+08:00 ] 127.0.0.1 /Prokind/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `categories` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `categories` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027482s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001753s ]
+
+[ 2018-10-22T08:59:21+08:00 ] 127.0.0.1 /Shelf/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0332s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001567s ]
+
+[ 2018-10-22T09:02:24+08:00 ] 127.0.0.1 /Room/edit.html?id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `rooms` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001180s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001781s ]
+
+[ 2018-10-22T09:02:32+08:00 ] 127.0.0.1 /Account/view.html?name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `accounts` WHERE ( name='' ) LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\956ecadebd0f6bd832e80a4249df91a0.php 第 136 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\956ecadebd0f6bd832e80a4249df91a0.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2018-10-22T09:02:35+08:00 ] 127.0.0.1 /Room/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-10-22T09:02:41+08:00 ] 127.0.0.1 /Room/edit.html?id=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `rooms` WHERE ( id=4 ) LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015396s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001505s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001605s ]
+
+[ 2018-10-22T09:18:07+08:00 ] 127.0.0.1 /Account/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0137s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0115s ]
+SQL: SELECT `nid`,`realname`,`dept` FROM `accounts` WHERE ( nid != 1 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `roles` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `roles`  [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+NOTIC: [8] Undefined variable: wolist D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\adae0c35679c672c2467daf87afd6071.php 第 356 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\adae0c35679c672c2467daf87afd6071.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2018-10-22T09:35:26+08:00 ] 127.0.0.1 /Finan/census.html?keyword=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016279s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000787s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001128s ]
+
+[ 2018-10-22T14:57:44+08:00 ] 127.0.0.1 /Custom/add_order.html?name=%E5%AE%A2%E6%88%B73&salesman=%E6%9D%A8%E9%BE%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000852s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0135s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0123s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000719s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2018-10-22T15:00:05+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000899s ]
+
+[ 2018-10-22T15:02:22+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000818s ]
+
+[ 2018-10-22T15:02:25+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+
+[ 2018-10-22T15:02:25+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+
+[ 2018-10-22T15:02:47+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0073s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0657s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.2350s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0169s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0783s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0688s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0683s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0681s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0747s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0073s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0737s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0203s ]
+
+[ 2018-10-22T15:02:50+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0096s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0110s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0083s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0741s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0695s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0689s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0675s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0699s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0705s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0197s ]
+
+[ 2018-10-22T15:07:10+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0130s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0084s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0698s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0747s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0742s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0692s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0791s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0071s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0709s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0218s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0196s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 205 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2018-10-22T15:07:26+08:00 ] 127.0.0.1 /Finan/census/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 15,15   [ RunTime:0.0092s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0080s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0067s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0686s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0675s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0683s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0680s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0707s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0702s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 205 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000734s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+
+[ 2018-10-22T15:07:31+08:00 ] 127.0.0.1 /Finan/census/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000752s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0093s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0083s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0074s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0691s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0682s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0678s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0672s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0711s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0068s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0291s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0407s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0217s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0749s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0195s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 205 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 205 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2018-10-22T15:10:08+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0070s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0072s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0688s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0681s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0679s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0676s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0716s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0734s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0232s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0312s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined index: name D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 198 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: name D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 198 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013352s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000777s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2018-10-22T15:10:25+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0073s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0068s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0692s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0679s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0675s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0683s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0742s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0739s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0199s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012856s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012929s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2018-10-22T15:10:33+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0066s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0719s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0681s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0682s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0700s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0766s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0071s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0755s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0207s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012552s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001067s ]
+
+[ 2018-10-22T15:11:04+08:00 ] 127.0.0.1 /Order/add_pay.html?id=10799
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `orders` WHERE ( nid=10799 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0133s ]
+SQL: SELECT `prepay` FROM `clients` WHERE ( id=1841 ) LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: cid D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\OrderController.class.php 第 195 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011079s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000938s ]
+
+[ 2018-10-22T15:11:17+08:00 ] 127.0.0.1 /Custom/add_order.html?name=%E5%AE%A2%E6%88%B73&salesman=%E6%9D%A8%E9%BE%99
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0138s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012575s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000956s ]
+
+[ 2018-10-22T15:30:23+08:00 ] 127.0.0.1 /Finan/census/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000819s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 15,15   [ RunTime:0.0059s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0076s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0073s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0697s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0684s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0674s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0686s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0743s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0072s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0734s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0198s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000907s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000965s ]
+
+[ 2018-10-22T15:30:27+08:00 ] 127.0.0.1 /Finan/census/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0114s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0072s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0695s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0688s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0692s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0682s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0723s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0070s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0185s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0722s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0186s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2018-10-22T15:30:31+08:00 ] 127.0.0.1 /Finan/census/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 15,15   [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0135s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0083s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0069s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0698s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0671s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0673s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0671s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0769s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0080s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0221s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0187s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0747s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0196s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0200s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0206s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012735s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-10-22T15:30:50+08:00 ] 127.0.0.1 /Finan/census/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0095s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0131s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0102s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0079s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0711s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0672s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0689s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0682s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0072s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0199s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0209s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0188s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0730s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0193s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0201s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2018-10-22T15:45:52+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001536s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` WHERE `cname` LIKE '%%' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `payment` WHERE `cname` LIKE '%%' ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0147s ]
+SQL: SELECT SUM(prepay) AS tp_sum FROM `clients` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` LIMIT 1   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0073s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0722s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0726s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0767s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0695s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0861s ]
+SQL: SHOW COLUMNS FROM `finances` [ RunTime:0.0102s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-01%' LIMIT 1   [ RunTime:0.0220s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-02%' LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-03%' LIMIT 1   [ RunTime:0.0229s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-04%' LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-05%' LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-06%' LIMIT 1   [ RunTime:0.0219s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-07%' LIMIT 1   [ RunTime:0.0194s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-08%' LIMIT 1   [ RunTime:0.0197s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-09%' LIMIT 1   [ RunTime:0.0204s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-10%' LIMIT 1   [ RunTime:0.0202s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-11%' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018-12%' LIMIT 1   [ RunTime:0.0195s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2018%' LIMIT 1   [ RunTime:0.0212s ]
+SQL: SELECT `money`,`order_end_at` FROM `orders` WHERE ( status<>'已注销' )  [ RunTime:0.0864s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-01%' LIMIT 1   [ RunTime:0.0317s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-02%' LIMIT 1   [ RunTime:0.0283s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-03%' LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-04%' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-05%' LIMIT 1   [ RunTime:0.0207s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-06%' LIMIT 1   [ RunTime:0.0198s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-07%' LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-08%' LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-09%' LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-10%' LIMIT 1   [ RunTime:0.0190s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-11%' LIMIT 1   [ RunTime:0.0189s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017-12%' LIMIT 1   [ RunTime:0.0233s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `finances` WHERE `bank_recv_at` LIKE '2017%' LIMIT 1   [ RunTime:0.0200s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+NOTIC: [8] Undefined index: sydqwzxze D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 208 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013630s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000655s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001201s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2018-10-22T16:22:17+08:00 ] 127.0.0.1 /Room/edit.html?id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `rooms` WHERE ( id=6 ) LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012022s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000796s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2018-10-22T16:23:00+08:00 ] 127.0.0.1 /Account/view.html?name=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `accounts` WHERE ( name='' ) LIMIT 1   [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\956ecadebd0f6bd832e80a4249df91a0.php 第 136 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\956ecadebd0f6bd832e80a4249df91a0.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022423s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-10-22T16:29:09+08:00 ] 127.0.0.1 /Service/view.html?servid=18685
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0239s ]
+SQL: SELECT * FROM `servers` WHERE ( ID=18685 )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `server_update_log` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `server_update_log` WHERE ( svnid=18685 )  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `server_transfer_log` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `server_transfer_log` WHERE ( svnid=18685 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `servipupdatelog` [ RunTime:0.0084s ]
+SQL: SELECT * FROM `servipupdatelog` WHERE ( Servers_ID=18685 )  [ RunTime:0.4159s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 226 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 257 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 282 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000774s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2018-10-22T16:46:03+08:00 ] 127.0.0.1 /Workorder/myorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+NOTIC: [2] Missing argument 1 for Admin\Controller\WorkorderController::num(), called in D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\WorkorderController.class.php on line 45 and defined D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\WorkorderController.class.php 第 875 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' ) LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的' LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待确认' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已解决' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已验证' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待财务确认' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待审核' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '上架位置确认' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '已解决[下转]' OR `state` = '已解决[涉硬]' OR `state` = '已下架' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '未解决' LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000379s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000481s ]
+NOTIC: [8] Undefined variable: servlist D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\2b4fc155eb0a3e5cecdb2c793466aa91.php 第 154 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001792s ]
+
+[ 2018-10-22T16:46:47+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000708s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的'  [ RunTime:0.0604s ]
+
+[ 2018-10-22T16:46:48+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000831s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' )  [ RunTime:0.0320s ]
+
+[ 2018-10-22T16:46:49+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的'  [ RunTime:0.0288s ]
+
+[ 2018-10-22T16:46:50+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000793s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待确认'  [ RunTime:0.0309s ]
+
+[ 2018-10-22T16:46:51+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的'  [ RunTime:0.0296s ]
+
+[ 2018-10-22T16:46:52+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' )  [ RunTime:0.0204s ]
+
+[ 2018-10-22T16:46:53+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的'  [ RunTime:0.0287s ]
+
+[ 2018-10-22T16:46:54+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已解决'  [ RunTime:0.0287s ]
+
+[ 2018-10-22T16:46:55+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0147s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已验证'  [ RunTime:0.0336s ]
+
+[ 2018-10-22T16:46:56+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已解决'  [ RunTime:0.0299s ]
+
+[ 2018-10-22T16:49:27+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0149s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已解决'  [ RunTime:0.0285s ]
+
+[ 2018-10-22T16:49:43+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0146s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待确认'  [ RunTime:0.0311s ]
+
+[ 2018-10-22T16:49:44+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0144s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已解决'  [ RunTime:0.0332s ]
+
+[ 2018-10-22T16:49:45+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0145s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已验证'  [ RunTime:0.0342s ]
+
+[ 2018-10-22T16:49:46+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待财务确认'  [ RunTime:0.0337s ]
+
+[ 2018-10-22T16:49:47+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0158s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待审核'  [ RunTime:0.0334s ]
+
+[ 2018-10-22T16:49:48+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0141s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待财务确认'  [ RunTime:0.0330s ]
+
+[ 2018-10-22T16:49:58+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0143s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已验证'  [ RunTime:0.0257s ]
+
+[ 2018-10-22T16:50:00+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待财务确认'  [ RunTime:0.0303s ]
+
+[ 2018-10-22T17:27:44+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已验证'  [ RunTime:0.0346s ]
+
+[ 2018-10-22T17:27:46+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已解决'  [ RunTime:0.0305s ]
+
+[ 2018-10-22T17:28:20+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '待确认'  [ RunTime:0.0279s ]
+
+[ 2018-10-22T17:28:22+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0156s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的'  [ RunTime:0.0245s ]
+
+[ 2018-10-22T17:28:23+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' )  [ RunTime:0.0353s ]
+
+[ 2018-10-22T17:33:33+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0148s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已验证'  [ RunTime:0.0366s ]
+
+[ 2018-10-22T17:33:46+08:00 ] 127.0.0.1 /Worktable/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' LIMIT 1   [ RunTime:0.0242s ]
+SQL: SELECT * FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' ORDER BY id desc LIMIT 0,15   [ RunTime:0.0213s ]
+SQL: SELECT SUM(bonus) AS tp_sum FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' LIMIT 1   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2018-10-22T17:33:55+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已解决'  [ RunTime:0.0312s ]
+
+[ 2018-10-22T17:33:57+08:00 ] 127.0.0.1 /Workorder/orderinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `tasks` WHERE `state` = '已验证'  [ RunTime:0.0317s ]
+

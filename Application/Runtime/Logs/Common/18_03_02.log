@@ -1,0 +1,30 @@
+[ 2018-03-02T09:22:40+08:00 ] 127.0.0.1 /pgyidc/newidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+ERR: 无法加载模块:Newidc
+
+[ 2018-03-02T09:22:40+08:00 ] 127.0.0.1 /pgyidc/newidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+ERR: 无法加载模块:Newidc
+
+[ 2018-03-02T09:43:55+08:00 ] 127.0.0.1 /pgyidc/news.html?nid=3&id=283
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000998s ]
+ERR: 无法加载模块:News
+
+[ 2018-03-02T16:16:00+08:00 ] 127.0.0.1 /pgyidc/newidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+ERR: 无法加载模块:Newidc
+
+[ 2018-03-02T16:59:10+08:00 ] 127.0.0.1 /pgyidc/newidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+ERR: 无法加载模块:Newidc
+

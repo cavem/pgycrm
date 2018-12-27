@@ -1,0 +1,174 @@
+<include file="Public/header" title="pgyidc" />
+<script src="__PUBLIC__/DatePicker/WdatePicker.js" type="text/javascript"></script>
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+</style>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <input type="hidden" name="nid" value="{$finaninfo.nid}">
+        <div class="form-line w50 fl">
+            <span class="form-label">客户名称：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="cname" readonly value="{$finaninfo.cname}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">财务编号：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" name="ddid" type="text" readonly value="{$finaninfo.id}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">订单类型：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="ordertype">
+                    <option value="新业务">新业务</option>
+                    <option value="续费业务">续费业务</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">相关销售：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="salers">
+                    <option value="">--请选择--</option>
+                    <option <if condition="$finaninfo.salesman eq '杨龙'">selected</if>>杨龙</option>
+                    <option <if condition="$finaninfo.salesman eq '王酥'">selected</if>>王酥</option>
+                    <option <if condition="$finaninfo.salesman eq '杨宁'">selected</if>>杨宁</option>
+                    <option <if condition="$finaninfo.salesman eq '孙一'">selected</if>>孙一</option>
+                    <option <if condition="$finaninfo.salesman eq '蔡涛'">selected</if>>蔡涛</option>
+                    <option <if condition="$finaninfo.salesman eq '何硕'">selected</if>>何硕</option>
+                    <option <if condition="$finaninfo.salesman eq '汤瑞东'">selected</if>>汤瑞东</option>
+                    <option <if condition="$finaninfo.salesman eq '慧慧'">selected</if>>慧慧</option>
+                    <option <if condition="$finaninfo.salesman eq '杨总安排'">selected</if>>杨总安排</option>
+                    <option <if condition="$finaninfo.salesman eq '公司自用'">selected</if>>公司自用</option>
+                    <option <if condition="$finaninfo.salesman eq '客户授权'">selected</if>>客户授权</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">财务类型：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" readonly value="财务收入">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">款项类别：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="type">
+                    <option <if condition="$finaninfo.type eq '应收款'">selected</if>>应收款</option>
+                    <option <if condition="$finaninfo.type eq '预付款'">selected</if>>预付款</option>
+                    <option <if condition="$finaninfo.type eq '余额'">selected</if>>余额</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">款项状态：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="state">
+                    <option <if condition="$finaninfo.state eq '款到确认'">selected</if>>款到确认</option>
+                    <option <if condition="$finaninfo.state eq '已付款'">selected</if>>已付款</option>
+                    <option <if condition="$finaninfo.state eq '已确认'">selected</if>>已确认</option>
+                    <option <if condition="$finaninfo.state eq '未付款'">selected</if>>未付款</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">付款金额：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="money" value="{$finaninfo.money}">
+            </div>
+        </div>        
+        <div class="form-line w50 fl">
+            <span class="form-label">收款方式：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="recvtype">
+                    <option <if condition="$finaninfo.recvtype eq '支付宝'">selected</if>>支付宝</option>
+                    <option <if condition="$finaninfo.recvtype eq '微信支付'">selected</if>>微信支付</option>
+                    <option <if condition="$finaninfo.recvtype eq '对公支付宝'">selected</if>>对公支付宝</option>
+                    <option <if condition="$finaninfo.recvtype eq '工商银行'">selected</if>>工商银行</option>
+                    <option <if condition="$finaninfo.recvtype eq '农业银行'">selected</if>>农业银行</option>
+                    <option <if condition="$finaninfo.recvtype eq '建设银行'">selected</if>>建设银行</option>
+                    <option <if condition="$finaninfo.recvtype eq '江苏银行'">selected</if>>江苏银行</option>
+                    <option <if condition="$finaninfo.recvtype eq '农行对公账户'">selected</if>>农行对公账户</option>
+                    <option <if condition="$finaninfo.recvtype eq '财付通'">selected</if>>财付通</option>
+                    <option <if condition="$finaninfo.recvtype eq 'QQ钱包'">selected</if>>QQ钱包</option> 
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">票据开设：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="receipt">
+                    <option <if condition="$finaninfo.receipt eq '无需票据'">selected</if>>无需票据</option>
+                    <option <if condition="$finaninfo.receipt eq '需要发票'">selected</if>>需要发票</option>
+                    <option <if condition="$finaninfo.receipt eq '需要收据'">selected</if>>需要收据</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">付款周期：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="paycycle">
+                    <option value="月付" {$finaninfo['paycycle']=="月付"?'selected':''}>月付</option>
+                    <option value="季付" {$finaninfo['paycycle']=="季付"?'selected':''}>季付</option>
+                    <option value="半年付" {$finaninfo['paycycle']=="半年付"?'selected':''}>半年付</option>
+                    <option value="年付" {$finaninfo['paycycle']=="年付"?'selected':''}>年付</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-line w50 fl">
+            <span class="form-label">费用开始日期：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="fee_begin_at" value="{$finaninfo.fee_begin_at}" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">银行款到日期：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="bank_recv_at" value="{$finaninfo.bank_recv_at}" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">费用结束日期：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="fee_end_at" value="{$finaninfo.fee_end_at}" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});">
+            </div>
+        </div>
+        <div class="form-line fl">
+            <span class="form-label" style="position: relative;bottom: 80px;">备注：</span>
+            <div class="form-content">
+                <textarea class="form-control" rows="5" name="remark">{$prepay.remark}</textarea>
+            </div>
+        </div>
+    </form>  
+</div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />

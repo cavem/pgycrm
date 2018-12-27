@@ -1,0 +1,2127 @@
+[ 2018-09-13T09:01:00+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010281s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000194s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021751s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002207s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002300s ]
+
+[ 2018-09-13T09:01:00+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000555s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001774s ]
+
+[ 2018-09-13T09:01:57+08:00 ] 127.0.0.1 /Custom/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000803s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0314s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001714s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2018-09-13T09:01:59+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-13T09:06:27+08:00 ] 127.0.0.1 /Ipsegs/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000820s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0403s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000129s ]
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\89279c351a854a21b9fc397bb57c4695.php 第 202 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000535s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2018-09-13T09:10:59+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001169s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0141s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0118s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT * FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID asc LIMIT 0,20   [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼小机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='嘉兴机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿城机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿迁联通' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='丽水机房' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房' ) LIMIT 1   [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='大连小鸟云机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='盐城机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州武进机房' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='凤凰美地' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='山东-枣庄机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0163s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000864s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000933s ]
+
+[ 2018-09-13T09:11:02+08:00 ] 127.0.0.1 /Service/edit.html?servid=444
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `_servers` WHERE ( ID=444 )  [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0086s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `cabinets` WHERE ( room='移动机房' )  [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057550s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057641s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001592s ]
+
+[ 2018-09-13T09:11:06+08:00 ] 127.0.0.1 /Service/edit_ip.html?serv_ip=222.187.224.120|222.187.224.116|222.187.224.117|222.187.224.118|222.187.224.119||
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `ipseg` FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 0,8   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.0332s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.64' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0277s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.72' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.96' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.48' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.201.48' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.16' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.248.224' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.211.224' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2018-09-13T09:11:11+08:00 ] 127.0.0.1 /Service/edit_ip/serv_ip/222.187.224.120%7C222.187.224.116%7C222.187.224.117%7C222.187.224.118%7C222.187.224.119%7C%7C/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `ipseg` FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 8,8   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.0' AND state=0 ) LIMIT 1   [ RunTime:0.0378s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.0' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.16' AND state=0 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.16' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.192' AND state=0 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.192' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.222.0' AND state=0 ) LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.222.0' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.205.128' AND state=0 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.205.128' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.205.96' AND state=0 ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.205.96' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.205.160' AND state=0 ) LIMIT 1   [ RunTime:0.0265s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.205.160' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.32' AND state=0 ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.201.32' ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009034s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2018-09-13T09:11:15+08:00 ] 127.0.0.1 /Service/edit_ip/serv_ip/222.187.224.120%7C222.187.224.116%7C222.187.224.117%7C222.187.224.118%7C222.187.224.119%7C%7C/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `ipseg` FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 16,8   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.0' AND state=0 ) LIMIT 1   [ RunTime:0.0328s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.0' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.128' AND state=0 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.128' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.32' AND state=0 ) LIMIT 1   [ RunTime:0.0268s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.32' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.220.192' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.220.192' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.96' AND state=0 ) LIMIT 1   [ RunTime:0.0268s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.211.96' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.205.224' AND state=0 ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.205.224' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.205.16' AND state=0 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.205.16' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.205.32' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.205.32' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008808s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000771s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000834s ]
+
+[ 2018-09-13T09:13:18+08:00 ] 127.0.0.1 /Ipsegs/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.0305s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.0' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.16' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001230s ]
+
+[ 2018-09-13T09:30:09+08:00 ] 127.0.0.1 /Product/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026802s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001767s ]
+
+[ 2018-09-13T09:35:35+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-13T09:43:52+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000613s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001278s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2018-09-13T09:43:52+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011255s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000890s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2018-09-13T09:43:56+08:00 ] 127.0.0.1 /Room/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: productlist D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\RoomController.class.php 第 22 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001531s ]
+
+[ 2018-09-13T09:44:26+08:00 ] 127.0.0.1 /Room/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000545s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001146s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2018-09-13T09:56:33+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-13T09:56:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000858s ]
+
+[ 2018-09-13T09:56:34+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006629s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-09-13T09:56:39+08:00 ] 127.0.0.1 /Room/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+
+[ 2018-09-13T09:56:40+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-13T10:09:51+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001143s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001141s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2018-09-13T10:09:51+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006696s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-09-13T10:09:54+08:00 ] 127.0.0.1 /Shelf/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+ERR: 无法加载控制器:Shelf
+
+[ 2018-09-13T10:10:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014127s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000726s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000868s ]
+
+[ 2018-09-13T10:10:02+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007183s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2018-09-13T10:10:06+08:00 ] 127.0.0.1 /Shelf/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000783s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016611s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2018-09-13T10:10:15+08:00 ] 127.0.0.1 /Shelf/list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0133s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 10,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001534s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001648s ]
+
+[ 2018-09-13T10:10:18+08:00 ] 127.0.0.1 /Shelf/list/p/33.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 320,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001555s ]
+
+[ 2018-09-13T10:10:31+08:00 ] 127.0.0.1 /Shelf/list/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001675s ]
+
+[ 2018-09-13T10:15:24+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0136s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0148s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT * FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID asc LIMIT 0,20   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼小机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='嘉兴机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿城机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿迁联通' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0162s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='丽水机房' ) LIMIT 1   [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='大连小鸟云机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='盐城机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州武进机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='凤凰美地' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='山东-枣庄机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000685s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000870s ]
+
+[ 2018-09-13T10:15:28+08:00 ] 127.0.0.1 /Service/view.html?servid=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0168s ]
+SQL: SELECT * FROM `_servers` WHERE ( ID=23 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `_server_update_log` [ RunTime:0.0122s ]
+SQL: SELECT * FROM `_server_update_log` WHERE ( _odnid=23 )  [ RunTime:0.0164s ]
+SQL: SHOW COLUMNS FROM `_server_transfer_log` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `_server_transfer_log` WHERE ( _svnid=23 )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000718s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000994s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001080s ]
+
+[ 2018-09-13T10:15:34+08:00 ] 127.0.0.1 /Service/view.html?servid=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `_servers` WHERE ( ID=23 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `_server_update_log` [ RunTime:0.0136s ]
+SQL: SELECT * FROM `_server_update_log` WHERE ( _odnid=23 )  [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `_server_transfer_log` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `_server_transfer_log` WHERE ( _svnid=23 )  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 219 行.
+NOTIC: [8] Undefined offset: 0 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\4852e52dcc5cf12e80cb02aab5af877a.php 第 275 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2018-09-13T10:15:56+08:00 ] 127.0.0.1 /Service/edit.html?servid=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `_servers` WHERE ( ID=23 )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0141s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `cabinets` WHERE ( room='河东3楼小机房' )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016344s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2018-09-13T10:16:04+08:00 ] 127.0.0.1 /Service/edit_ip.html?serv_ip=|
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `ipseg` FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 0,8   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.0292s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.64' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0275s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.72' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.96' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.48' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0276s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.201.48' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.16' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.248.224' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0268s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.211.224' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2018-09-13T10:16:12+08:00 ] 127.0.0.1 /Service/edit.html?servid=898
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0153s ]
+SQL: SELECT * FROM `_servers` WHERE ( ID=898 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0116s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `cabinets` WHERE ( room='河东4楼机房' )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000729s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000787s ]
+
+[ 2018-09-13T10:16:14+08:00 ] 127.0.0.1 /Service/edit_ip.html?serv_ip=10.10.182.113|43.241.48.217||
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `ipseg` FROM `ipsegs` WHERE `ipseg` LIKE '%%' LIMIT 0,8   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.0330s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.64' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='222.187.221.72' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.96' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0279s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.48' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.201.48' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.202.16' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0276s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.248.224' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT `room` FROM `ipsegs` WHERE ( ipseg='218.93.211.224' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008572s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000902s ]
+
+[ 2018-09-13T10:32:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001823s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000231s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000359s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022437s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002252s ]
+
+[ 2018-09-13T10:32:09+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006560s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000650s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2018-09-13T10:32:12+08:00 ] 127.0.0.1 /Switches/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `switches` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `switches` WHERE `switch_id` LIKE '%%' OR `asset_id` LIKE '%%' OR `company` LIKE '%%' OR `room` LIKE '%%' OR `cabinet` LIKE '%%' OR `ip_addr` LIKE '%%' LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `switches` WHERE `switch_id` LIKE '%%' OR `asset_id` LIKE '%%' OR `company` LIKE '%%' OR `room` LIKE '%%' OR `cabinet` LIKE '%%' OR `ip_addr` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019245s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000928s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001021s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002025s ]
+
+[ 2018-09-13T10:32:27+08:00 ] 127.0.0.1 /Shelf/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019160s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000854s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2018-09-13T11:08:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000938s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000597s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-09-13T11:08:47+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000705s ]
+
+[ 2018-09-13T11:08:51+08:00 ] 127.0.0.1 /Models/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000712s ]
+SQL: SHOW COLUMNS FROM `models` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `models` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `models` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2018-09-13T11:18:59+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2018-09-13T11:19:00+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006648s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000447s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000493s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000738s ]
+
+[ 2018-09-13T11:19:04+08:00 ] 127.0.0.1 /Os/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0128s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `os` WHERE `name` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `os` WHERE `name` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2018-09-13T11:23:06+08:00 ] 127.0.0.1 /Prokind/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `categories` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `categories` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000268s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001244s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001808s ]
+
+[ 2018-09-13T11:23:08+08:00 ] 127.0.0.1 /Product/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001541s ]
+
+[ 2018-09-13T11:23:11+08:00 ] 127.0.0.1 /Ipsegs/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.0286s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0272s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0274s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0268s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0269s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.0' AND state=0 ) LIMIT 1   [ RunTime:0.0287s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.16' AND state=0 ) LIMIT 1   [ RunTime:0.0389s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2018-09-13T11:23:13+08:00 ] 127.0.0.1 /Room/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000601s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2018-09-13T11:23:15+08:00 ] 127.0.0.1 /Shelf/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0154s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008681s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008747s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2018-09-13T11:23:17+08:00 ] 127.0.0.1 /Switches/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `switches` [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `switches` WHERE `switch_id` LIKE '%%' OR `asset_id` LIKE '%%' OR `company` LIKE '%%' OR `room` LIKE '%%' OR `cabinet` LIKE '%%' OR `ip_addr` LIKE '%%' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `switches` WHERE `switch_id` LIKE '%%' OR `asset_id` LIKE '%%' OR `company` LIKE '%%' OR `room` LIKE '%%' OR `cabinet` LIKE '%%' OR `ip_addr` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010782s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2018-09-13T11:23:18+08:00 ] 127.0.0.1 /Models/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `models` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `models` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `models` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001032s ]
+
+[ 2018-09-13T11:26:32+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-13T11:26:35+08:00 ] 127.0.0.1 /Role/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `roles` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `roles` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `roles` WHERE `name` LIKE '%%' LIMIT 0,15   [ RunTime:0.0044s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2018-09-13T11:27:18+08:00 ] 127.0.0.1 /Account/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0147s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 0,10   [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-09-13T11:27:30+08:00 ] 127.0.0.1 /Account/list/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000742s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 10,10   [ RunTime:0.0069s ]
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014013s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014099s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2018-09-13T11:27:32+08:00 ] 127.0.0.1 /Account/list/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0155s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `accounts` WHERE (  `name` LIKE '%%' OR `realname` LIKE '%%' OR `level` LIKE '%%' OR `dept` LIKE '%%' ) AND `nid` > 1 LIMIT 20,10   [ RunTime:0.0055s ]
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+NOTIC: [8] Undefined variable: cpage D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\AccountController.class.php 第 25 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2018-09-13T11:29:37+08:00 ] 127.0.0.1 /Custom/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000546s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000197s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002222s ]
+
+[ 2018-09-13T11:29:41+08:00 ] 127.0.0.1 /Custom/add_order.html?name=%E8%92%B2%E5%85%AC%E8%8B%B1%E5%85%AC%E5%8F%B8&salesman=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0135s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021380s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2018-09-13T11:30:58+08:00 ] 127.0.0.1 /Custom/add_order.html?name=%E8%92%B2%E5%85%AC%E8%8B%B1%E5%85%AC%E5%8F%B8&salesman=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0132s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2018-09-13T14:40:23+08:00 ] 127.0.0.1 /Prokind/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0126s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `categories` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `categories` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018418s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018537s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001290s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2018-09-13T14:40:47+08:00 ] 127.0.0.1 /Product/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `products` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `products` WHERE `name` LIKE '%%' OR `category` LIKE '%%' OR `band_limit` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000848s ]
+
+[ 2018-09-13T14:40:59+08:00 ] 127.0.0.1 /Ipsegs/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `ipsegs` [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `ipsegs` WHERE `ipseg` LIKE '%%' OR `netmask` LIKE '%%' OR `vlan` LIKE '%%' OR `router` LIKE '%%' OR `room` LIKE '%%' OR `isp` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `ips` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.64' AND state=0 ) LIMIT 1   [ RunTime:0.0273s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.72' AND state=0 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.96' AND state=0 ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.48' AND state=0 ) LIMIT 1   [ RunTime:0.0261s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.201.48' AND state=0 ) LIMIT 1   [ RunTime:0.0259s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.202.16' AND state=0 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.248.224' AND state=0 ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='218.93.211.224' AND state=0 ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.0' AND state=0 ) LIMIT 1   [ RunTime:0.0266s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `ips` WHERE ( ipseg='222.187.221.16' AND state=0 ) LIMIT 1   [ RunTime:0.0268s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2018-09-13T14:41:01+08:00 ] 127.0.0.1 /Room/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000881s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `rooms` WHERE `name` LIKE '%%' OR `isp` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000578s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2018-09-13T14:41:02+08:00 ] 127.0.0.1 /Shelf/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `cabinets` LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `cabinets` ORDER BY id asc LIMIT 0,10   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019591s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000952s ]
+
+[ 2018-09-13T14:41:03+08:00 ] 127.0.0.1 /Switches/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `switches` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `switches` WHERE `switch_id` LIKE '%%' OR `asset_id` LIKE '%%' OR `company` LIKE '%%' OR `room` LIKE '%%' OR `cabinet` LIKE '%%' OR `ip_addr` LIKE '%%' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `switches` WHERE `switch_id` LIKE '%%' OR `asset_id` LIKE '%%' OR `company` LIKE '%%' OR `room` LIKE '%%' OR `cabinet` LIKE '%%' OR `ip_addr` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018586s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018728s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001722s ]
+
+[ 2018-09-13T14:41:04+08:00 ] 127.0.0.1 /Models/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `models` [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `models` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `models` WHERE `name` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018805s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001879s ]
+
+[ 2018-09-13T14:41:05+08:00 ] 127.0.0.1 /Os/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `os` WHERE `name` LIKE '%%' OR `type` LIKE '%%' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `os` WHERE `name` LIKE '%%' OR `type` LIKE '%%' ORDER BY id asc LIMIT 0,10   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016992s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2018-09-13T15:02:00+08:00 ] 127.0.0.1 /Custom/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001790s ]
+
+[ 2018-09-13T15:02:04+08:00 ] 127.0.0.1 /Custom/view.html?name=%E8%92%B2%E5%85%AC%E8%8B%B1%E5%85%AC%E5%8F%B8&id=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `clients` WHERE `name` = '蒲公英公司' AND `id` = 1  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `_servers` WHERE ( CustName='蒲公英公司' AND ServState='在线运行' )  [ RunTime:0.0501s ]
+SQL: SHOW COLUMNS FROM `prepays` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `prepays` WHERE ( cid = 1 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0073s ]
+SQL: SELECT `order_begin_at`,`last_pay_at`,`status`,`ordertype`,`money`,`salesman` FROM `orders` WHERE ( cid = 1 )  [ RunTime:0.0352s ]
+SQL: SELECT `ServNum`,`ShelfCode`,`ServState`,`OS`,`Serv_IP`,`_create_at` FROM `_servers` WHERE ( CustName = '蒲公英公司' AND ServState='在线运行' )  [ RunTime:0.0187s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined index:  D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\0fba219a4a4df009e8de8d2e804cfe97.php 第 200 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2018-09-13T15:02:08+08:00 ] 127.0.0.1 /Custom/list.html?sc=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000457s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000728s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019246s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000768s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2018-09-13T15:02:09+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0143s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000204s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014425s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000781s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000842s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2018-09-13T15:02:25+08:00 ] 127.0.0.1 /Custom/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0140s ]
+SQL: DELETE FROM `clients` WHERE ( id=1839 ) [ RunTime:0.0286s ]
+
+[ 2018-09-13T15:02:26+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013377s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000895s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2018-09-13T15:02:36+08:00 ] 127.0.0.1 /Custom/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0143s ]
+SQL: DELETE FROM `clients` WHERE ( id=1840 ) [ RunTime:0.0353s ]
+
+[ 2018-09-13T15:02:37+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014617s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2018-09-13T15:02:44+08:00 ] 127.0.0.1 /Custom/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0149s ]
+SQL: DELETE FROM `clients` WHERE ( id=1841 ) [ RunTime:0.0289s ]
+
+[ 2018-09-13T15:02:45+08:00 ] 127.0.0.1 /Custom/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0138s ]
+SQL: DELETE FROM `clients` WHERE ( id=1841 ) [ RunTime:0.0021s ]
+
+[ 2018-09-13T15:02:46+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000829s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2018-09-13T15:02:47+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013424s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000610s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000872s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2018-09-13T15:02:53+08:00 ] 127.0.0.1 /Custom/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0072s ]
+SQL: DELETE FROM `clients` WHERE ( id=1846 ) [ RunTime:0.0356s ]
+
+[ 2018-09-13T15:02:54+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000528s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-09-13T15:02:58+08:00 ] 127.0.0.1 /Custom/remove
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0137s ]
+SQL: DELETE FROM `clients` WHERE ( id=1847 ) [ RunTime:0.0253s ]
+
+[ 2018-09-13T15:02:59+08:00 ] 127.0.0.1 /Custom/list.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000916s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2018-09-13T15:25:01+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000858s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-13T16:16:42+08:00 ] 127.0.0.1 /Role/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `roles` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `roles` WHERE `name` LIKE '%%' LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `roles` WHERE `name` LIKE '%%' LIMIT 0,15   [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2018-09-13T16:16:42+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000853s ]
+ERR: 无法加载控制器:Error403
+

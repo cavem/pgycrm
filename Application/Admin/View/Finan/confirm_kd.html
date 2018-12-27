@@ -1,0 +1,114 @@
+<include file="Public/header" title="pgyidc" />
+<script src="__PUBLIC__/DatePicker/WdatePicker.js" type="text/javascript"></script>
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;padding:15px;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+.claaa{color: #888;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*boot*/
+.panel-body{background: #eee;}
+</style>
+<script>
+$(function(){
+
+})
+</script>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <table class="table table-bordered">
+        <colgroup><col width="15%"> <col width="35%"> <col width="15%"> <col width="35%"></colgroup>
+        <tbody>
+            <tr>
+                <td class="claaa">订单编号/财务编号</td>
+                <td>{$finaninfo.id}</td>
+                <td class="claaa">款项类别</td>
+                <td>{$finaninfo.type}</td>
+            </tr>
+            <tr>
+                <td class="claaa">客户名称</td>
+                <td>{$finaninfo.cname}</td>
+                <td class="claaa">付款状态</td>
+                <td>{$finaninfo.state}</td>
+                
+            </tr>
+            <tr>
+                <td class="claaa">付款金额</td>
+                <td>{$finaninfo.money}</td>
+                <td class="claaa">票据开设</td>
+                <td>{$finaninfo.receipt}</td>
+            </tr>
+            <tr>
+                <td class="claaa">收款方式</td>
+                <td>{$finaninfo.recvtype}</td>
+                <td class="claaa">付款周期</td>
+                <td>{$finaninfo.paycycle}</td>
+            </tr>
+            <tr>
+                <td class="claaa">费用开始日期</td>
+                <td>{$finaninfo.fee_begin_at}</td>
+                <td class="claaa">费用结束日期</td>
+                <td>{$finaninfo.fee_end_at}</td>
+            </tr>
+            <tr>
+                <td class="claaa">银行到款日期</td>
+                <td>{$finaninfo.bank_recv_at}</td>
+                <td class="claaa"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="claaa">相关IP</td>
+                <td colspan="3">
+                    <table style="width: 100%;">
+                        <tr>
+                            <td>{$finaninfo.ipaddr|substr=0,95}</td>
+                            <td>
+                                <?php if(!empty($finaninfo['ipaddr'])&&strlen($finaninfo['ipaddr'])>95) :?>
+                                ...<span class="glyphicon glyphicon-eye-open" style="padding-left: 1em;float: right;" title="{$finaninfo.ipaddr}"></span>
+                                <?php endif;?>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="claaa">备注</td>
+                <td colspan="3">{$finaninfo.remark}</td>
+            </tr>
+            <tr>
+                <td class="claaa">提交人</td>
+                <td>{$finaninfo.committer}</td>
+                <td class="claaa">提交时间</td>
+                <td>{$finaninfo.create_at}</td>
+            </tr>
+            <tr>
+                <form class="mform">
+                <input type="hidden" name="paysureby" value="{$Think.session.loginuser.realname}">
+                <td class="claaa"><b>款到确认人</b></td>
+                <td><b>{$Think.session.loginuser.realname}</b></td>
+                <td class="claaa"><b>款到确认时间</b></td>
+                <input type="hidden" name="paysure_at" value="<php>echo date('Y-m-d H:i:s');</php>">
+                <td><b><php>echo date("Y-m-d H:i:s");</php></b></td>
+                </form>
+            </tr>
+        </tbody>
+    </table>      
+</div>
+</div>
+</div>
+<include file="Public/footer" title="pgyidc" />

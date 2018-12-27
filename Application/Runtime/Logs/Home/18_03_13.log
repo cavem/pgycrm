@@ -1,0 +1,63 @@
+[ 2018-03-13T09:57:22+08:00 ] 127.0.0.1 /Application/Admin/View/Public/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-03-13T09:57:24+08:00 ] 127.0.0.1 /Application/Admin/View/Public/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000814s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000862s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-03-13T10:06:19+08:00 ] 127.0.0.1 /Application/Admin/View/Public/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000949s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-03-13T10:08:23+08:00 ] 127.0.0.1 /Officweb/quoteinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-03-13T10:11:53+08:00 ] 127.0.0.1 /Officweb/quoteinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-03-13T10:12:44+08:00 ] 127.0.0.1 /Officweb/quoteinfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000830s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+
+[ 2018-03-13T10:16:59+08:00 ] 127.0.0.1 /Officweb/quotelist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+ERR: 模板不存在:./Application/Home/View/Public/404.html
+

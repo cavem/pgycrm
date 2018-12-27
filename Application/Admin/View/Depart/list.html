@@ -1,0 +1,112 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+</style>
+<script>
+$(function(){
+    $('.add').click(function(){
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            layer.msg('请稍等...',{icon:16});
+            $.post('/Account/new',decodeURIComponent(formdata,true),function(data,status){
+                if(data==0){
+                    layer.msg('添加成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('添加失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('新增账户','900px','660px',"{:U('Account/new')}",confirm);
+    })
+    $('.view').click(function(){
+        var name=$(this).closest('tr').find('.name').text();
+        var confirm=function(){
+            layer.closeAll();
+        }
+        myalert('查看角色','900px','660px',"{:U('Account/view')}"+"?name="+name,confirm);
+    })
+    $('.edit').click(function(){
+        var name=$(this).closest('tr').find('.name').text();
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            layer.msg('请稍等...',{icon:16});
+            $.post('/Account/edit',decodeURIComponent(formdata,true),function(data,status){
+                if(data==0){
+                    layer.msg('修改成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('修改失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('修改角色','900px','660px',"{:U('Account/edit')}"+"?name="+name,confirm);
+    })
+    $('.remove').click(function(){
+        layer.msg('请稍等...',{icon:16});
+        var name=$(this).closest('tr').find('.name').text();
+        $.post('/Account/remove',{"name":name},function(data,status){
+            if(data==0){
+                layer.msg('删除成功',{icon:1});
+                window.location.reload();
+            }else{
+                layer.msg('删除失败',{icon:2});
+                window.location.reload();
+            }
+        })
+    })
+    $('.gopage').click(function(){
+        var cpage=$('.cpage').val();
+        window.location.href="{:U('Account/list')}"+"?p="+cpage;
+    })
+})
+</script>
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-window-restore"></i> 部门管理</span>
+        <div class="mysearchbox fr">
+            <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
+            <form class="sform" action="{:U('Account/list')}" method="POST">
+                <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容">
+            </form>
+            <i class="fa fa-times empty"></i>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <a href="javascript:;" class="fr gopage" style="height: 28px;line-height: 28px;border:1px solid #58A0D3;background-color: #d5d5d5;font-size: 12px;padding:0 5px">跳转</a>
+            <div><input type="text" id="pagebox" class="form-control fr cpage" style="width: 60px;height: 28px;"></div>
+            <button class="btn btn-primary fl add mr10"><i class="fa fa-plus"></i> 新增</button>
+            <div class="page fr mr10 pages">{$page}</div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th>编号</th><th>等级 </th><th>描述</th><th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <volist name="departlist" id="vo" key="k">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.name}</td>
+                        <td>{$vo.description}</td>
+                        <td style="width: 200px;">
+                            <button class="btn btn-info view"><i class="fa fa-eye"></i></button>
+                            <button class="btn btn-warning edit"><i class="fa fa-edit"></i></button>
+                            <button class="btn btn-danger remove"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </volist>
+            </tbody>
+        </table>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

@@ -1,0 +1,224 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display: block;width: 150px;text-align: right;font-weight: bold;}
+.form-content{width: 700px;text-align: left;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+/*多选框*/
+.checkbox-wrap li{float: left;position: relative;margin-left:-1px;z-index: 1;min-width: 46px;height: 40px;background: #fff;border: 1px solid #e7e7e7;cursor: pointer;line-height: 40px;font-size: 13px;padding: 0 20px;}
+.checkbox-wrap li:hover{border:1px solid #60aff6;z-index: 4;}
+.checkbox-wrap li input{position: absolute;width:0;height: 0;left: 0;opacity: 0;cursor: pointer;}
+.mychecked{border: 1px solid #60aff6 !important;background: url(__PUBLIC__/assets/images/icon-selected.png) #fff no-repeat !important;background-position:bottom right !important;z-index: 5 !important;}
+.sm-checkbox-wrap{background: #ddd;clear: both;overflow: hidden;padding: 5px 10px;}
+.sm-checkbox-wrap .checkbox-wrap li{height: 30px !important;line-height: 30px !important;padding: 0 10px;}
+.haschild{padding-right: 10px !important;}
+.haschild i{position: relative;top: 16px;right: 25px;color: #ddd;font-size: 18px;}
+.panel-item{margin-top: 15px;}
+.layui-tab-content p{width: 100%;background-color: #D5D5D5;height: 30px;padding: 5px 0 0 5px;color:#000;}
+.layui-tab-content table td{border:1px solid #D5D5D5;padding-left: 5px}
+</style>
+<script>
+$(function(){
+    $('.viewpic').click(function(){
+        layer.alert('<img src="'+$(this).data("val")+'" width="100%;">');
+    })
+})
+</script>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+    <div class="myalert-main">
+        <div class="layui-tab">
+            <!-- <ul class="layui-tab-title">
+                <li class="layui-this">基本信息</li>
+                <li>权限设置</li>
+            </ul> -->
+            <div class="layui-tab-content" style="min-height: 580px;">
+                <p>工单信息</p>
+                <table style="width: 100%;line-height: 30px;">
+                    <tr>
+                        <td style="width:15%">标题</td>
+                        <td style="width:85%" colspan="3">{$tasks.title}</td>
+                    </tr>
+                    <tr>
+                        <td>问题描述</td>
+                        <td colspan="3">{$tasks.problemdesc}</td>
+                    </tr>
+                    <tr>
+                        <td style="width:15%">工单状态</td>
+                        <td style="width:35%">{$tasks.state}</td>
+                        <td style="width:15%">工单编号</td>
+                        <td style="width:35%">{$tasks.id}</td>
+                    </tr>
+                    <tr>
+                        <td style="width:15%">提交人</td>
+                        <td style="width:35%">{$tasks.committer}</td>
+                        <td style="width:15%">工单类型</td>
+                        <td style="width:35%">{$tasks.type2}</td>
+                    </tr>
+                    <tr>
+                        <td style="width:15%">受理部门</td>
+                        <td style="width:35%">{$tasks.recvdept}</td>
+                        <td style="width:15%">所在机房</td>
+                        <td style="width:35%">{$tasks.room}</td>
+                    </tr>
+                    <tr>
+                        <td style="width:15%">处理方法</td>
+                        <td style="width:35%">{$tasks.action}</td>
+                        <td style="width:15%">处理时限</td>
+                        <td style="width:35%">{$tasks.timelimit}</td>
+                    </tr>
+                    <tr>
+                        <td style="width:15%">提交时间</td>
+                        <td style="width:35%">{$tasks.commit_at}</td>
+                        <td style="width:15%">截止时间</td>
+                        <td style="width:35%">{$tasks.expire_at}</td>
+                    </tr>
+                    <if condition="($tasks.action eq '上架') OR ($tasks.action eq '添加IP') OR ($tasks.action eq '更换IP') OR ($tasks.action eq '重装win系统') OR ($tasks.action eq '重装linux系统') OR ($tasks.action eq '更换IP重装win系统') OR ($tasks.action eq '更换IP重装linux系统') OR ($tasks.action eq '新上架')">
+                    <tr>
+                        <td style="width:15%">新增IP地址</td>
+                        <td style="width:85%" colspan="3">{$tasks.addip}</td>
+                    </tr>
+                    </if>
+                    <if condition="($tasks.action eq '上架') OR ($tasks.action eq '上架转让')">
+                    <tr>
+                        <td style="width:15%">截图</td>
+                        <td style="width:85%" colspan="3"><a href="javascript:;" class="viewpic" data-val="{$tasks.pic}">查看截图</a></td>
+                    </tr> 
+                    </if>
+                </table>
+                <p style="margin-top: 10px;">操作记录</p>
+                <table border="0" style="width: 100%;line-height: 30px">
+                    <tr style="border-bottom: 1px solid #D5D5D5">
+                        <td>备注</td><td>操作</td><td>时间</td>
+                    </tr>
+                    <foreach name="talog" item="info">
+                        <tr style="border-bottom: 1px solid #D5D5D5">
+                            <td style="width:50%;padding-right: 2em">{$info.msg}</td>
+                            <td style="width:20%">{$info.act}</td>
+                            <td style="width:30%">【{$info.name}】{$info.tm|date="Y-m-d H:i:s",###}</td>
+                        </tr>
+                    </foreach>
+                </table>
+                <notempty name="tasks.svid">
+                  <p style="margin-top: 10px;">服务器信息</p>
+                  <table border="0" style="width: 100%;line-height: 30px">
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td style="width: 100px">编号</td>
+                          <td style="font: 16px solid #FF0000">{$serverinfo.servnum}</td>
+                      </tr>
+                      <tr>
+                          <td style="width:15%">客户名称</td>
+                          <td style="width:35%">{$serverinfo.custname}</td>
+                          <td style="width:15%">服务器类型</td>
+                          <td style="width:35%">{$serverinfo.productkind}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td style="width:15%">设备名称</td>
+                          <td style="width:35%">{$serverinfo.servname}</td>
+                          <td style="width:15%">设备类型</td>
+                          <td style="width:35%">{$serverinfo.devicetype}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td style="width:15%">状态</td>
+                          <td style="width:35%">{$serverinfo.servstate}</td>
+                          <td style="width:15%">设备外形</td>
+                          <td style="width:35%">{$serverinfo.deviceshape}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td style="width:15%">操作系统</td>
+                          <td style="width:35%">{$serverinfo.os}</td>
+                          <td style="width:15%">MAC地址</td>
+                          <td style="width:35%">{$serverinfo.macaddress}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td style="width:15%">所在机房</td>
+                          <td style="width:35%">{$serverinfo.idcname}</td>
+                          <td style="width:15%">所在机柜</td>
+                          <td style="width:35%">{$serverinfo.shelfcode}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td>IP地址</td>
+                          <td>{$serverinfo.serv_ip}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td>带宽限制</td>
+                          <td>{$serverinfo.bandwidth}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td>配置</td>
+                          <td style="font-weight: bold;">{$serverinfo.hwconfig}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                          <td>备注</td>
+                          <td>{$serverinfo.remarks}</td>
+                      </tr>
+                  </table>
+                </notempty>
+                <notempty name="servtflist.0">
+                <p style="margin-top: 10px;">服务器转让信息</p>
+                <table class="table table-bordered">
+                    <thead>
+                        <th></th>
+                        <th>旧订单ID</th>
+                        <th>旧客户名称</th>
+                        <th>新订单ID</th>
+                        <th>新客户名称</th>
+                        <th>提交人</th>
+                        <th>提交时间</th>
+                    </thead>
+                    <tbody>
+                        <volist name="servtflist" id="vo" key="k">
+                        <tr>
+                            <td>{$k}</td>
+                            <td>{$vo.pre_o_nid}</td>
+                            <td>{$vo.pre_cname}</td>
+                            <td>{$vo.new_o_nid}</td>
+                            <td>{$vo.new_cname}</td>
+                            <td>{$vo.committer}</td>
+                            <td>{$vo.commit_at}</td>
+                        </tr>
+                        </volist>
+                    </tbody>
+                </table>
+                </notempty>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<script src="__PUBLIC__/layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'form'], function(){
+      var layer = layui.layer
+      ,form = layui.form;
+    });
+    //重新渲染表单
+    function renderForm(){
+      layui.use('form', function(){
+       var form = layui.form;//高版本建议把括号去掉，有的低版本，需要加()
+       form.render();
+      });
+    }
+</script>
+<include file="Public/footer" title="pgyidc" />

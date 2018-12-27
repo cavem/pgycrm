@@ -1,0 +1,331 @@
+<include file="Public/header" title="pgyidc" />
+<script src="__PUBLIC__/DatePicker/WdatePicker.js" type="text/javascript"></script>
+<style>
+.square{width: 34px;height: 34px;background: #28b779;color: #fff;text-align: center;line-height: 34px;cursor: pointer;}
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+.tr-active{background: #8bd6b6 !important};
+.updown{display: inline-block;width: 20px;position: relative;top: 7px;text-align: center;background: #eee;}
+.updown span{display: block;cursor: pointer;color: #999;}
+.updown span:hover{color: #111;}
+.sort{cursor: pointer;}
+.sort:hover{color: #337ab7;text-decoration: underline;}
+</style>
+<script>
+$(function(){
+    $('.table-hover tbody tr').hover(function(){
+        $(this).find('.operate-btns').show();
+    },function(){
+        $(this).find('.operate-btns').hide();
+    })
+    //view
+    $('.view').click(function(){
+        var nid=$(this).closest('tr').find('.nid').text();
+        myalert('查看工单','760px','680px',"{:U('Workorder/viewitem')}?nid="+nid);
+    })
+    //奖金清零
+    $('.empty-b').click(function(){
+        var nid=$(this).closest('tr').find('.nid').text();
+        layer.confirm('确定将【'+nid+'】奖金清零?', {
+            btn: ['确定','取消']
+        }, function(){
+            layer.load();
+            $.post("/Worktable/emptybns",{"nid":nid},function(data,status){
+                if(data==0){
+                    layer.msg('修改成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('修改失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        });
+    })
+    //工单重置
+    $('.reset').click(function(){
+        var nid=$(this).closest('tr').find('.nid').text();
+        layer.confirm('确定将工单【'+nid+'】重置?', {
+            btn: ['确定','取消']
+        }, function(){
+            layer.load();
+            $.post("/Worktable/reset",{"nid":nid},function(data,status){
+                if(data==0){
+                    layer.msg('重置成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('重置失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        });
+    })
+    //删除
+    $('.remove').click(function(){
+        var nid=$(this).closest('tr').find('.nid').text();
+        layer.confirm('确定删除【'+nid+'】?', {
+            btn: ['确定','取消']
+        }, function(){
+            layer.load();
+            $.post("/Worktable/remove",{"nid":nid},function(data,status){
+                if(data==0){
+                    layer.msg('删除成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('删除失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        });
+    })
+    $('.close').click(function(){
+        $('.sform').submit();
+    })
+    $('.condition-ctrl').click(function(){
+        if($(this).find('i').hasClass('fa-caret-down')){
+            $(this).find('i').removeClass('fa-caret-down');
+            $(this).find('i').addClass('fa-caret-up');
+            $('.lsit-wrap').css({"height":"580px","overflow":"auto"});
+        }else{
+            $(this).find('i').removeClass('fa-caret-up');
+            $(this).find('i').addClass('fa-caret-down');
+            $('.lsit-wrap').css({"height":"","overflow":"auto"});
+        }
+        $('.condition-panel').toggle();
+    })
+    //select:type2 change
+
+    $("select[name='type2']").change(function(){
+        var str="<option value=''>--请选择--</option>";
+        var val=$(this).val();
+        switch(val){
+            case "问题处理":str+="<option>服务器重启</option><option>接线</option><option>破密</option><option>刷机</option><option>断网</option>"+
+            "<option>添加IP</option><option>更换IP</option><option>网络检测</option><option>硬件检查</option><option>更换位置</option>"+
+            "<option>更换硬件</option><option>重装Win系统</option><option>重装Linux系统</option><option>更换IP重装Win系统</option>"+
+            "<option>更换IP重装Linux系统</option><option>更换硬件重装系统</option><option>租用机器增减硬件</option><option>托管机器增减硬件</option>"+
+            "<option>搬机器1U</option><option>搬机器2U</option><option>修改启动项</option><option>借用配件</option><option>借用配件重装系统</option>"+
+            "<option>新上架</option><option>自动化装WIN03系统</option>";break;
+            case "上架单":str+="<option>上架</option><option>新上架</option>";break;
+            case "下架单":str+="<option>下架</option>";break;
+            case "服务器转让":str+="<option>订单转让</option><option>上架转让</option><option>下架转让</option>";break;
+        }
+        $("select[name='action']").html(str);
+    })
+    //跳转
+    $('.gopage').click(function(){
+        var cpage=$('.cpage').val();
+        $("input[name='p']").val(cpage);
+        $('.sform').submit();
+    })
+    //排序
+    $('.sort').click(function(){
+        var val=$(this).data("val");
+        var scval=$("input[name='sc']").val();
+        var scvalarr=scval.split(' ');
+        var zd=scvalarr[0];
+        var st=scvalarr[1];
+        if(val==zd){
+            if(st=='asc'){
+                $("input[name='sc']").val(val+' desc');
+            }else{
+                $("input[name='sc']").val(val+' asc');
+            }
+        }else{
+            $("input[name='sc']").val(val+' asc');
+        }
+        $('.sform').submit();
+    })
+    $('.export').click(function(){
+        layer.msg('请稍等...',{icon:16});
+        $('.sform').attr("action","{:U('Worktable/exportcsv')}");
+        $('.sform').submit();
+    })
+})
+</script>
+<div id="content" class="wow fadeIn" style="overflow: auto;height: 100%;">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-table"></i> 工单报表</span>
+        <div class="square fr search">
+            <i class="fa fa-search" style="font-size: 14px;"></i>
+        </div>
+        <form class="sform" action="{:U('Worktable/list')}" method="GET">
+        <input type="hidden" name="p">
+        <input type="hidden" name="sc" value="{$sc}">
+        <div class="mysearchbox fr">
+            <i class="fa fa-search search" style="position: absolute;top: 11px;left: 11px;"></i>
+            <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容" value="{$key}">
+            <i class="fa fa-times empty"></i>
+        </div>
+        <div class="square fr condition-ctrl">
+            <i class="fa fa-caret-down"></i>
+        </div>
+        <div class="condition-panel">
+            <div class="condition-panel-item">
+                <span class="lb">工单类型</span>
+                <select class="form-control" name="type2">
+                    <option value="">--请选择--</option>
+                    <option <if condition="$type2 eq '问题处理'">selected</if>>问题处理</option>
+                    <option <if condition="$type2 eq '上架单'">selected</if>>上架单</option>
+                    <option <if condition="$type2 eq '下架单'">selected</if>>下架单</option>
+                    <option <if condition="$type2 eq '服务器转让'">selected</if>>服务器转让</option>
+                </select>
+            </div>
+            <div class="condition-panel-item">
+                <span class="lb">处理方法</span>
+                <select class="form-control" name="action"></select>
+            </div>
+            <div class="condition-panel-item">
+                <span class="lb">受理部门</span>
+                <select class="form-control" name="recvdept">
+                    <option value="">--请选择--</option>
+                    <option <if condition="$recvdept eq '技术部'">selected</if>>技术部</option>
+                    <option <if condition="$recvdept eq '客服部'">selected</if>>客服部</option>
+                    <option <if condition="$recvdept eq '网络部'">selected</if>>网络部</option>
+                    <option <if condition="$recvdept eq '财务部'">selected</if>>财务部</option>
+                </select>
+            </div>
+            <div class="condition-panel-item" style="width: 260px;">
+                <span class="lb">提交时间</span>
+                <input type="text" name="commit_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="{$commit_at_from}">~
+                <input type="text" name="commit_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="{$commit_at_to}">
+            </div>
+            <div class="condition-panel-item" style="width: 260px;">
+                <span class="lb">受理时间</span>
+                <input type="text" name="receive_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="{$receive_at_from}">~
+                <input type="text" name="receive_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="{$receive_at_to}">
+            </div>
+            <div class="condition-panel-item" style="width: 260px;">
+                <span class="lb">完成时间</span>
+                <input type="text" name="complete_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="{$complete_at_from}">~
+                <input type="text" name="complete_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="{$complete_at_to}">
+            </div>
+            <div class="condition-panel-item">
+                <span class="lb">完成结果</span>
+                <select class="form-control" name="comp_state">
+                    <option value="">--请选择--</option>
+                    <option <if condition="$comp_state eq '优'">selected</if>>优</option>
+                    <option <if condition="$comp_state eq '中'">selected</if>>中</option>
+                    <option <if condition="$comp_state eq '差'">selected</if>>差</option>
+                </select>
+            </div>
+            <div class="condition-panel-item">
+                <span class="lb">所在机房</span>
+                <select class="form-control" name="room">
+                    <option value="">--请选择--</option>
+                    <foreach name="roomlist" item="vo">
+                        <option <if condition="$vo eq $room">selected</if>>{$vo}</option>
+                    </foreach>
+                </select>
+            </div>
+            <div class="condition-panel-item">
+                <span class="lb">受理人</span>
+                <select class="form-control" name="receiver">
+                    <option value="">--请选择--</option>
+                    <volist name="receiverlst" id="vo">
+                        <option <if condition="$vo.realname eq $receiver">selected</if>>{$vo.realname}</option>
+                    </volist>
+                </select>
+            </div>
+            <div class="condition-panel-item">
+                <span class="lb">提交人</span>
+                <select class="form-control" name="committer">
+                    <option value="">--请选择--</option>
+                    <foreach name="committerlst" item="vo">
+                        <option <if condition="$vo.realname eq $committer">selected</if>>{$vo.realname}</option>
+                    </foreach>
+                </select>
+            </div>
+        </div>
+        </form>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15" style="overflow: hidden;">
+            <if condition="$perm['工单系统']['工单报表']['导出']">
+            <a href="javascript:;" class="btn btn-primary fl export"><i class="fa fa-external-link"></i> 导 出</a>
+            </if>
+            <a href="javascript:;" class="fr gopage" style="height: 28px;line-height: 28px;border:1px solid #58A0D3;background-color: #d5d5d5;font-size: 12px;padding:0 5px">跳转</a>
+            <div><input type="text" id="pagebox" class="form-control fr cpage" style="width: 60px;height: 28px;"></div>
+            <div class="page fr mr10 pages">{$page}</div>
+        </div>
+        <div class="lsit-wrap">
+        <table class="table table-hover" style="min-width: 2100px;">
+            <thead>
+                <tr>
+                    <th>操作</th>
+                    <th class="sort" data-val="nid">ID</th><th>标题</th>
+                    <th>客户名称</th><th>IP地址</th>
+                    <th>工单类型</th><th>处理方法</th>
+                    <th>受理部门</th><th>受理工程师</th><th>用时</th>
+                    <th class="sort" data-val="bonus">奖金</th><th>完成结果</th>
+                    <th>提交时间</th><th>受理时间</th>
+                    <th class="sort" data-val="complete_at">完成时间</th><th>处理时限(分钟)</th><th>所在机房</th>
+                    <th>提交人</th>
+                </tr>
+            </thead>
+            <tbody>
+              <volist name="tasklist" id="vo">
+                <tr>
+                    <td class="text-navy td-action">
+                        <div class="act-more">
+                            <div style="position: relative;text-align: left;">
+                                <button class="btn btn-sm btn-info view" title="查看"><i class="fa fa-eye"></i></button>
+                                <div class="operate-btns" style="position: absolute;width: 200px;top:0px;left: 38px;text-align:left;display: none;">
+                                    <if condition="$perm['工单系统']['工单报表']['奖金清零']">
+                                    <button class="btn btn-sm btn-success empty-b" title="奖金清零"><i class="fa fa-eraser"></i></button>
+                                    </if> 
+                                    <if condition="$perm['工单系统']['工单报表']['工单重置']">
+                                    <button class="btn btn-sm btn-info reset" title="工单重置"><i class="fa fa-refresh"></i></button>
+                                    </if>
+                                    <if condition="$perm['工单系统']['工单报表']['删除']">
+                                    <button class="btn btn-sm btn-danger remove" title="删除"><i class="fa fa-trash"></i></button>
+                                    </if>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="nid">{$vo.nid}</td>
+                    <td>{$vo.title}</td>
+                    <td>{$vo.cname}</td>
+                    <td>
+                        <table style="width: 100%;">
+                            <tr>
+                                <td style="width: 220px;">{$vo.ipaddr|substr=0,30}</td>
+                                <td>
+                                    <?php if(!empty($vo['ipaddr'])&&strlen($vo['ipaddr'])>30) :?>
+                                    ...<span class="fa fa-eye" style="padding-left: 1em" title="{$vo.ipaddr}"></span>
+                                    <?php endif;?>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>{$vo.type2}</td>
+                    <td>{$vo.action}</td>
+                    <td>{$vo.recvdept}</td>
+                    <td>{$vo.receiver}</td>
+                    <td>{$vo.total_use}</td>
+                    <td>{$vo.bonus}</td>
+                    <td>
+                        <switch name="vo.comp_state">
+                            <case value="优"><span class="label label-success">优</span></case>
+                            <case value="中"><span class="label label-warning">中</span></case>
+                            <case value="差"><span class="label label-danger">差</span></case>
+                        </switch>
+                    </td>
+                    <td>{$vo.commit_at}</td>
+                    <td>{$vo.receive_at}</td>
+                    <td>{$vo.complete_at}</td>
+                    <td>{$vo.timelimit}</td>
+                    <td>{$vo.room}</td>
+                    <td>{$vo.committer}</td>
+                </tr>
+               </volist>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="17"><span class="label label-danger">总奖金：</span>{$totalbonus}</td>
+                </tr>
+            </tfoot>
+        </table>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

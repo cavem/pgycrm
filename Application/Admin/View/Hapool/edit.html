@@ -1,0 +1,112 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+/*基本信息*/
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+.bdred{border-color: red !important;}
+</style>
+<script>
+$(function(){
+    $('.moreoption').click(function(){
+        $(this).closest('.form-content').find('.mulselect').toggle();
+    })
+    document.addEventListener('click',function (e) {
+        var parent=$(e.target).parents('.form-content,.mulselect');
+        if(parent.length===0){
+            $('.mulselect').hide();
+        }
+    })
+    $('.mulselect').change(function(){
+        var selecteds="";
+        $(this).children('option:selected').each(function(){
+            selecteds+=$(this).text()+',';
+        })
+        selecteds=selecteds.substring(0,selecteds.length-1);
+        $(this).closest('.form-content').find('input').val(selecteds);
+        $(this).closest('.form-content').find('.moreoption').html(selecteds+'<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i>');
+    })
+    $('.moreoption').hover(function(){
+        $(this).attr('title',$(this).text());
+    })
+    $("input").blur(function(){
+        if($(this).val()!=''){
+            $(this).removeClass("bdred");
+        }
+    })
+    $("select").change(function(){
+        if($(this).val()!=''){
+            $(this).removeClass("bdred");
+        }
+    })
+})
+</script>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <div class="form-line w50 fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> 工作名称：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="Name" value="{$wklist.name}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">所属部门：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="Department_ID">
+                    <option value="">--请选择--</option>
+                    <volist name="dptlist" id="vo">
+                        <option value="{$vo.id}" <if condition="$wklist['department_id'] eq $vo['id']">selected</if>>{$vo.name}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> 工作频率：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="Frequency" value="{$wklist.frequency}">
+            </div>
+        </div>
+        <div class="form-line fl" style="height: auto;width: 100%;">
+            <span class="form-label" style="position: relative;bottom: 430px;">工作描述：</span>
+            <div class="form-content" style="width: 700px;">
+                <script id="container" name="Remarks" type="text/plain" style="height:250px;">{$wklist.remarks}</script>
+                <!-- 配置文件 -->
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+                <!-- 编辑器源码文件 -->
+                <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+                <!-- 实例化编辑器 -->
+                <script type="text/javascript">
+                    var ue = UE.getEditor('container',{autoHeightEnabled:false});
+                </script>
+            </div>
+        </div>
+        <div class="form-line fl">
+            <span class="form-label" style="position: relative;bottom: 10px;">责任人：</span>
+            <div class="form-content" style="width: 500px;">
+                <span class="moreoption form-control" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;cursor: initial;">{$wklist.userprofiles}<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                <select multiple class="form-control mulselect" style="width: 500px;height: 250px;position: absolute;display: none;">
+                    <volist name="userlist" id="uservo">
+                        <option>{$uservo.realname}</option>
+                    </volist>
+                </select>
+                <input name="UserProfiles" type="hidden" value="{$wklist.userprofiles}">
+            </div>
+            <span style="position:relative;bottom: 10px;">注：按住ctrl可多选</span>
+        </div>
+    </form>
+</div>
+</div>
+</div>
+<include file="Public/footer" title="pgyidc" />

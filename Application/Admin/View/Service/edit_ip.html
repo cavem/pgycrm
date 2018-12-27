@@ -1,0 +1,53 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+@media (max-width: 970px) and (min-width: 481px){
+body {
+    background: transparent;
+}
+}
+</style>
+<script>
+    $(function(){
+        //排序
+        $('.sort').click(function(){
+            var str="";
+            $("input[name='ip_addr']").each(function(){
+                str+=$(this).val()+"|";
+            })
+            var confirm=function(index,layero){
+                //获取iframe的body元素
+                var body = layer.getChildFrame('body',index);
+                var ippartstr="";
+                var data=body.find(".module1").each(function(){
+                    ippartstr+='<div class="alert alert-warning alert-dismissable mt5"><input type="hidden" name="ip_addr" value="'+$(this).text()+'"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'+$(this).text()+'</div>';
+                })
+                $('.sider').html(ippartstr);
+                layer.closeAll();
+            }
+            myalert('IP排序','600px','420px',"{:U('Service/edit_ipsort')}?ipstr="+str,confirm);
+        })
+    })
+</script>
+<div class="main" style="background: #eee;">
+    <div class="sider" style="width: 25%;float:left;">
+        <div style="line-height: 34px;overflow: hidden;">
+            <span class="fl" style="font-size: 16px;font-weight: bold;">选中IP:</span>
+            <a class="btn btn-info fr sort" title="排序"><i class="fa fa-exchange"></i></a>
+        </div>
+        <foreach name="serv_iplist" item="vo">
+        <if condition="$vo neq ''">
+            <div class="alert alert-info alert-dismissable mt5">
+                <input type="hidden" name="ip_addr" value="{$vo}">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                {$vo}
+            </div>
+        </if>
+        </foreach>
+    </div>
+    <div class="tcontain" style="width: 73%;height: 443px;float:left;overflow: hidden;margin-left:2%;">
+        <iframe src="{:U('Service/edit_ipfree')}" class="iframe-main" frameborder='0' style="width:100%;height: 100%;"></iframe>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

@@ -1,0 +1,178 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.square{width: 34px;height: 34px;background: #28b779;color: #fff;text-align: center;line-height: 34px;cursor: pointer;}
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+.moreoption{color: #337ab7;cursor: pointer;}
+.moreoption:hover{color: #23527c;}
+.fold-drop{position: absolute;min-width: 100px;background: #fff;border: 1px solid #e7e7e7;display: none;z-index: 99;}
+.fold-drop li a {display: block;padding: 0 5px;line-height: 30px;text-align: left;color: #404241;text-decoration-line: none;}
+.fold-drop li a:hover{color: #fff;background: #60aff6;}
+.sort{cursor: pointer;}
+.sort:hover{color: #337ab7;text-decoration: underline;}
+</style>
+<script>
+$(function(){
+    $('.add').click(function(){
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            //表单验证
+            var isneed=0;
+            body.find('.need').each(function(){
+                if($(this).closest('.form-line').find("input").val()==''){
+                    $(this).closest('.form-line').find("input").addClass('bdred');
+                    layer.msg("必填项不能为空");
+                    isneed+=1;
+                    return false;
+                }else if($(this).closest('.form-line').find("select").children("option:selected").val()==''){
+                    $(this).closest('.form-line').find("select").addClass('bdred');
+                    layer.msg("必填项不能为空");
+                    isneed+=1;
+                    return false;
+                }
+            })
+            if(isneed!=0){return false};
+            //提交表单
+            layer.load();
+            $.post('/Hapool/new',formdata,function(data,status){
+                if(data==0){
+                    layer.msg('添加成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('添加失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('新建工作','900px','660px',"{:U('Hapool/new')}",confirm);
+    })
+    $('.view').click(function(){
+        var id=$(this).closest('tr').children("td:first").text();
+        var confirm=function(){
+            layer.closeAll();
+        }
+        myalert('查看工作','900px','660px',"{:U('Hapool/view')}"+"?id="+id,confirm);
+    })
+    $('.edit').click(function(){
+        var id=$(this).closest('tr').children("td:first").text();
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            //表单验证
+            var isneed=0;
+            body.find('.need').each(function(){
+                if($(this).closest('.form-line').find("input").val()==''){
+                    $(this).closest('.form-line').find("input").addClass('bdred');
+                    layer.msg("必填项不能为空");
+                    isneed+=1;
+                    return false;
+                }else if($(this).closest('.form-line').find("select").children("option:selected").val()==''){
+                    $(this).closest('.form-line').find("select").addClass('bdred');
+                    layer.msg("必填项不能为空");
+                    isneed+=1;
+                    return false;
+                }
+            })
+            if(isneed!=0){return false};
+            layer.load();
+            $.post('/Hapool/edit',formdata,function(data,status){
+                if(data==0){
+                    layer.msg('修改成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('修改失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('修改工作','900px','660px',"{:U('Hapool/edit')}"+"?id="+id,confirm);
+    })
+    $('.remove').click(function(){
+        var id=$(this).closest('tr').children("td:first").text();
+        layer.confirm('确定删除【'+id+'】?', {
+            btn: ['确定','取消']
+        }, function(){
+            layer.load();
+            $.post('/Hapool/remove',{"id":id},function(data,status){
+                if(data==0){
+                    layer.msg('删除成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('删除失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        });
+        
+    })
+    $('.gopage').click(function(){
+        var cpage=$('.cpage').val();
+        window.location.href="{:U('Hapool/list')}"+"?p="+cpage;
+    })
+})
+</script>
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-th-large"></i> 工作池管理</span>
+        <div class="square fr search">
+            <i class="fa fa-search" style="font-size: 14px;"></i>
+        </div>
+        <form class="sform" action="{:U('Hapool/list')}" method="GET">
+        <input type="hidden" name="p">
+        <input type="hidden" name="sc" value="{$sc}">
+        <div class="mysearchbox fr">
+            <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
+            <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容" value="{$key}">
+            <i class="fa fa-times empty"></i>
+        </div>
+        </form>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <a href="javascript:;" class="fr gopage" style="height: 28px;line-height: 28px;border:1px solid #58A0D3;background-color: #d5d5d5;font-size: 12px;padding:0 5px">跳转</a>
+            <div><input type="text" id="pagebox" class="form-control fr cpage" style="width: 60px;height: 28px;"></div>
+            <if condition="$perm['人事管理']['工作池管理']['新增']">
+            <a href="javascript:;" class="btn btn-primary fl add"><i class="fa fa-plus"></i> 新建工作</a>
+            </if>
+            <div class="page fr mr10 pages">{$page}</div>
+        </div>
+        <div class="lsit-wrap">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th class="sort" data-val="id">ID</th>
+                    <th class="sort" data-val="name">工作名称</th>
+                    <th>工作详情</th><th style="width: 100px;">工作频率</th><th>部门</th><th>负责人</th><th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <volist name="list" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.name}</td>
+                    <td>{$vo.remarks}</td>
+                    <td>{$vo.frequency}</td>
+                    <td><php>echo $dptlist[$vo['department_id']];</php></td>
+                    <td>{$vo.userprofiles}</td>
+                    <td style="width: 200px;">
+                        <if condition="$perm['人事管理']['工作池管理']['查看']">
+                        <button class="btn btn-info btn-sm view"><i class="fa fa-eye"></i></button>
+                        </if> 
+                        <if condition="$perm['人事管理']['工作池管理']['修改']">
+                        <button class="btn btn-warning btn-sm edit"><i class="fa fa-pencil-square-o"></i></button>
+                        </if>
+                        <if condition="$perm['人事管理']['工作池管理']['删除']">
+                        <button class="btn btn-danger btn-sm remove"><i class="fa fa-trash"></i></button>
+                        </if> 
+                    </td>
+                    </tr>
+                    </volist>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

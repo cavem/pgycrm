@@ -1,0 +1,963 @@
+[ 2018-12-13T09:19:02+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010136s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+
+[ 2018-12-13T09:19:02+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001012s ]
+
+[ 2018-12-13T09:19:03+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+
+[ 2018-12-13T09:19:05+08:00 ] 127.0.0.1 /Login/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0408s ]
+SQL: SELECT * FROM `accounts` WHERE `name` = 'wangfd' AND `passwd` = '17447f85470a7fad4cdc6322db232537'  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `accounts` WHERE `name` = 'wangfd' AND `passwd` = '17447f85470a7fad4cdc6322db232537' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `loginlog` [ RunTime:0.0303s ]
+SQL: INSERT INTO `loginlog` (`name`,`ipaddr`,`loginat`) VALUES ('王府的','127.0.0.1','2018-12-13 09:19:05') [ RunTime:0.0434s ]
+
+[ 2018-12-13T09:19:05+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032411s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-12-13T09:19:06+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035607s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035659s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000482s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000707s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2018-12-13T09:19:19+08:00 ] 127.0.0.1 /Worktable/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000479s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT * FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' ORDER BY nid desc LIMIT 0,15   [ RunTime:0.0031s ]
+SQL: SELECT SUM(bonus) AS tp_sum FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' LIMIT 1   [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0328s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0072s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='客服部' )  [ RunTime:0.0013s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='技术部' OR dept='客服部' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 278 行.
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 279 行.
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 280 行.
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 281 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 292 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 293 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 294 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 295 行.
+NOTIC: [8] Undefined variable: commit_at_from D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 300 行.
+NOTIC: [8] Undefined variable: commit_at_to D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 301 行.
+NOTIC: [8] Undefined variable: receive_at_from D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 305 行.
+NOTIC: [8] Undefined variable: receive_at_to D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 306 行.
+NOTIC: [8] Undefined variable: complete_at_from D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 310 行.
+NOTIC: [8] Undefined variable: complete_at_to D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 311 行.
+NOTIC: [8] Undefined variable: comp_state D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 317 行.
+NOTIC: [8] Undefined variable: comp_state D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 318 行.
+NOTIC: [8] Undefined variable: comp_state D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 319 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000961s ]
+
+[ 2018-12-13T09:19:22+08:00 ] 127.0.0.1 /Worktable/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0146s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' LIMIT 1   [ RunTime:0.0152s ]
+SQL: SELECT * FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' ORDER BY nid desc LIMIT 0,15   [ RunTime:0.0019s ]
+SQL: SELECT SUM(bonus) AS tp_sum FROM `tasks` WHERE (  `ipaddr` LIKE '%%' OR `cname` LIKE '%%' OR `type2` LIKE '%%' OR `action` LIKE '%%' OR `recvdept` LIKE '%%' OR `receiver` LIKE '%%' OR `total_use` LIKE '%%' OR `bonus` LIKE '%%' OR `comp_state` LIKE '%%' OR `room` LIKE '%%' ) AND `state` = '关闭' LIMIT 1   [ RunTime:0.0079s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0068s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0068s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='客服部' )  [ RunTime:0.0012s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='技术部' OR dept='客服部' )  [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 278 行.
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 279 行.
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 280 行.
+NOTIC: [8] Undefined variable: type2 D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 281 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 292 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 293 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 294 行.
+NOTIC: [8] Undefined variable: recvdept D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 295 行.
+NOTIC: [8] Undefined variable: commit_at_from D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 300 行.
+NOTIC: [8] Undefined variable: commit_at_to D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 301 行.
+NOTIC: [8] Undefined variable: receive_at_from D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 305 行.
+NOTIC: [8] Undefined variable: receive_at_to D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 306 行.
+NOTIC: [8] Undefined variable: complete_at_from D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 310 行.
+NOTIC: [8] Undefined variable: complete_at_to D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 311 行.
+NOTIC: [8] Undefined variable: comp_state D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 317 行.
+NOTIC: [8] Undefined variable: comp_state D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 318 行.
+NOTIC: [8] Undefined variable: comp_state D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 319 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: room D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 326 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: receiver D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 333 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+NOTIC: [8] Undefined variable: committer D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\53585074e63904d58a23da04a45f43b6.php 第 340 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017890s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000566s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2018-12-13T09:41:14+08:00 ] 127.0.0.1 /Public/complete.mp3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+ERR: 无法加载控制器:Public
+
+[ 2018-12-13T14:05:04+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0541s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.2509s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0291s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0302s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0013s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼小机房' ) LIMIT 1   [ RunTime:0.0192s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='嘉兴机房' ) LIMIT 1   [ RunTime:0.0192s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0195s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0199s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0204s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0198s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿城机房' ) LIMIT 1   [ RunTime:0.0191s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿迁联通' ) LIMIT 1   [ RunTime:0.0191s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0197s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='丽水机房' ) LIMIT 1   [ RunTime:0.0191s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房' ) LIMIT 1   [ RunTime:0.0192s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0191s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0194s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='大连小鸟云机房' ) LIMIT 1   [ RunTime:0.0198s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0195s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='盐城机房' ) LIMIT 1   [ RunTime:0.0194s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0188s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州机房' ) LIMIT 1   [ RunTime:0.0190s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0195s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0194s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州武进机房' ) LIMIT 1   [ RunTime:0.0194s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='凤凰美地' ) LIMIT 1   [ RunTime:0.0196s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='山东-枣庄机房' ) LIMIT 1   [ RunTime:0.0193s ]
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0191s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0326s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0174s ]
+SQL: SELECT * FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID desc LIMIT 0,15   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000390s ]
+NOTIC: [8] Undefined variable: servstate D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 385 行.
+NOTIC: [8] Undefined variable: servstate D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 386 行.
+NOTIC: [8] Undefined variable: servstate D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 387 行.
+NOTIC: [8] Undefined variable: servstate D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 388 行.
+NOTIC: [8] Undefined variable: servstate D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 389 行.
+NOTIC: [8] Undefined variable: servstate D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 390 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 404 行.
+NOTIC: [8] Undefined variable: devicetype D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 411 行.
+NOTIC: [8] Undefined variable: devicetype D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 412 行.
+NOTIC: [8] Undefined variable: devicetype D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 413 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 427 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 428 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 429 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 430 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 431 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 432 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 433 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 434 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 435 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 436 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106874s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106959s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000804s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2018-12-13T14:05:08+08:00 ] 127.0.0.1 /Workorder/confirmserver?sid=19647
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.1018s ]
+SQL: SELECT * FROM `servers` WHERE ( ID = 19647 ) LIMIT 1   [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\1a5956bac3daffe2e8430b4491329050.php 第 233 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\1a5956bac3daffe2e8430b4491329050.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001004s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001616s ]
+
+[ 2018-12-13T14:05:10+08:00 ] 127.0.0.1 /Workorder/actionlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0353s ]
+SQL: SELECT `name`,`timelimit` FROM `process` WHERE ( dept ='技术部' AND type ='问题处理' )  [ RunTime:0.0111s ]
+
+[ 2018-12-13T14:05:24+08:00 ] 127.0.0.1 /Workorder/confirmserver?sid=19647
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `servers` WHERE ( ID = 19647 ) LIMIT 1   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\1a5956bac3daffe2e8430b4491329050.php 第 233 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\1a5956bac3daffe2e8430b4491329050.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001004s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2018-12-13T14:05:25+08:00 ] 127.0.0.1 /Workorder/actionlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0174s ]
+SQL: SELECT `name`,`timelimit` FROM `process` WHERE ( dept ='技术部' AND type ='问题处理' )  [ RunTime:0.0037s ]
+
+[ 2018-12-13T14:07:29+08:00 ] 127.0.0.1 /Workorder/confirmserver?sid=19647
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.2825s ]
+SQL: SELECT * FROM `servers` WHERE ( ID = 19647 ) LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\1a5956bac3daffe2e8430b4491329050.php 第 233 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\1a5956bac3daffe2e8430b4491329050.php 第 331 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000717s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000926s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000996s ]
+
+[ 2018-12-13T14:07:30+08:00 ] 127.0.0.1 /Workorder/actionlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0289s ]
+SQL: SELECT `name`,`timelimit` FROM `process` WHERE ( dept ='技术部' AND type ='问题处理' )  [ RunTime:0.0014s ]
+
+[ 2018-12-13T14:07:46+08:00 ] 127.0.0.1 /Custom/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.1110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0682s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,15   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0444s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='销售部' AND isleave='false' )  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000330s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+NOTIC: [8] Undefined variable: salers D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 352 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001870s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002066s ]
+
+[ 2018-12-13T14:07:49+08:00 ] 127.0.0.1 /Order/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000809s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0374s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' LIMIT 1   [ RunTime:0.1517s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' LIMIT 1   [ RunTime:0.0635s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='已生效' ) LIMIT 1   [ RunTime:0.0641s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='未生效' ) LIMIT 1   [ RunTime:0.0646s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='待审核' ) LIMIT 1   [ RunTime:0.0657s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='已注销' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0170s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `orders` WHERE (  `id` LIKE '%%' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' ORDER BY nid desc LIMIT 0,15   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0361s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11793 )  [ RunTime:0.0262s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11791 )  [ RunTime:0.0152s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11790 )  [ RunTime:0.0151s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11789 )  [ RunTime:0.0139s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11788 )  [ RunTime:0.0147s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11787 )  [ RunTime:0.0142s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11786 )  [ RunTime:0.0146s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11785 )  [ RunTime:0.0136s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11784 )  [ RunTime:0.0139s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11783 )  [ RunTime:0.0138s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11782 )  [ RunTime:0.0148s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11781 )  [ RunTime:0.0146s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11780 )  [ RunTime:0.0142s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11779 )  [ RunTime:0.0140s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=11778 )  [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0079s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='销售部' AND isleave='false' )  [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: order_begin_at D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 340 行.
+NOTIC: [8] Undefined variable: order_end_at D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 344 行.
+NOTIC: [8] Undefined variable: status D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 350 行.
+NOTIC: [8] Undefined variable: status D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 351 行.
+NOTIC: [8] Undefined variable: status D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 352 行.
+NOTIC: [8] Undefined variable: status D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 353 行.
+NOTIC: [8] Undefined variable: status D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 354 行.
+NOTIC: [8] Undefined variable: paycycle D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 362 行.
+NOTIC: [8] Undefined variable: paycycle D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 363 行.
+NOTIC: [8] Undefined variable: paycycle D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 364 行.
+NOTIC: [8] Undefined variable: paycycle D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 365 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2018-12-13T14:07:55+08:00 ] 127.0.0.1 /Workorder/newgrounding.html?id=11793
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `orders` WHERE ( nid = 11793 ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `clients` WHERE ( id = 1893 ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\7a54d0e974aaaa88dfb0e78ef58f27d2.php 第 220 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\7a54d0e974aaaa88dfb0e78ef58f27d2.php 第 278 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\7a54d0e974aaaa88dfb0e78ef58f27d2.php 第 307 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000480s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-12-13T14:07:57+08:00 ] 127.0.0.1 /Workorder/roomlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `rooms`  [ RunTime:0.0020s ]
+
+[ 2018-12-13T14:07:58+08:00 ] 127.0.0.1 /Workorder/actionlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0125s ]
+SQL: SELECT `name`,`timelimit` FROM `process` WHERE ( dept ='技术部' AND type ='上架单' )  [ RunTime:0.0015s ]
+
+[ 2018-12-13T14:09:11+08:00 ] 127.0.0.1 /Workorder/newgrounding.html?id=11793
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `orders` WHERE ( nid = 11793 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `clients` WHERE ( id = 1893 ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000243s ]
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\7a54d0e974aaaa88dfb0e78ef58f27d2.php 第 220 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\7a54d0e974aaaa88dfb0e78ef58f27d2.php 第 283 行.
+NOTIC: [8] Undefined variable: tasks D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\7a54d0e974aaaa88dfb0e78ef58f27d2.php 第 312 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000748s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000877s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2018-12-13T14:09:12+08:00 ] 127.0.0.1 /Workorder/roomlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0099s ]
+SQL: SELECT * FROM `rooms`  [ RunTime:0.0017s ]
+
+[ 2018-12-13T14:09:13+08:00 ] 127.0.0.1 /Workorder/actionlst.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `process` [ RunTime:0.0152s ]
+SQL: SELECT `name`,`timelimit` FROM `process` WHERE ( dept ='技术部' AND type ='上架单' )  [ RunTime:0.0018s ]
+
+[ 2018-12-13T15:36:41+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000917s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-12-13T15:36:41+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000140s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000691s ]
+

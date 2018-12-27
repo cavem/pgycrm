@@ -1,0 +1,233 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+</style>
+<script>
+$(function(){
+    $("select[name='IDCName']").change(function(){
+        var idcname=$(this).children("option:selected").val();
+        var meshelfcode=$('.meshelfcode').val();
+        $.post("/Service/getshelf",{"idcname":idcname},function(data,status){
+            data=JSON.parse(data);
+            var shelfcon="";
+            for(var i in data){
+                if(data[i]['code']==meshelfcode){
+                    shelfcon+='<option value="'+data[i]['code']+'" selected>'+data[i]['code']+'</option>';
+                }else{
+                    shelfcon+='<option value="'+data[i]['code']+'">'+data[i]['code']+'</option>';
+                }
+            }
+            $("select[name='ShelfCode']").html(shelfcon);
+        })
+    })
+    $('.edit-ip').click(function(){
+        var serv_ip=$("input[name='Serv_IP']").val();
+        var serviparr=serv_ip.split("/");
+        var tempstr="";
+        serviparr.forEach(function(val,index){
+            tempstr+=val+'|';
+        })
+        serv_ip=tempstr;
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var ip_addrstr="";
+            var formdata = body.find("input[name='ip_addr']").each(function(){
+                ip_addrstr+=$(this).val()+"/";
+            });
+            $("input[name='Serv_IP']").val(ip_addrstr);
+            layer.closeAll(); 
+        }
+        myalert('修改IP','800px','540px',"{:U('Service/edit_ip')}"+"?serv_ip="+serv_ip,confirm);
+    })
+})
+</script>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <input type="hidden" name="ID" value="{$servinfo.id}">
+        <input type="hidden" name="Order_ID" value="{$servinfo.order_id}">
+        <div class="form-line w50 fl">
+            <span class="form-label">产品类型：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="Productkind" readonly value="{$servinfo.productkind}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">服务器编号：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="ServNum" readonly value="{$servinfo.servnum}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">产品所属：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="CustName" readonly value="{$servinfo.custname}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">相关销售：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="Salers" readonly value="{$servinfo.salers}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">联系人：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="CustTech" value="{$servinfo.custtech}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">联系电话：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="CustTel" value="{$servinfo.custtel}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">服务器外形：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="DeviceShape">
+                    <option <if condition="$servinfo.deviceshape eq '刀片机'">selected</if>>刀片机</option>
+                    <option <if condition="$servinfo.deviceshape eq '1U'">selected</if>>1U</option>
+                    <option <if condition="$servinfo.deviceshape eq '2U'">selected</if>>2U</option>
+                    <option <if condition="$servinfo.deviceshape eq '3U'">selected</if>>3U</option>
+                    <option <if condition="$servinfo.deviceshape eq '4U'">selected</if>>4U</option>
+                    <option <if condition="$servinfo.deviceshape eq '一托2'">selected</if>>一托2</option>
+                    <option <if condition="$servinfo.deviceshape eq '一托4'">selected</if>>一托4</option>
+                    <option <if condition="$servinfo.deviceshape eq '一托6'">selected</if>>一托6</option>
+                    <option <if condition="$servinfo.deviceshape eq '一托7'">selected</if>>一托7</option>
+                    <option <if condition="$servinfo.deviceshape eq '一托8'">selected</if>>一托8</option>
+                    <option <if condition="$servinfo.deviceshape eq '一托16'">selected</if>>一托16</option>
+                    <option <if condition="$servinfo.deviceshape eq '交换机'">selected</if>>交换机</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">服务器状态：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="ServState">
+                    <option value="在线运行" <if condition="$servinfo.servstate eq '在线运行'">selected</if>>在线运行</option>
+                    <option value="闲置空机" <if condition="$servinfo.servstate eq '闲置空机'">selected</if>>闲置空机</option>
+                    <option value="终止合同" <if condition="$servinfo.servstate eq '终止合同'">selected</if>>终止合同</option>
+                    <option value="期满移出" <if condition="$servinfo.servstate eq '期满移出'">selected</if>>期满移出</option>
+                    <option value="暂出维护" <if condition="$servinfo.servstate eq '暂出维护'">selected</if>>暂出维护</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">所在机房：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="IDCName">
+                    <foreach name="roomlist" item="vo">
+                        <option value="{$vo}" <if condition="$servinfo.idcname eq $vo">selected</if>>{$vo}</option>
+                    </foreach>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">机柜编号：</span>
+            <div class="form-content" style="width: 250px;">
+                <input type="hidden" class="meshelfcode" value="{$servinfo.shelfcode}">
+                <select class="form-control" name="ShelfCode">
+                    <volist name="shelflist" id="vo">
+                        <option value="{$vo.code}" <php>if($servinfo['shelfcode']==$vo['code']){echo 'selected';}</php>>{$vo.code}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">设备类型：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="DeviceType">
+                    <option value="服务器" <if condition="$servinfo.devicetype eq '服务器'">selected</if>>服务器</option>
+                    <option value="交换机" <if condition="$servinfo.devicetype eq '交换机'">selected</if>>交换机</option>
+                    <option value="防火墙" <if condition="$servinfo.devicetype eq '防火墙'">selected</if>>防火墙</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">MAC地址：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="MacAddress" value="{$servinfo.macaddress}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">交换机端口：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="SwitchPort" value="{$servinfo.switchport}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">自动化：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="Automation">
+                    <option value="已开启" <if condition="$servinfo.automation eq '已开启'">selected</if>>已开启</option>
+                    <option value="未开启" <if condition="$servinfo.automation eq '未开启'">selected</if>>未开启</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line fl">
+            <span class="form-label">IP地址：</span>
+            <div class="form-content" style="width: 663px;">
+                <input class="form-control" type="hidden" name="pre_serv_ip" value="{$servinfo.serv_ip}">
+                <input class="form-control" type="text" name="Serv_IP" value="{$servinfo.serv_ip}" readonly>
+            </div>
+            <a class="btn btn-info edit-ip" style="padding: 7px 13px;margin-left: -4px;margin-top: -2px;">
+                ...
+            </a>
+        </div>
+        <div class="form-line fl" style="height: 54px;line-height: 54px;">
+            <span class="form-label" style="position: relative;bottom: 35px;">服务器配置：</span>
+            <div class="form-content">
+                <input type="hidden" name="pre_hwconfig" value="{$servinfo.hwconfig}">
+                <textarea class="form-control" name="Hwconfig" rows="2">{$servinfo.hwconfig}</textarea>
+            </div>
+        </div>
+        <div class="form-line fl" style="height: 54px;line-height: 54px;">
+            <span class="form-label" style="position: relative;bottom: 35px;">带宽限制：</span>
+            <div class="form-content">
+                <input type="hidden" name="pre_bandwidth" value="{$servinfo.bandwidth}">
+                <textarea class="form-control" name="Bandwidth" rows="2">{$servinfo.bandwidth}</textarea>
+            </div>
+        </div>
+        <div class="form-line fl" style="height: 54px;line-height: 54px;">
+            <span class="form-label" style="position: relative;bottom: 35px;">代理商备注：</span>
+            <div class="form-content">
+                <textarea class="form-control" name="CustRemarks" rows="2">{$servinfo.custremarks}</textarea>
+            </div>
+        </div>
+        <div class="form-line fl" style="height: 54px;line-height: 54px;">
+            <span class="form-label" style="position: relative;bottom: 35px;">服务器备注：</span>
+            <div class="form-content">
+                <textarea class="form-control" name="Remarks" rows="2">{$servinfo.remarks}</textarea>
+            </div>
+        </div>
+    </form>  
+</div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />

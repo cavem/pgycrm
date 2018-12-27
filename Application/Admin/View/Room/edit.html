@@ -1,0 +1,82 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+</style>
+<!-- 弹窗-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <div class="form-line w50 fl">
+            <span class="form-label">机房名称：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="name" value="{$list.name}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">运营商：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="isp" value="{$list.isp}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">机房类型：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="type">
+                    <option value="">--请选择--</option>
+                    <option <if condition="$list.isp eq '自营'">selected</if>>自营</option>
+                    <option <if condition="$list.isp eq '代理'">selected</if>>代理</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">值班电话1：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="tel" value="{$list.tel}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">值班电话2：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="tel2" value="{$list.tel2}">
+            </div>
+        </div>
+        <div class="form-line fl" style="height: 54px;line-height: 54px;">
+            <span class="form-label">排序：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="sort" value="{$list.sort}">
+            </div>
+        </div>
+        <div class="form-line fl">
+            <span class="form-label">机房地址：</span>
+            <div class="form-content">
+                <input class="form-control" type="text" name="addr" value="{$list.addr}">
+            </div>
+        </div>
+    </form>  
+</div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />

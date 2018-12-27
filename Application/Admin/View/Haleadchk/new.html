@@ -1,0 +1,70 @@
+<include file="Public/header" title="pgyidc" />
+<script src="__PUBLIC__/DatePicker/WdatePicker.js" type="text/javascript"></script>
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+/*基本信息*/
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+.bdred{border-color: red !important;}
+</style>
+<script>
+$(function(){
+    $("select[name=RealName]").change(function(){
+        $('.wptable').html('');
+        $.post('getworkpool',{"name":$(this).val()},function(data,status){
+            data=JSON.parse(data);
+            console.log(data);
+            for(var i in data){
+                $('.wptable').append('<tr><td><form id="form'+i+'"><textarea name="WorkRemarks" style="display:none;">'+data[i]+'</textarea><input type="hidden" name="WorkRemark_ID" value="'+i+'"><div>工作：'+data[i]+'</div>'+
+                '<div>评价：<input type="radio" name="AssessLevel" value="好">好 <input type="radio" name="AssessLevel" value="中">中 <input type="radio" name="AssessLevel" value="差">差 </div>'+
+                '<div><span style="display: block;float: left;">备注：</span><div style="margin-left: 42px;"><textarea class="form-control" name="ResultRemarks"></textarea></div></div></form></td></tr>');
+            }
+        })
+    })
+})
+</script>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+        <div class="form-line w50 fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> 主管名称：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="RealName">
+                    <option value="">--请选择--</option>
+                    <volist name="aclist" id="vo" key="k">
+                        <option>{$vo}</option>
+                    </volist>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">考核月份：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="AssessMonth" onclick="WdatePicker({dateFmt:'yyyy-MM'});" value="<php>echo date('Y-m').'-01';</php>">
+            </div>
+        </div>
+        <div class="form-line fl" style="height: auto;position: relative;">
+            <span class="form-label" style="position: absolute;top: 0px;">工作池：</span>
+            <div class="form-content" style="width: 700px;margin-left: 150px;">
+                <table class="table wptable">
+                    
+                </table>
+            </div>
+        </div>
+        <div class="aaa">
+
+        </div>
+</div>
+</div>
+</div>
+<include file="Public/footer" title="pgyidc" />

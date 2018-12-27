@@ -1,0 +1,137 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+.bdred{border-color: red !important;}
+</style>
+<script>
+$(function(){
+    $("input").blur(function(){
+        if($(this).val()!=''){
+            $(this).removeClass("bdred");
+        }
+    })
+    $("select[name='room']").change(function(){
+        var idcname=$(this).children("option:selected").val();
+        $.post("/Service/getshelf",{"idcname":idcname},function(data,status){
+            data=JSON.parse(data);
+            var shelfcon='<option value="">--请选择--</option>';
+            for(var i in data){
+                shelfcon+='<option value="'+data[i]['code']+'">'+data[i]['code']+'</option>';
+            }
+            $("select[name='cabinet']").html(shelfcon);
+        })
+    })
+    $('.edit-ip').click(function(){
+        var serv_ip=$("input[name='ip_addr']").val();
+        var serviparr=serv_ip.split("/");
+        var tempstr="";
+        serviparr.forEach(function(val,index){
+            tempstr+=val+'|';
+        })
+        serv_ip=tempstr;
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var ip_addrstr="";
+            var formdata = body.find("input[name='ip_addr']").each(function(){
+                ip_addrstr+=$(this).val()+"/";
+            });
+            $("input[name='ip_addr']").val(ip_addrstr);
+            layer.closeAll(); 
+        }
+        myalert('修改IP','800px','540px',"{:U('Service/edit_ip')}"+"?serv_ip="+serv_ip,confirm);
+    })
+})
+</script>
+<!-- 弹窗-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <div class="form-line w50 fl">
+            <span class="form-label">使用公司：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="company" value="宿迁蒲公英网络有限公司">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">所在机房</span>
+            <select class="form-control" name="room" style="width: 250px;">
+                <option value="">--请选择--</option>
+                <foreach name="roomlist" item="vo">
+                    <option value="{$vo}">{$vo}</option>
+                </foreach>
+            </select>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">所在机柜</span>
+            <select class="form-control" name="cabinet" style="width: 250px;">
+                <option value="">--请选择--</option>
+            </select>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> 交换机编号：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="switch_id">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">资产编号：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="asset_id">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> 端口数：</span>
+            <div class="form-content" style="width: 250px;">
+                共<input class="form-control" type="text" name="port_num" style="width: 200px;">口
+            </div>
+        </div>
+        <div class="form-line fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> IP地址：</span>
+            <div class="form-content" style="width: 663px;">
+                <input class="form-control" type="text" name="ip_addr">
+            </div>
+            <a class="btn btn-info edit-ip" style="padding: 7px 13px;margin-left: -4px;margin-top: -2px;">
+                ...
+            </a>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">上联设备：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="up_switch">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">上联端口：</span>
+            <div class="form-content" style="width: 250px;">
+                第<input class="form-control" type="text" name="up_port" style="width: 200px;">口
+            </div>
+        </div>
+    </form>  
+</div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />

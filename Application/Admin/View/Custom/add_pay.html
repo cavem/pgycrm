@@ -1,0 +1,79 @@
+<include file="Public/header" title="pgyidc" />
+<script src="__PUBLIC__/DatePicker/WdatePicker.js" type="text/javascript"></script>
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+</style>
+<!-- 弹窗(新增角色)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <div class="form-line w50 fl">
+            <input type="hidden" name="cid" value="{$cid}">
+            <span class="form-label">客户名称：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" readonly value="{$name}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">金额：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="money" value="">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">收款银行：</span>
+            <div class="form-content" style="width: 250px;">
+                <select class="form-control" name="paybank">
+                    <option>支付宝</option>
+                    <option>微信支付</option>
+                    <option>对公支付宝</option>
+                    <option>工商银行</option>
+                    <option>农业银行</option>
+                    <option>建设银行</option>
+                    <option>江苏银行</option>
+                    <option>农行对公账户</option>
+                    <option>财付通</option>
+                    <option>QQ钱包</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">入款日期：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="pay_at" value="" onclick="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm:ss'});">
+            </div>
+        </div>
+        <div class="form-line fl">
+            <span class="form-label" style="position: relative;bottom: 80px;">备注：</span>
+            <div class="form-content">
+                <textarea class="form-control" rows="8" name="remark"></textarea>
+            </div>
+        </div>
+    </form>  
+</div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />

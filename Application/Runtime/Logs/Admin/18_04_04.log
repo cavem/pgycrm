@@ -1,0 +1,693 @@
+[ 2018-04-04T15:06:17+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000904s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013729s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013775s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001132s ]
+
+[ 2018-04-04T15:06:17+08:00 ] 127.0.0.1 /Admin/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/userinfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000862s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/bootstrap-3.3.5-dist/css/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+ERR: 非法操作:bootstrap-3.3.5-dist
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/css/templatecss.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000550s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001106s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+ERR: 非法操作:css
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/css/dermagreen.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+ERR: 非法操作:css
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/css/dermaorange.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001116s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+ERR: 非法操作:css
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/css/dermadefault.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000593s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001935s ]
+ERR: 非法操作:css
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/css/style.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000894s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+ERR: 非法操作:css
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/script/jquery-1.11.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+ERR: 非法操作:script
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/script/jquery.cookie.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000796s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+ERR: 非法操作:script
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/bootstrap-3.3.5-dist/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000619s ]
+ERR: 非法操作:bootstrap-3.3.5-dist
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+
+[ 2018-04-04T15:46:53+08:00 ] 127.0.0.1 /Admin/index/img/noavatar_middle.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000564s ]
+
+[ 2018-04-04T15:46:59+08:00 ] 127.0.0.1 /Admin/officweb/navlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000503s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0205s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =0 ) ORDER BY NavType DESC,NavID ASC  [ RunTime:0.0032s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =8 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =11 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =1 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =2 )  [ RunTime:0.0015s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =4 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =5 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =6 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =10 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\990418e22c63c577730a292b2f03051c.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022163s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001213s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2018-04-04T15:46:59+08:00 ] 127.0.0.1 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000649s ]
+
+[ 2018-04-04T15:47:08+08:00 ] 127.0.0.1 /Admin/officweb/memberlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0078s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `UserName` LIKE '%%' OR `LinkMail` LIKE '%%' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE `UserName` LIKE '%%' OR `LinkMail` LIKE '%%' ORDER BY UserID DESC LIMIT 0,15   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\653b4dd43436a923df7668e367f26b52.php 第 398 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\653b4dd43436a923df7668e367f26b52.php 第 399 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010905s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000971s ]
+
+[ 2018-04-04T15:47:08+08:00 ] 127.0.0.1 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+
+[ 2018-04-04T15:47:10+08:00 ] 127.0.0.1 /Admin/officweb/newslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000439s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0272s ]
+SQL: SHOW COLUMNS FROM `newslist` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newslist` WHERE `Title` LIKE '%%' LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `newslist` WHERE `Title` LIKE '%%' ORDER BY ID DESC LIMIT 0,15   [ RunTime:0.0024s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000194s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\5f3de551d5c67b7d05bedd9ae52e9f42.php 第 397 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\5f3de551d5c67b7d05bedd9ae52e9f42.php 第 398 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002150s ]
+
+[ 2018-04-04T15:47:10+08:00 ] 127.0.0.1 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000571s ]
+
+[ 2018-04-04T15:47:13+08:00 ] 127.0.0.1 /Admin/officweb/cloudlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0088s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0137s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0038s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = 1 AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Admin\Controller\OfficwebController.class.php 第 272 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: quotid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001750s ]
+
+[ 2018-04-04T15:47:13+08:00 ] 127.0.0.1 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000751s ]
+
+[ 2018-04-04T16:40:10+08:00 ] 127.0.0.1 /Admin/officweb/smsInfo.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001089s ]
+ERR: 非法操作:smsInfo
+
+[ 2018-04-04T16:55:33+08:00 ] 127.0.0.1 /Admin/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2018-04-04T16:55:33+08:00 ] 127.0.0.1 /Admin/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001022s ]
+
+[ 2018-04-04T16:55:37+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000549s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000908s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000858s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000911s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001169s ]
+
+[ 2018-04-04T16:56:02+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000100s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011920s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2018-04-04T16:56:39+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000965s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2018-04-04T16:56:41+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000487s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013392s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001025s ]
+
+[ 2018-04-04T16:56:42+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-04-04T16:57:03+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000617s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013455s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013497s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001238s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001308s ]
+
+[ 2018-04-04T16:58:33+08:00 ] 127.0.0.1 /Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 495 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012277s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000727s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001231s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001326s ]
+
+[ 2018-04-04T16:58:34+08:00 ] 127.0.0.1 /Admin/Index/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined variable: cl D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 291 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 293 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 294 行.
+NOTIC: [8] Undefined variable: model D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 312 行.
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 402 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 403 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000823s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000882s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001511s ]
+
+[ 2018-04-04T16:58:34+08:00 ] 127.0.0.1 /Admin/Index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000692s ]
+
+[ 2018-04-04T16:59:31+08:00 ] 127.0.0.1 /Admin/Index/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: cl D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 291 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 293 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 294 行.
+NOTIC: [8] Undefined variable: model D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 312 行.
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 402 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 403 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012563s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012598s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000980s ]
+
+[ 2018-04-04T16:59:31+08:00 ] 127.0.0.1 /Admin/Index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000533s ]
+
+[ 2018-04-04T17:00:21+08:00 ] 127.0.0.1 /Admin/Index/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000841s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 355 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 356 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001004s ]
+
+[ 2018-04-04T17:00:21+08:00 ] 127.0.0.1 /Admin/Index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000629s ]
+
+[ 2018-04-04T17:00:33+08:00 ] 127.0.0.1 /Admin/Index/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000069s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 351 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 352 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000875s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2018-04-04T17:00:33+08:00 ] 127.0.0.1 /Admin/Index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000714s ]
+
+[ 2018-04-04T17:01:45+08:00 ] 127.0.0.1 /Admin/Index/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000839s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 411 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 412 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010237s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000816s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2018-04-04T17:01:45+08:00 ] 127.0.0.1 /Admin/Index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+
+[ 2018-04-04T17:01:45+08:00 ] 127.0.0.1 /Admin/Index/images/wechatpay.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000896s ]
+
+[ 2018-04-04T17:01:45+08:00 ] 127.0.0.1 /Admin/Index/images/ys_head2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+
+[ 2018-04-04T17:01:45+08:00 ] 127.0.0.1 /Admin/Index/images/coin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000727s ]
+
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/pay.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000821s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined variable: datatype D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 414 行.
+NOTIC: [8] Undefined variable: fid D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Admin\e5a2561e2211ad56bfdf1cf3f6894ff8.php 第 415 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000759s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/js/amazeui.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000848s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+ERR: 非法操作:js
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/js/jquery.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+ERR: 非法操作:js
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/js/ui-choose.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+ERR: 非法操作:js
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/images/ys_head2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/images/zfbpay.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000556s ]
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/images/coin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000632s ]
+
+[ 2018-04-04T17:08:09+08:00 ] 127.0.0.1 /Admin/Index/images/wechatpay.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000666s ]
+

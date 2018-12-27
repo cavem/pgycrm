@@ -1,0 +1,804 @@
+[ 2018-10-19T16:04:11+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000859s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001196s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001274s ]
+
+[ 2018-10-19T16:04:25+08:00 ] 127.0.0.1 /Finan/census/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 15,15   [ RunTime:0.0093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018380s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000709s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000762s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001112s ]
+
+[ 2018-10-19T16:04:27+08:00 ] 127.0.0.1 /Finan/census/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 30,15   [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019687s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001869s ]
+
+[ 2018-10-19T16:04:29+08:00 ] 127.0.0.1 /Finan/census/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 45,15   [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001997s ]
+
+[ 2018-10-19T16:04:31+08:00 ] 127.0.0.1 /Finan/census/p/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 60,15   [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009209s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000708s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2018-10-19T16:04:39+08:00 ] 127.0.0.1 /Finan/census/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0137s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0075s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000835s ]
+
+[ 2018-10-19T16:14:11+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+
+[ 2018-10-19T16:14:28+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+
+[ 2018-10-19T16:15:26+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000698s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+
+[ 2018-10-19T16:15:42+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000747s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000956s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001030s ]
+
+[ 2018-10-19T16:16:29+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0144s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020641s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020756s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000873s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001539s ]
+
+[ 2018-10-19T16:32:33+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+
+[ 2018-10-19T16:34:23+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0056s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000171s ]
+
+[ 2018-10-19T16:36:58+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+
+[ 2018-10-19T16:37:12+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2018-10-19T16:38:55+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0145s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2018-10-19T16:39:24+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0142s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000146s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000893s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000953s ]
+
+[ 2018-10-19T16:40:08+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009310s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2018-10-19T16:43:04+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000149s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021123s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001264s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001778s ]
+
+[ 2018-10-19T16:51:24+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze  LIMIT 0,15   [ RunTime:0.0089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 149 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022095s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022219s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001282s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002130s ]
+
+[ 2018-10-19T16:51:59+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0071s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze  LIMIT 0,15   [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013228s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2018-10-19T16:52:44+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze  LIMIT 0,15   [ RunTime:0.0094s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2018-10-19T16:52:48+08:00 ] 127.0.0.1 /Finan/census.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000727s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze  LIMIT 0,15   [ RunTime:0.0066s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2018-10-19T16:52:50+08:00 ] 127.0.0.1 /Finan/census.html?sc=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000678s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0141s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze  LIMIT 0,15   [ RunTime:0.0097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000760s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000816s ]
+
+[ 2018-10-19T16:52:53+08:00 ] 127.0.0.1 /Finan/census.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000718s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze  LIMIT 0,15   [ RunTime:0.0089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2018-10-19T16:53:32+08:00 ] 127.0.0.1 /Finan/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001788s ]
+
+[ 2018-10-19T16:53:35+08:00 ] 127.0.0.1 /Finan/census.html?sc=asc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0121s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze asc LIMIT 0,15   [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000571s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000718s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000776s ]
+
+[ 2018-10-19T16:53:38+08:00 ] 127.0.0.1 /Finan/census.html?sc=desc
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000732s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0067s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009748s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2018-10-19T17:16:28+08:00 ] 127.0.0.1 /Finan/census/sc/desc/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 15,15   [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001234s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001782s ]
+
+[ 2018-10-19T17:16:30+08:00 ] 127.0.0.1 /Finan/census/sc/desc/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 30,15   [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000742s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-10-19T17:16:31+08:00 ] 127.0.0.1 /Finan/census/sc/desc/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0138s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 30,15   [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021851s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000667s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001081s ]
+
+[ 2018-10-19T17:16:33+08:00 ] 127.0.0.1 /Finan/census/sc/desc/p/4.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000745s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 45,15   [ RunTime:0.0064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009644s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000718s ]
+
+[ 2018-10-19T17:16:35+08:00 ] 127.0.0.1 /Finan/census/sc/desc/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\myenv\apache\htdocs\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `payment` [ RunTime:0.0237s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `payment` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `payment` ORDER BY ndze desc LIMIT 0,15   [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined variable: key D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\aa59d994f125c10cf925df321ac19db5.php 第 152 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017687s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000938s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001010s ]
+

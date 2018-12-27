@@ -1,0 +1,864 @@
+[ 2018-05-21T08:38:56+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015207s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000272s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: loginuser D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 532 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.106118s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.106197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000783s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001269s ]
+
+[ 2018-05-21T08:45:55+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000515s ]
+
+[ 2018-05-21T08:45:58+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+
+[ 2018-05-21T08:46:08+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000798s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000289s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2018-05-21T08:46:17+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000673s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000802s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000269s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000332s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020430s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000813s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000909s ]
+
+[ 2018-05-21T08:46:21+08:00 ] 127.0.0.1 /Index/cloud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 42 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 134 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 168 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 338 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 389 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 425 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 972 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001156s ]
+
+[ 2018-05-21T08:46:28+08:00 ] 127.0.0.1 /Index/newserver.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000255s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000632s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2018-05-21T08:58:56+08:00 ] 127.0.0.1 /Index/sqidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023945s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000555s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2018-05-21T08:58:59+08:00 ] 127.0.0.1 /Index/jdidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024327s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024379s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000892s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000974s ]
+
+[ 2018-05-21T08:58:59+08:00 ] 127.0.0.1 /Index/wzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000275s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000830s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000889s ]
+
+[ 2018-05-21T08:59:00+08:00 ] 127.0.0.1 /Index/gzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000468s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000276s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000513s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000791s ]
+
+[ 2018-05-21T08:59:33+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-05-21T10:06:03+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000407s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000497s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000753s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000807s ]
+
+[ 2018-05-21T10:06:37+08:00 ] 127.0.0.1 /Index/cloud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 42 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 134 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 168 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 338 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 389 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 425 行.
+NOTIC: [8] Undefined variable: current D:\myenv\apache\htdocs\pgyidc\Application\Runtime\Cache\Home\0cf361509365907d66e391a361e4b79c.php 第 972 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016516s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000445s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000689s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2018-05-21T10:06:39+08:00 ] 127.0.0.1 /Index/cloudbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0381s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0376s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0421s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0807s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=0 )  [ RunTime:0.0021s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=1 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0014s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0013s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0019s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0017s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0013s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056253s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000508s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000785s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000838s ]
+
+[ 2018-05-21T10:06:40+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0130s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=4 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=5 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-05-21T10:06:43+08:00 ] 127.0.0.1 /Home/Index/cloudbuy/id/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000449s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0062s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0068s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=0 )  [ RunTime:0.0012s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=1 )  [ RunTime:0.0006s ]
+SQL: SELECT `CID` FROM `configinfo` WHERE ( NavData=2 AND DataName=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=2 AND DataName=0 )  [ RunTime:0.0006s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=3 AND DataName=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=3 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=3 AND DataName=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=3 ) GROUP BY Kernel  [ RunTime:0.0008s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=3 ) GROUP BY Gigabyte  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000290s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022387s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2018-05-21T10:06:45+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0061s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=3 AND DataName=3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=3 AND DataName=4 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=3 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=3 AND DataName=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=3 AND DataName=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=3 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-05-21T10:06:47+08:00 ] 127.0.0.1 /Home/Index/cloudbuy/cid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0126s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0129s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0066s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=0 )  [ RunTime:0.0012s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=1 )  [ RunTime:0.0008s ]
+SQL: SELECT `NavData` FROM `configinfo` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=2 AND DataName=0 )  [ RunTime:0.0007s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=4 AND DataName=1 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=4 ) GROUP BY Kernel  [ RunTime:0.0010s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=4 ) GROUP BY Gigabyte  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000748s ]
+
+[ 2018-05-21T10:06:48+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0131s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=4 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-05-21T10:06:50+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0127s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=4 AND Kernel=4 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-05-21T10:06:52+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0124s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=4 AND Kernel=4 AND Gigabyte=2 ) LIMIT 1   [ RunTime:0.0011s ]
+
+[ 2018-05-21T10:06:59+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0118s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0122s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-05-21T10:07:01+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0129s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-05-21T10:07:06+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001473s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0127s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-05-21T10:07:10+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001265s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001372s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0138s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-05-21T10:07:13+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0071s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-05-21T10:07:15+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0122s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-05-21T10:07:18+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0078s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0009s ]
+
+[ 2018-05-21T10:11:51+08:00 ] 127.0.0.1 /Home/Index/cloudbuy/cid/4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000949s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0157s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0076s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0077s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=0 )  [ RunTime:0.0013s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=1 )  [ RunTime:0.0005s ]
+SQL: SELECT `NavData` FROM `configinfo` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=2 AND DataName=0 )  [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=4 AND DataName=1 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=4 ) GROUP BY Kernel  [ RunTime:0.0008s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=4 ) GROUP BY Gigabyte  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000229s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023706s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023779s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000680s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2018-05-21T10:11:53+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0071s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=4 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=4 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-05-21T10:11:56+08:00 ] 127.0.0.1 /Home/Index/cloudbuy/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0072s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0077s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=0 )  [ RunTime:0.0012s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=1 )  [ RunTime:0.0006s ]
+SQL: SELECT `CID` FROM `configinfo` WHERE ( NavData=1 AND DataName=0 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0006s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0008s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000631s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2018-05-21T10:11:58+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0150s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=4 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0005s ]
+
+[ 2018-05-21T10:12:02+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0149s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2018-05-21T10:12:09+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0112s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-05-21T10:12:10+08:00 ] 127.0.0.1 /Home/Index/cloudbuy/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0071s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0073s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=0 )  [ RunTime:0.0012s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=1 and datatype=1 )  [ RunTime:0.0006s ]
+SQL: SELECT `CID` FROM `configinfo` WHERE ( NavData=1 AND DataName=0 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0007s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0008s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0009s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0009s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2018-05-21T10:12:11+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0183s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0144s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0013s ]
+
+[ 2018-05-21T10:12:17+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0146s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-05-21T10:12:19+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0116s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-05-21T10:12:20+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0142s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0132s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-05-21T10:14:51+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000764s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0152s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=4 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=0 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=5 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0006s ]
+
+[ 2018-05-21T10:14:52+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0130s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-05-21T10:14:57+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0123s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=4 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0007s ]
+
+[ 2018-05-21T10:14:59+08:00 ] 127.0.0.1 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0138s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0151s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=8 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0008s ]
+
+[ 2018-05-21T10:15:06+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+
+[ 2018-05-21T10:15:10+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000745s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2018-05-21T10:15:19+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2018-05-21T17:31:58+08:00 ] 127.0.0.1 /Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000767s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018933s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2018-05-21T17:33:05+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000543s ]
+

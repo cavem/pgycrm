@@ -1,0 +1,72 @@
+<include file="Public/header" title="pgyidc" />
+<div class="layui-form-item layui-form-text" style="padding:20px;">
+    <div class="chang js-short">
+        <a onclick="selip(0)" class="btn btn-sm btn-warning">普通电信IP</a>
+        <a onclick="selip(1)" class="btn btn-sm btn-warning">普通电信阻断国外IP</a>
+        <a onclick="selip(2)" class="btn btn-sm btn-warning">普通移动IP</a>
+        <a onclick="selip(3)" class="btn btn-sm btn-warning">普通联通IP</a>
+        <a onclick="selip(4)" class="btn btn-sm btn-success">高防电信(阻断国外)IP</a>
+        <a onclick="selip(5)" class="btn btn-sm btn-success">高防联通(阻断国外)IP</a>
+        <a onclick="selip(6)" class="btn btn-sm btn-info">普通BGP(无防御)IP</a>
+        <a onclick="selip(7)" class="btn btn-sm btn-info">100G BGP空闲(不封国外，京东专用)IP</a>
+        <a onclick="selip(8)" class="btn btn-sm btn-info">高防BGP(阻断国外)IP</a>
+    </div>
+    <div class="layui-input-block" style="margin: 0;">
+        <textarea name="ips" placeholder="请点击上方按钮选择IP" class="layui-textarea"></textarea>
+    </div>
+    <div>
+        <a class="btn btn-danger emptytext">清空</a> <a class="btn btn-primary user">使用</a>
+    </div>
+</div>
+<script src="__PUBLIC__/layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'form'], function(){
+      var layer = layui.layer
+      ,form = layui.form;
+    });
+    //重新渲染表单
+    function renderForm(){
+      layui.use('form', function(){
+       var form = layui.form;//高版本建议把括号去掉，有的低版本，需要加()
+       form.render();
+      });
+    }
+
+    function selip(dt)
+    {
+        $.ajax({
+            type: "POST",
+              url: "/Workorder/selip",
+              data:"datatype="+dt,
+              success: function(msg){
+                var a=eval('('+msg+')');
+                var ips=$("[name='ips']").text();
+                $("[name='ips']").text(ips+a+"/");
+            }
+        });
+    }
+    $(function(){
+        //清空
+        $('.emptytext').click(function(){
+            $('textarea').val('');
+        })
+        //使用
+        $('.user').click(function(){
+            if($('textarea').html()==''){
+                layer.msg("ip不能为空！",{icon:0});
+                return;
+            }
+            layer.load();
+            $.post('/Workorder/getfreeip',{"ip":$('textarea').html()},function(data,status){
+                if(data==0){
+                    layer.msg("已使用！",{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg("操作失败！",{icon:0});
+                    window.location.reload();
+                }
+            })
+        })
+    }) 
+</script>
+<include file="Public/footer" title="pgyidc" />

@@ -1,0 +1,24 @@
+[ 2018-01-25T09:09:02+08:00 ] 127.0.0.1 /pgyidc/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载模块:Index
+
+[ 2018-01-25T15:44:21+08:00 ] 127.0.0.1 /pgyidc/Application/Home/View/Public/css/images/suspend.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 无法加载模块:Application
+
+[ 2018-01-25T15:46:55+08:00 ] 127.0.0.1 /pgyidc/Application/Home/View/Public/css/images/suspend.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Application
+
+[ 2018-01-25T15:46:56+08:00 ] 127.0.0.1 /pgyidc/Application/Home/View/Public/css/images/suspend.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+ERR: 无法加载模块:Application
+

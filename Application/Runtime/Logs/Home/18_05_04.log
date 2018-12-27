@@ -1,0 +1,565 @@
+[ 2018-05-04T00:18:41+08:00 ] 220.181.108.153 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021205s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2018-05-04T00:30:07+08:00 ] 1.28.88.48 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000418s ]
+
+[ 2018-05-04T00:30:07+08:00 ] 113.0.39.19 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021590s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000369s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2018-05-04T00:59:14+08:00 ] 123.125.67.222 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000422s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004319s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-05-04T01:27:59+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+
+[ 2018-05-04T06:10:01+08:00 ] 159.65.32.59 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000377s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 531 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2018-05-04T09:06:47+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+
+[ 2018-05-04T10:16:04+08:00 ] 222.187.222.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000292s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000263s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-05-04T10:16:08+08:00 ] 222.187.222.56 /Index/cloud.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000196s ]
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 30 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 112 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 148 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 336 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 389 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 427 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 536 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0cf361509365907d66e391a361e4b79c.php 第 912 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2018-05-04T10:16:09+08:00 ] 222.187.222.56 /Index/cloudbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0007s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=0 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000180s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 536 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 570 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000428s ]
+
+[ 2018-05-04T10:16:09+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=4 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=6 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Prix` FROM `price` WHERE ( CID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Prix` FROM `coreprice` WHERE ( CID=1 AND Kernel=2 AND Gigabyte=1 ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2018-05-04T10:16:11+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+
+[ 2018-05-04T10:16:11+08:00 ] 222.187.222.56 /Index/cloudbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0007s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=0 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 536 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 570 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2018-05-04T10:16:11+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000406s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0006s ]
+
+[ 2018-05-04T10:16:12+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0006s ]
+
+[ 2018-05-04T10:16:12+08:00 ] 222.187.222.56 /Index/cloudbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0007s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=0 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0004s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0005s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 536 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 570 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027450s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000438s ]
+
+[ 2018-05-04T10:16:12+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+
+[ 2018-05-04T10:16:14+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0006s ]
+
+[ 2018-05-04T10:16:14+08:00 ] 222.187.222.56 /Index/cloudbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0005s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=0 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0002s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0003s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000222s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 536 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 570 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025046s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2018-05-04T10:16:14+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+
+[ 2018-05-04T10:16:16+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0007s ]
+
+[ 2018-05-04T10:16:16+08:00 ] 222.187.222.56 /Index/cloudbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `os` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0006s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=0 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=0 and datatype=1 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `configlist` WHERE ( Property=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `configinfo` WHERE ( NavData=1 AND DataName=0 )  [ RunTime:0.0003s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=1 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=2 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `Title` FROM `configinfo` WHERE ( FatherID=1 AND DataName=3 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `ID`,`Kernel` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Kernel  [ RunTime:0.0004s ]
+SQL: SELECT `ID`,`Gigabyte` FROM `coreprice` WHERE ( CID=1 ) GROUP BY Gigabyte  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=0 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `os` WHERE ( ostype=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000211s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 536 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/1c44d0dd6e867a3c86931fd4c5d77be1.php 第 570 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2018-05-04T10:16:16+08:00 ] 222.187.222.56 /Home/Index/cloudbuyreq/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+SQL: SHOW COLUMNS FROM `coreprice` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `price` [ RunTime:0.0006s ]
+
+[ 2018-05-04T10:27:18+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2018-05-04T11:36:32+08:00 ] 112.90.82.196 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021276s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-05-04T11:37:31+08:00 ] 101.227.131.139 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000212s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021846s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021903s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-05-04T13:13:07+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+
+[ 2018-05-04T15:58:14+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-05-04T15:58:15+08:00 ] 222.187.222.56 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+
+[ 2018-05-04T19:21:36+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+
+[ 2018-05-04T20:35:22+08:00 ] 42.236.12.150 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000357s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021202s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021244s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000498s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2018-05-04T20:35:27+08:00 ] 42.236.99.2 /index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+

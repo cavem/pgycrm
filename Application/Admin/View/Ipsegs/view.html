@@ -1,0 +1,143 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+</style>
+<script>
+$(function(){
+    $('.add').click(function(){
+        var confirm=function(index,layero){
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            var ipseg=body.find("input[name='seg1']").val()+'.'+body.find("input[name='seg2']").val()+'.'+body.find("input[name='seg3']").val()+'.'+body.find("input[name='seg4']").val();
+            layer.load();
+            $.post('/Ipsegs/new',formdata+'&ipseg='+ipseg,function(data,status){
+                if(data==0){
+                    layer.msg('添加成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('添加失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('新增IP段','900px','660px',"{:U('Ipsegs/new')}",confirm);
+    })
+    $('.remove').click(function(){
+        var ipaddr=$(this).closest('tr').find('.ipaddr').text();
+        var id=$(this).closest('tr').children("td:first").text();
+        layer.confirm('确定将【'+ipaddr+'】删除?', {
+                btn: ['确定','取消']
+            }, function(){
+            layer.load();
+            $.post('/Ipsegs/removeip',{"id":id},function(data,status){
+                if(data==0){
+                    layer.msg('操作成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('操作失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        })
+    })
+    $('.ipclose').click(function(){
+        var ipaddr=$(this).closest('tr').find('.ipaddr').text();
+        var id=$(this).closest('tr').children("td:first").text();
+        layer.confirm('确定将【'+ipaddr+'】关闭?', {
+                btn: ['确定','取消']
+            }, function(){
+            layer.load();
+            $.post('/Ipsegs/ipclose',{"id":id},function(data,status){
+                if(data==0){
+                    layer.msg('操作成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('操作失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        })
+    })
+    $('.ipopen').click(function(){
+        var ipaddr=$(this).closest('tr').find('.ipaddr').text();
+        var id=$(this).closest('tr').children("td:first").text();
+        layer.confirm('确定将【'+ipaddr+'】公开?', {
+                btn: ['确定','取消']
+            }, function(){
+            layer.load();
+            $.post('/Ipsegs/ipopen',{"id":id},function(data,status){
+                if(data==0){
+                    layer.msg('操作成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('操作失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        })
+    })
+    $('.gopage').click(function(){
+        var cpage=$('.cpage').val();
+        window.location.href="{:U('Ipsegs/view')}"+"?p="+cpage;
+    })
+})
+</script>
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-product-hunt"></i> IP管理</span>
+        <div class="mysearchbox fr">
+            <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
+            <form class="sform" action="{:U('Ipsegs/view')}" method="POST">
+                <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容">
+            </form>
+            <i class="fa fa-times empty"></i>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <a href="javascript:;" class="fr gopage" style="height: 28px;line-height: 28px;border:1px solid #58A0D3;background-color: #d5d5d5;font-size: 12px;padding:0 5px">跳转</a>
+            <div><input type="text" id="pagebox" class="form-control fr cpage" style="width: 60px;height: 28px;"></div>
+            <if condition="$perm['资源管理']['IP段管理']['新增']">
+            <button class="btn btn-primary fl add mr10"><i class="fa fa-plus"></i> 新增</button>
+            </if>
+            <div class="page fr mr10 pages">{$page}</div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th>编号</th><th>网络段</th><th>IP地址</th><th>状态</th><th>是否开放</th><th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <volist name="list" id="vo" key="k">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.ipseg}</td>
+                        <td class="ipaddr">{$vo.ipaddr}</td>
+                        <td>
+                            <switch name="vo.state">
+                                <case value="1"><span class="label label-danger">已使用</span></case>
+                                <case value="0"><span class="label label-success">未分配</span></case>
+                            </switch>
+                        </td>
+                        <td>
+                            <switch name="vo.isopen">
+                                <case value="true"><span class="label label-success">已公开</span></case>
+                                <case value="false"><span class="label label-danger">未公开</span></case>
+                            </switch>
+                        </td>
+                        <td style="width: 100px;">
+                            <switch name="vo.isopen">
+                                <case value="true"><button class="btn btn-sm btn-warning ipclose" title="关闭IP"><i class="fa fa-eye-slash"></i></button></case>
+                                <case value="false"><button class="btn btn-sm btn-info ipopen" title="打开IP"><i class="fa fa-eye"></i></button></case>
+                            </switch>
+                            <button class="btn btn-sm btn-danger remove"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </volist>
+            </tbody>
+        </table>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

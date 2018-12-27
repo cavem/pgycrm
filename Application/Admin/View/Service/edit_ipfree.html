@@ -1,0 +1,68 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+@media (max-width: 970px) and (min-width: 481px){
+body {
+    background: transparent;
+}
+}
+</style>
+<script>
+$(function(){
+    $('.ippart').click(function(){
+        var ippart=$(this).text();
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var str="";
+            $("input[name='ip_addr']").each(function(){
+                str+=$(this).val()+"/";
+            })
+            var ippartstr="";
+            var teststr="";
+            var formdata = body.find(".mactive").each(function(){
+                var ippartcheck=$(this).children('.freeip').text();
+                if(str.indexOf(ippartcheck)<1){
+                    teststr+=ippartcheck+'/';
+                    ippartstr+='<div class="alert alert-warning alert-dismissable mt5"><input type="hidden" name="ip_addr" value="'+ippartcheck+'"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>'+ippartcheck+'</div>';
+                }
+            });
+            console.log(teststr);
+            $('.sider',window.parent.document).append(ippartstr);
+            layer.closeAll();
+        }
+        myalert('空闲IP列表','500px','420px',"{:U('Service/edit_ip2')}"+"?ippart="+ippart,confirm);
+    })
+})
+</script>
+<div class="mysearchbox fr">
+    <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
+    <form class="sform" action="{:U('Service/edit_ipfree')}" method="POST">
+        <input type="hidden" name="serv_ip" value="{$serv_ip}">
+        <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容">
+    </form>
+    <i class="fa fa-times empty"></i>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th></th>
+            <th>网络段</th>
+            <th>空闲IP数</th>
+            <th>所在机房</th>
+        </tr>
+    </thead>
+    <tbody>
+        <volist name="ipseg" id="vo" key="k">
+        <tr>
+            <td>{$vo.no}</td>
+            <td><a href="javacript:;" class="ippart">{$vo.ipseg}</a></td>
+            <td>{$vo.count}</td>
+            <td>{$vo.room}</td>
+        </tr>
+        </volist>
+    </tbody>
+</table>
+{$page}
+<include file="Public/footer" title="pgyidc" />

@@ -1,0 +1,45 @@
+[ 2018-04-04T15:06:17+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+
+[ 2018-04-04T16:55:33+08:00 ] 127.0.0.1 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000445s ]
+
+[ 2018-04-04T16:55:37+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+
+[ 2018-04-04T16:56:02+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2018-04-04T16:56:39+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-04-04T16:56:41+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+
+[ 2018-04-04T16:56:42+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+
+[ 2018-04-04T16:57:03+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+
+[ 2018-04-04T16:58:33+08:00 ] 127.0.0.1 /img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000638s ]
+

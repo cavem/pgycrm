@@ -1,0 +1,113 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+</style>
+<script>
+$(function(){
+    $('.add-power').click(function(){
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            layer.msg('请稍等...',{icon:16});
+            $.post('new',decodeURIComponent(formdata,true),function(data,status){
+                if(data==0){
+                    layer.msg('添加成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('添加失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('新增权限','900px','660px',"{:U('Role/new')}",confirm);
+    })
+    $('.gopage').click(function(){
+        var cpage=$('.cpage').val();
+        window.location.href="{:U('Role/list')}"+"?p="+cpage;
+    })
+    $(".edit").click(function(){
+        var roles_id=$(this).closest('tr').children('td:first').text();
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            layer.msg('请稍等...',{icon:16});
+            $.post('edit',"roles_id="+roles_id+"&"+decodeURIComponent(formdata,true),function(data,status){
+                if(data==0){
+                    layer.msg('修改成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('修改失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('新增权限','900px','660px',"{:U('Role/edit')}"+"?roles_id="+roles_id,confirm);
+    })
+    $('.remove').click(function(){
+        layer.msg('请稍等...',{icon:16});
+        var roles_id=$(this).closest('tr').children('td:first').text();
+        $.post('remove',{"roles_id":roles_id},function(data,status){
+            if(data==0){
+                layer.msg('删除成功',{icon:1});
+                window.location.reload();
+            }else{
+                layer.msg('删除失败',{icon:2});
+                window.location.reload();
+            }
+        })
+    })
+    $('.view').click(function(){
+        var roles_id=$(this).closest('tr').children('td:first').text();
+        var confirm=function(index,layero){
+            layer.closeAll();
+        }
+        myalert('新增权限','900px','660px',"{:U('Role/view')}"+"?roles_id="+roles_id,confirm);
+    })
+})
+</script>
+
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa-exclamation-circle"></i> 角色权限</span>
+        <div class="mysearchbox fr">
+            <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
+            <form action="{:U('Role/list')}" method="POST">
+                <input type="search" name="keyword" class="form-control" placeholder="请输入查询内容">
+            </form>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <a href="javascript:;" class="fr gopage" style="height: 34px;line-height: 34px;">跳转</a>
+            <div><input type="text" id="pagebox"  class="form-control fr cpage" style="width: 60px;"></div>
+            <button class="btn btn-primary fl add-power mr10"><i class="fa fa-plus"></i> 新增</button>
+            <div class="fr mr10" style="height: 34px;line-height: 34px;"> 共{$count}条数据 </div>
+            <div class="page fr mr10">{$page}</div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th>编号</th><th>角色名称</th><th>权限数量</th><th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <volist name="rolelist" id="vo">
+                    <tr>
+                    <td>{$vo.id}</td>
+                    <td>{$vo.name}</td>
+                    <td><a href="javascript:;" class="view">{$vo.powernum}/137</a></td>
+                    <td style="width: 200px;">
+                        <button class="btn btn-info view"><i class="fa fa-eye"></i></button>
+                        <button class="btn btn-warning edit"><i class="fa fa-edit"></i></button>
+                        <button class="btn btn-danger remove"><i class="fa fa-trash"></i></button>
+                    </td>
+                    </tr>
+                </volist>
+            </tbody>
+        </table>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

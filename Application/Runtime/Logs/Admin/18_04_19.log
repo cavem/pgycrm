@@ -1,0 +1,1038 @@
+[ 2018-04-19T03:22:13+08:00 ] 142.4.218.236 /Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000166s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-04-19T03:22:16+08:00 ] 142.4.218.236 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000254s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005362s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000104s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-04-19T06:27:49+08:00 ] 203.208.60.193 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-04-19T07:39:36+08:00 ] 203.208.60.194 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006154s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-04-19T07:42:39+08:00 ] 203.208.60.196 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005623s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-04-19T07:42:49+08:00 ] 203.208.60.193 /Admin/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004489s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000394s ]
+
+[ 2018-04-19T08:38:20+08:00 ] 42.236.10.81 /Admin/User/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005439s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005480s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2018-04-19T08:38:20+08:00 ] 42.236.48.218 /Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004457s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-04-19T08:38:21+08:00 ] 42.236.10.110 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
+
+[ 2018-04-19T10:42:18+08:00 ] 203.208.60.195 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005497s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-04-19T10:43:43+08:00 ] 222.187.222.56 /Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000378s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2018-04-19T10:43:44+08:00 ] 222.187.222.56 /Admin/User/loginin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE (  `UserName` = 'xiaocai' OR `LinkMail` = 'xiaocai' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate /usr/share/nginx/html/pgyidc/ThinkPHP/Library/Think/Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto /usr/share/nginx/html/pgyidc/ThinkPHP/Library/Think/Model.class.php 第 1128 行.
+SQL: UPDATE `users` SET `LastTime`='1524105824',`WebGuid`='5226CF30AA5-69EA-53B6-5CE5-5F468071EBCF',`EffectiveTime`='2018-04-20 10:43:44' WHERE ( UserID= 522 ) [ RunTime:0.0035s ]
+
+[ 2018-04-19T10:43:44+08:00 ] 222.187.222.56 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0008s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=522 and datatype=0 )  [ RunTime:0.0004s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=522 and datatype=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 497 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016464s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-04-19T10:43:44+08:00 ] 222.187.222.56 /Admin/index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+
+[ 2018-04-19T10:43:49+08:00 ] 222.187.222.56 /Admin/officweb/cloudlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0005s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = '1' AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-04-19T10:43:49+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000265s ]
+
+[ 2018-04-19T10:43:53+08:00 ] 222.187.222.56 /Admin/officweb/navlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =0 ) ORDER BY NavType DESC,NavID ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =8 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =11 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =5 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =6 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =10 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+NOTIC: [8] Array to string conversion /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/990418e22c63c577730a292b2f03051c.php 第 432 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/990418e22c63c577730a292b2f03051c.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016415s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2018-04-19T10:43:53+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+
+[ 2018-04-19T10:43:53+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+
+[ 2018-04-19T10:43:54+08:00 ] 222.187.222.56 /Admin/officweb/newslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `newslist` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newslist` WHERE `Title` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `newslist` WHERE `Title` LIKE '%%' ORDER BY ID DESC LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/5f3de551d5c67b7d05bedd9ae52e9f42.php 第 397 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/5f3de551d5c67b7d05bedd9ae52e9f42.php 第 398 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-04-19T10:43:54+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+
+[ 2018-04-19T10:43:55+08:00 ] 222.187.222.56 /Admin/officweb/memberlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `UserName` LIKE '%%' OR `LinkMail` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `users` WHERE `UserName` LIKE '%%' OR `LinkMail` LIKE '%%' ORDER BY UserID DESC LIMIT 0,15   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/653b4dd43436a923df7668e367f26b52.php 第 398 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/653b4dd43436a923df7668e367f26b52.php 第 399 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-04-19T10:43:55+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-04-19T10:43:56+08:00 ] 222.187.222.56 /Admin/officweb/newslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `newslist` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newslist` WHERE `Title` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `newslist` WHERE `Title` LIKE '%%' ORDER BY ID DESC LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/5f3de551d5c67b7d05bedd9ae52e9f42.php 第 397 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/5f3de551d5c67b7d05bedd9ae52e9f42.php 第 398 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014041s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-04-19T10:43:56+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+
+[ 2018-04-19T10:43:56+08:00 ] 222.187.222.56 /Admin/officweb/navlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =0 ) ORDER BY NavType DESC,NavID ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =8 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =11 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =6 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =10 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Array to string conversion /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/990418e22c63c577730a292b2f03051c.php 第 432 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/990418e22c63c577730a292b2f03051c.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-04-19T10:43:56+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000256s ]
+
+[ 2018-04-19T10:43:58+08:00 ] 222.187.222.56 /Admin/officweb/memberlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `users` WHERE `UserName` LIKE '%%' OR `LinkMail` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `users` WHERE `UserName` LIKE '%%' OR `LinkMail` LIKE '%%' ORDER BY UserID DESC LIMIT 0,15   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/653b4dd43436a923df7668e367f26b52.php 第 398 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/653b4dd43436a923df7668e367f26b52.php 第 399 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-04-19T10:43:58+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+
+[ 2018-04-19T10:43:59+08:00 ] 222.187.222.56 /Admin/officweb/newslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000549s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `newslist` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `newslist` WHERE `Title` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `newslist` WHERE `Title` LIKE '%%' ORDER BY ID DESC LIMIT 0,15   [ RunTime:0.0003s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `NavName` FROM `navigation` WHERE ( NavID =8 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/5f3de551d5c67b7d05bedd9ae52e9f42.php 第 397 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/5f3de551d5c67b7d05bedd9ae52e9f42.php 第 398 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014830s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-04-19T10:43:59+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+
+[ 2018-04-19T10:44:00+08:00 ] 222.187.222.56 /Admin/officweb/navlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `navigation` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =0 ) ORDER BY NavType DESC,NavID ASC  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =8 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =11 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =1 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =2 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =4 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =5 )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =6 )  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `navigation` WHERE ( NavFatherID =10 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Array to string conversion /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/990418e22c63c577730a292b2f03051c.php 第 432 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/990418e22c63c577730a292b2f03051c.php 第 433 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016544s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2018-04-19T10:44:01+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000258s ]
+
+[ 2018-04-19T10:44:04+08:00 ] 222.187.222.56 /Admin/officweb/serverlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `quoteinfo` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `quoteinfo` WHERE `Title` LIKE '%%' AND `FatherID` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `quoteinfo` WHERE `Title` LIKE '%%' AND `FatherID` = 0 ORDER BY QuotID ASC LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000110s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-04-19T10:44:04+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000269s ]
+
+[ 2018-04-19T10:44:05+08:00 ] 222.187.222.56 /Admin/officweb/cloudlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0004s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = '1' AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015531s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000146s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2018-04-19T10:44:05+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-04-19T10:44:14+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0004s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = 2 AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-04-19T10:44:14+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2018-04-19T10:44:15+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0004s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = 3 AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014543s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000351s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-04-19T10:44:15+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000273s ]
+
+[ 2018-04-19T10:44:17+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000260s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0004s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = 2 AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000373s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000417s ]
+
+[ 2018-04-19T10:44:17+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-04-19T10:44:18+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0006s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0004s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = 1 AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019121s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-04-19T10:44:18+08:00 ] 222.187.222.56 /Admin/Officweb/cloudlist/fid/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-04-19T10:44:42+08:00 ] 222.187.222.56 /Admin/officweb/serverlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `quoteinfo` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `quoteinfo` WHERE `Title` LIKE '%%' AND `FatherID` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `quoteinfo` WHERE `Title` LIKE '%%' AND `FatherID` = 0 ORDER BY QuotID ASC LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013038s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000354s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000406s ]
+
+[ 2018-04-19T10:44:42+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2018-04-19T10:44:42+08:00 ] 222.187.222.56 /Admin/officweb/physicslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 1 AND `NavData` = 0 AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 994 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000436s ]
+
+[ 2018-04-19T10:44:42+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+
+[ 2018-04-19T10:44:43+08:00 ] 222.187.222.56 /Admin/officweb/serverlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `quoteinfo` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `quoteinfo` WHERE `Title` LIKE '%%' AND `FatherID` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `quoteinfo` WHERE `Title` LIKE '%%' AND `FatherID` = 0 ORDER BY QuotID ASC LIMIT 0,15   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000143s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013973s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-04-19T10:44:43+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2018-04-19T10:44:44+08:00 ] 222.187.222.56 /Admin/officweb/cloudlist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000288s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `configinfo` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `configlist` [ RunTime:0.0007s ]
+SQL: SELECT `ID`,`Title` FROM `configlist` WHERE ( Property=0 ) ORDER BY Px ASC  [ RunTime:0.0004s ]
+SQL: SELECT `CID`,`Title` FROM `configinfo` WHERE `DataType` = 0 AND `NavData` = '1' AND `DataName` = 0 ORDER BY CID ASC  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Admin/Controller/OfficwebController.class.php 第 281 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+NOTIC: [8] Undefined index: quotid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/d835a3852ff4fa9b0924afb033133a4c.php 第 319 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015541s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-04-19T10:44:44+08:00 ] 222.187.222.56 /Admin/officweb/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2018-04-19T10:44:51+08:00 ] 222.187.222.56 /Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000268s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000397s ]
+
+[ 2018-04-19T10:44:53+08:00 ] 222.187.222.56 /Admin/User/loginin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+SQL: SHOW COLUMNS FROM `users` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `users` WHERE (  `UserName` = 'xiaocai' OR `LinkMail` = 'xiaocai' ) LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2018-04-19T10:44:53+08:00 ] 222.187.222.56 /Admin/index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+SQL: SHOW COLUMNS FROM `paylog` [ RunTime:0.0007s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=522 and datatype=0 )  [ RunTime:0.0003s ]
+SQL: SELECT SUM(money) as my FROM `paylog` WHERE ( userid=522 and datatype=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+NOTIC: [8] Undefined variable: datatype /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 496 行.
+NOTIC: [8] Undefined variable: fid /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Admin/b595b808c2ebeeeb0478ffc30bb4e87a.php 第 497 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013296s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-04-19T10:44:53+08:00 ] 222.187.222.56 /Admin/index/img/leftimg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2018-04-19T10:46:11+08:00 ] 222.187.222.56 /Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000434s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000118s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2018-04-19T13:35:30+08:00 ] 216.244.66.231 /Admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004622s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2018-04-19T15:41:59+08:00 ] 35.195.176.198 /admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000402s ]
+
+[ 2018-04-19T15:42:01+08:00 ] 35.195.176.198 /admin/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004476s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2018-04-19T21:17:49+08:00 ] 203.208.60.193 /Admin/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+

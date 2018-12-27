@@ -1,0 +1,86 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;}
+/*基本信息*/
+.form-line{height: 40px;line-height: 40px;margin: 10px 0;}
+.form-label{display:inline-block;width: 150px;text-align: right;font-weight: bold;}
+.w50{width: 50%;text-align: left;}
+.form-content{width: 700px;text-align: left;display: inline-block;}
+.form-control{display: initial;}
+.tab-content{padding: 10px;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+.bdred{border-color: red !important;}
+</style>
+<script>
+$(function(){
+    $("input").blur(function(){
+        if($(this).val()!=''){
+            $(this).removeClass("bdred");
+        }
+    })
+})
+</script>
+<!-- 弹窗-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+<div class="myalert-main">
+    <form class="mform">
+        <input type="hidden" name="id" value="{$cabtinfo.id}">
+        <div class="form-line w50 fl">
+            <span class="form-label">使用公司：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="company" value="{$cabtinfo.company}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">所在机房</span>
+            <select class="form-control" name="room" style="width: 250px;">
+                <option value="">--请选择--</option>
+                <foreach name="roomlist" item="vo">
+                    <option value="{$vo}" <if condition="$cabtinfo['room'] eq $vo">selected</if>>{$vo}</option>
+                </foreach>
+            </select>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label"><span class="need" style="color: red;">*</span> 机柜编号：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="code" value="{$cabtinfo.code}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">可用U数：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="u_num" value="{$cabtinfo.u_num}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">APC设备IP：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="apc_ip" value="{$cabtinfo.apc_ip}">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">APC设备管理URL：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="apc_url" value="{$cabtinfo.apc_url}">
+            </div>
+        </div>
+    </form>  
+</div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />

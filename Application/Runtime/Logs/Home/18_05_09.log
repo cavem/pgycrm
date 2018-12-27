@@ -1,0 +1,445 @@
+[ 2018-05-09T08:54:54+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+
+[ 2018-05-09T09:00:05+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2018-05-09T10:28:09+08:00 ] 80.82.78.50 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000298s ]
+
+[ 2018-05-09T10:33:25+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+
+[ 2018-05-09T14:21:24+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+
+[ 2018-05-09T14:21:26+08:00 ] 222.187.222.56 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+
+[ 2018-05-09T14:22:23+08:00 ] 222.187.222.56 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000204s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/2a94b8bda04ff446dcedd42276fc99ee.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000114s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-05-09T14:26:18+08:00 ] 222.187.222.56 /Index/serverbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/84492f59e1a4a3ddbba6c61742423575.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022915s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000126s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000426s ]
+
+[ 2018-05-09T14:26:31+08:00 ] 222.187.222.56 /Index/jdidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000153s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000198s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/aa3aeb1fadd92d61844caa03c13b4527.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000422s ]
+
+[ 2018-05-09T14:26:35+08:00 ] 222.187.222.56 /Index/wzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/de53b165aa44a1bdd4ef614c7a822ea2.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2018-05-09T14:26:36+08:00 ] 222.187.222.56 /Index/gzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000410s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/f6c27120fe4981d5715fcbe863016efe.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016585s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-05-09T14:26:38+08:00 ] 222.187.222.56 /Index/jdidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/aa3aeb1fadd92d61844caa03c13b4527.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016528s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016570s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000371s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-05-09T14:26:42+08:00 ] 222.187.222.56 /Index/wzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/de53b165aa44a1bdd4ef614c7a822ea2.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000412s ]
+
+[ 2018-05-09T14:26:45+08:00 ] 222.187.222.56 /Index/gzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000264s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/f6c27120fe4981d5715fcbe863016efe.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000123s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000434s ]
+
+[ 2018-05-09T14:27:18+08:00 ] 120.204.200.82 /index/serverbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000420s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/84492f59e1a4a3ddbba6c61742423575.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022667s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022709s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000159s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2018-05-09T14:27:31+08:00 ] 61.151.226.65 /index/jdidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000427s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000155s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000200s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/aa3aeb1fadd92d61844caa03c13b4527.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016754s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000117s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000155s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2018-05-09T14:27:35+08:00 ] 61.151.226.71 /index/wzidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000406s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/de53b165aa44a1bdd4ef614c7a822ea2.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016474s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000403s ]
+
+[ 2018-05-09T14:29:42+08:00 ] 222.187.222.56 /Index/cooperate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000187s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 30 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 112 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 148 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 336 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 389 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 427 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 536 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 862 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017469s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-05-09T14:30:42+08:00 ] 120.204.200.82 /index/cooperate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 30 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 112 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 148 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 336 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 389 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 427 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 536 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 862 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-05-09T14:32:41+08:00 ] 222.187.222.56 /Index/cooperate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 30 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 112 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 148 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 336 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 389 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 427 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 536 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 862 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2018-05-09T14:32:42+08:00 ] 222.187.222.56 /Index/cooperate.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 30 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 112 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 148 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 336 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 389 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 427 行.
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 536 行.
+NOTIC: [8] Undefined variable: current /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/bd98552faaa73d74a80e755c3e2afe6e.php 第 862 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016065s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2018-05-09T14:32:49+08:00 ] 222.187.222.56 /Application/Admin/View/Public/images/icon_control.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+
+[ 2018-05-09T14:41:08+08:00 ] 120.204.17.71 /index/serverbuy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000287s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/84492f59e1a4a3ddbba6c61742423575.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022822s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000385s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
+
+[ 2018-05-09T18:02:19+08:00 ] 80.82.70.187 /cache/global/img/gs.gif
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+
+[ 2018-05-09T20:48:13+08:00 ] 203.208.60.147 /robots.txt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000407s ]
+
+[ 2018-05-09T20:48:13+08:00 ] 203.208.60.147 /Index/sqidc.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+NOTIC: [8] Undefined index: loginuser /usr/share/nginx/html/pgyidc/Application/Runtime/Cache/Home/0776fca720e318c95b1f2b4c475eb466.php 第 536 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016645s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+

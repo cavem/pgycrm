@@ -1,0 +1,111 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+.claaa{color: #aaa;}
+.clred{color: red;}
+.td-nopad{padding: 0 !important;}
+.table-in{background: #eee !important;}
+/*bootstrap*/
+.table>tbody>tr>td{text-align: center;vertical-align: middle;}
+</style>
+<!-- 弹窗(查看)-->
+<div class="myalert-content">
+    <div class="myalert-wrap">
+        <div class="myalert-main">
+            <table class="table table-bordered">
+                <tr>
+                    <td class="claaa" width="15%">名称</td>
+                    <td width="25%">{$userinfo.name}</td>
+                    <td class="claaa" width="15%">真实姓名</td>
+                    <td width="45%">{$userinfo.realname}</td>
+                </tr>
+                <tr>
+                    <td class="claaa">所在部门</td>
+                    <td>{$userinfo.dept}</td>
+                    <td class="claaa">值班机房</td>
+                    <php>
+                        $merooms=json_decode($userinfo['rooms'],true);
+                        $roomstr="";
+                        foreach($merooms as $mrval){
+                            $roomstr.=$mrval.',';
+                        }
+                        $roomstr=substr($roomstr,0,strlen($roomstr)-1);
+                    </php>
+                    <td><php>echo $roomstr;</php></td>
+                </tr>
+                <tr>
+                    <td class="claaa">是否主管</td>
+                    <td><if condition="$userinfo.ischarge eq 'true'"><i class="fa fa-check" style="color: green"></i><else /><i class="fa fa-times" style="color: red;"></i></if></td>
+                    <td class="claaa">是否销售</td>
+                    <td><if condition="$userinfo.issales eq 'true'"><i class="fa fa-check" style="color: green"></i><else /><i class="fa fa-times" style="color: red;"></i></if></td>
+                </tr>
+                <tr>
+                    <td class="claaa">带领员工</td>
+                    <td></td>
+                    <td class="claaa">接单部门</td>
+                    <php>
+                        $merecvs=json_decode($userinfo['recvs'],true);
+                        $recvstr="";
+                        foreach($merecvs as $mreval){
+                            $recvstr.=$mreval.',';
+                        }
+                        $recvstr=substr($recvstr,0,strlen($recvstr)-1);
+                    </php>
+                    <td><php>echo $recvstr;</php></td>
+                </tr>
+                <tr>
+                    <td class="claaa">账户等级</td>
+                    <td>{$userinfo.level}</td>
+                    <td class="claaa">角色</td>
+                    <td>{$userinfo.role}</td>
+                </tr>
+                <tr>
+                    <td class="claaa">权限</td>
+                    <td colspan="3" class="td-nopad">
+                        <div style="height: 468px;overflow-y: scroll;margin-top: -1px;margin-left:-1px;z-index: -5;;">
+                            <table class="table table-bordered" style="background: #eee;">
+                                <foreach name="powerlist" item="vo" key="k">
+                                    <tr>
+                                        <td style="width: 100px; text-align: center;">{$k}</td>
+                                        <td class="td-nopad">
+                                            <table class="table table-bordered table-in" style="margin-bottom: 0;">
+                                                <tbody>
+                                                    <foreach name="vo" item="vo2" key="k2">
+                                                        <tr>
+                                                            <td style="width: 120px; text-align: center;">{$k2}</td>
+                                                            <td class="td-nopad">
+                                                                <table class="table table-bordered table-hover table-in" style="margin-bottom: 0;">
+                                                                    <tbody>
+                                                                        <foreach name="vo2" item="vo3" key="k3">
+                                                                            <tr class="no-perm">
+                                                                                <td class="title" style="width: 140px; text-align: center;">{$k3}</td>
+                                                                                <td style="text-align: center;">
+                                                                                    <if condition="$vo3[k3] eq '0'">
+                                                                                        <i class="fa fa-times" style="color: red;"></i>
+                                                                                    <else />
+                                                                                    <i class="fa fa-check" style="color: green"></i>
+                                                                                    </if>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </foreach>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </foreach>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </foreach>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

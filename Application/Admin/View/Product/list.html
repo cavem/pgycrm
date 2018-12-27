@@ -1,0 +1,124 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+a{color: #337ab7;}
+a:hover{color: #23527c;}
+</style>
+<script>
+$(function(){
+    $('.add').click(function(){
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            layer.load();
+            $.post('/Product/new',formdata,function(data,status){
+                if(data==0){
+                    layer.msg('添加成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('添加失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('添加产品','900px','660px',"{:U('Product/new')}",confirm);
+    })
+    $('.edit').click(function(){
+        var name=$(this).closest('tr').find('.name').text();
+        var id=$(this).closest('tr').children('td:first').text();
+        var confirm=function(index,layero){
+            //获取iframe的body元素
+            var body = layer.getChildFrame('body',index);
+            var formdata = body.find('.mform').serialize();
+            layer.load();
+            $.post('/Product/edit',formdata+"&id="+id,function(data,status){
+                if(data==0){
+                    layer.msg('修改成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('修改失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        }
+        myalert('修改产品','900px','660px',"{:U('Product/edit')}"+"?id="+id,confirm);
+    })
+    $('.remove').click(function(){
+        var name=$(this).closest('tr').find('.name').text();
+        var id=$(this).closest('tr').children('td:first').text();
+        layer.confirm('确定删除【'+name+'】?', {
+                btn: ['确定','取消']
+            }, function(){
+            layer.load();
+            $.post('/Product/remove',{"id":id},function(data,status){
+                if(data==0){
+                    layer.msg('删除成功',{icon:1});
+                    window.location.reload();
+                }else{
+                    layer.msg('删除失败',{icon:2});
+                    window.location.reload();
+                }
+            })
+        })
+    })
+    $('.gopage').click(function(){
+        var cpage=$('.cpage').val();
+        window.location.href="{:U('Product/list')}"+"?p="+cpage;
+    })
+})
+</script>
+<div id="content" class="wow fadeIn">
+    <div id="content-header">
+        <span class="header-title"><i class="fa fa fa-archive"></i> 产品管理</span>
+        <div class="mysearchbox fr">
+            <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
+            <form class="sform" action="{:U('Product/list')}" method="POST">
+                <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容">
+            </form>
+            <i class="fa fa-times empty"></i>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="someopt mt15">
+            <a href="javascript:;" class="fr gopage" style="height: 28px;line-height: 28px;border:1px solid #58A0D3;background-color: #d5d5d5;font-size: 12px;padding:0 5px">跳转</a>
+            <div><input type="text" id="pagebox" class="form-control fr cpage" style="width: 60px;height: 28px;"></div>
+            <if condition="$perm['资源管理']['产品管理']['新增']">
+            <button class="btn btn-primary fl add mr10"><i class="fa fa-plus"></i> 新增</button>
+            </if>
+            <div class="page fr mr10 pages">{$page}</div>
+        </div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                <th>编号</th><th>产品名称</th><th>产品类别</th><th>产品单位</th><th>价格</th><th>价格单位</th><th>带宽限制</th><th>描述</th><th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <volist name="productlist" id="vo" key="k">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td class="name">{$vo.name}</td>
+                        <td>{$vo.category}</td>
+                        <td>{$vo.unit}</td>
+                        <td>{$vo.price}</td>
+                        <td>{$vo.price_unit}</td>
+                        <td>{$vo.band_limit}</td>
+                        <td>{$vo.desc}</td>
+                        <td style="width: 200px;">
+                            <if condition="$perm['资源管理']['产品管理']['查看']">
+                            <button class="btn btn-sm btn-info view"><i class="fa fa-eye"></i></button>
+                            </if>
+                            <if condition="$perm['资源管理']['产品管理']['修改']">
+                            <button class="btn btn-sm btn-warning edit"><i class="fa fa-edit"></i></button>
+                            </if>
+                            <if condition="$perm['资源管理']['产品管理']['删除']">
+                            <button class="btn btn-sm btn-danger remove"><i class="fa fa-trash"></i></button>
+                            </if>
+                        </td>
+                    </tr>
+                </volist>
+            </tbody>
+        </table>
+    </div>
+</div>
+<include file="Public/footer" title="pgyidc" />

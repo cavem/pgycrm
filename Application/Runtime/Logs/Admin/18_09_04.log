@@ -1,0 +1,362 @@
+[ 2018-09-04T09:10:07+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000706s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009986s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000820s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2018-09-04T09:10:07+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000724s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2018-09-04T09:10:13+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0443s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0599s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.0344s ]
+SQL: SELECT * FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID asc LIMIT 0,15   [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0509s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0277s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0191s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼小机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='嘉兴机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿城机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿迁联通' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='丽水机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='大连小鸟云机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='盐城机房' ) LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州机房' ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0164s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州武进机房' ) LIMIT 1   [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='凤凰美地' ) LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='山东-枣庄机房' ) LIMIT 1   [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0166s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034647s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002152s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002316s ]
+
+[ 2018-09-04T09:10:17+08:00 ] 127.0.0.1 /Custom/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000569s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id asc LIMIT 0,10   [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000179s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001223s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001310s ]
+
+[ 2018-09-04T09:23:58+08:00 ] 127.0.0.1 /Custom/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001072s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2018-09-04T09:37:47+08:00 ] 127.0.0.1 /Custom/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000144s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000254s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009898s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001002s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001056s ]
+
+[ 2018-09-04T09:37:54+08:00 ] 127.0.0.1 /error403.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000945s ]
+ERR: 无法加载控制器:Error403
+
+[ 2018-09-04T09:38:02+08:00 ] 127.0.0.1 /Workorder/myorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000655s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2018-09-04T09:38:09+08:00 ] 127.0.0.1 /Service/edit.html?servid=23
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `_servers` WHERE ( ID=23 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0131s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `cabinets` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `cabinets` WHERE ( room='河东3楼小机房' )  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001509s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002146s ]
+
+[ 2018-09-04T09:43:04+08:00 ] 127.0.0.1 /Custom/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000821s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009458s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009526s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000975s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001043s ]
+
+[ 2018-09-04T16:27:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011242s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2018-09-04T16:27:40+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000776s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000829s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007383s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2018-09-04T16:27:44+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0151s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `_servers` [ RunTime:0.0116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT * FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID asc LIMIT 0,15   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼小机房' ) LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='嘉兴机房' ) LIMIT 1   [ RunTime:0.0178s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿城机房' ) LIMIT 1   [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='宿迁联通' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='丽水机房' ) LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房' ) LIMIT 1   [ RunTime:0.0182s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0178s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0174s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0171s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='大连小鸟云机房' ) LIMIT 1   [ RunTime:0.0178s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='盐城机房' ) LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州机房' ) LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='常州武进机房' ) LIMIT 1   [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='凤凰美地' ) LIMIT 1   [ RunTime:0.0177s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='山东-枣庄机房' ) LIMIT 1   [ RunTime:0.0173s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `_servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0178s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+NOTIC: [8] Undefined index: Automation D:\myenv\apache\htdocs\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 375 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000738s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001334s ]
+

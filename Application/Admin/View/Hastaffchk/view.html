@@ -1,0 +1,25 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+body{background: #eee;padding: 20px;overflow: auto;}
+</style>
+<table class="table table-bordered" style="width: 1300px;">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>工作内容</th>
+            <th>评价</th>
+            <th>备注</th>
+        </tr>
+    </thead>
+    <tbody>
+        <volist name="list" id="vo">
+        <tr>
+            <td>{$vo.id}</td>
+            <td>{$vo.workremarks}</td>
+            <td>{$vo.assesslevel}</td>
+            <td>{$vo.resultremarks}</td>
+        </tr>
+        </volist>
+    </tbody>
+</table>
+<include file="Public/footer" title="pgyidc" />

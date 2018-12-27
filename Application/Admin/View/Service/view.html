@@ -1,0 +1,248 @@
+<include file="Public/header" title="pgyidc" />
+<style>
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{font-size: 14px;border-top: 2px solid #28b779;font-size: 14px;background: #eee;}
+.nav-tabs>li>a{font-size:14px;}
+body{background: #eee !important;}
+.myalert-wrap{width: 100%;min-height:100%;position: relative;}
+.myalert-main{width: 100%;overflow: hidden;}
+/*layui*/
+.layui-tab{margin: 0;}
+.layui-tab-title{background: #fff;}
+.layui-tab-title .layui-this{color: #28b779;background: #eee;}
+.layui-tab-title .layui-this:after{border-bottom-color:transparent;border-top-color: #28b779;}
+/*bootstap*/
+.panel-title{display: inline-block;}
+.opt-wrap{position: relative;bottom: 4px;}
+ul{margin-bottom: 0;}
+input[type=checkbox], input[type=radio]{margin: 0;}
+.label{padding: .2em .6em;}
+.claaa{color: #888;}
+.table{background-color: transparent !important;}
+</style>
+
+<!-- 弹窗(编辑)-->
+<div class="myalert-content">
+<div class="myalert-wrap">
+    <div class="myalert-main">
+        <div class="layui-tab">
+            <ul class="layui-tab-title">
+                <li class="layui-this">服务器信息</li>
+                <li>更新日志</li>
+            </ul>
+            <div class="layui-tab-content">
+                <!-- 服务器信息-->
+                <div class="layui-tab-item layui-show">
+                    <table class="table table-bordered">
+                        <tbody>
+                          <tr>
+                            <td class="claaa">编号</td>
+                            <td>{$servinfo.servnum}</td>
+                            <td class="claaa">产品类型</td>
+                            <td>{$servinfo.productkind}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">产权所属</td>
+                            <td>{$servinfo.custname}</td>
+                            <td class="claaa">相关销售</td>
+                            <td>{$servinfo.salers}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">联系人</td>
+                            <td>{$servinfo.custtech}</td>
+                            <td class="claaa">联系电话</td>
+                            <td>{$servinfo.custtel}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">设备名称</td>
+                            <td>{$servinfo.servname}</td>
+                            <td class="claaa">设备类型</td>
+                            <td>{$servinfo.devicetype}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">设备外形</td>
+                            <td>{$servinfo.deviceshape}</td>
+                            <td class="claaa">操作系统</td>
+                            <td>{$servinfo.os}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">所在机房</td>
+                            <td>{$servinfo.idcname}</td>
+                            <td class="claaa">所在机柜</td>
+                            <td>{$servinfo.shelfcode}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">机器型号</td>
+                            <td>{$servinfo.servtype}</td>
+                            <td class="claaa">MAC地址</td>
+                            <td>{$servinfo.macaddress}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">自动化</td>
+                            <td>{$servinfo.automation}</td>
+                            <td class="claaa">状态</td>
+                            <td>{$servinfo.servstate}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">带宽限制</td>
+                            <td colspan="3">{$servinfo.bandwidth}</td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">IP地址</td>
+                            <td colspan="3">
+                                <div style="min-width: 100%;width: 700px;overflow: auto;">
+                                <php>
+                                    $iparr=explode('/',$servinfo['serv_ip']);
+                                    $ipstr="";
+                                    foreach($iparr as $val){
+                                        if(!empty($val)){
+                                            $ipstr.='<span class="label label-info">'.$val.'</span>&nbsp;';
+                                        }
+                                    }
+                                    echo $ipstr;
+                                </php>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">备注</td>
+                            <td colspan="3">
+                                <div style="width: 700px;overflow: auto;">
+                                {$servinfo.remarks}
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="claaa">代理商备注</td>
+                            <td colspan="3">{$servinfo.custremarks}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+                <!-- 更新日志 -->
+                <div class="layui-tab-item" style="overflow: auto;">
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="claaa" style="width: 120px;">服务器更新</td>
+                                <td>
+                                    <if condition="$servudlist[0] neq ''">
+                                    <div style="min-width: 100%;width:650px;overflow: auto;">
+                                    <table class="table table-bordered" style="min-width: 1233px;">
+                                        <thead>
+                                            <th></th>
+                                            <th>变更类型</th>
+                                            <th>IP地址</th>
+                                            <th>更新前</th>
+                                            <th>更新后</th>
+                                            <th>备注</th>
+                                            <th>提交人</th>
+                                            <th>提交时间</th>
+                                        </thead>
+                                        <tbody>
+                                            <volist name="servudlist" id="vo" key="k">
+                                            <tr>
+                                                <td>{$k}</td>
+                                                <td>{$vo.logtype}</td>
+                                                <td>{$vo.ipaddr}</td>
+                                                <td>{$vo.pre_data}</td>
+                                                <td>{$vo.new_data}</td>
+                                                <td>{$vo.remarks}</td>
+                                                <td>{$vo.committer}</td>
+                                                <td>{$vo.commit_at}</td>
+                                            </tr>
+                                            </volist>
+                                        </tbody>
+                                    </table>
+                                    </div>
+                                    </if>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="claaa">IP变更</td>
+                                <td>
+                                    <if condition="$servipuplist[0] neq ''">
+                                    <table class="table table-bordered" style="min-width: 1050px;">
+                                        <thead>
+                                            <th></th>
+                                            <th>旧IP</th>
+                                            <th>新IP</th>
+                                            <th>提交人</th>
+                                            <th>提交时间</th>
+                                        </thead>
+                                        <tbody>
+                                            <volist name="servipuplist" id="vo" key="k">
+                                            <tr>
+                                                <td>{$k}</td>
+                                                <td style="width: 280px;">
+                                                    <table style="width: 100%;">
+                                                        <tr>
+                                                            <td style="width: 330px;">{$vo.oldip|substr=0,60}</td>
+                                                            <td>
+                                                                <?php if(!empty($vo['oldip'])&&strlen($vo['oldip'])>60) :?>
+                                                                ...<span class="glyphicon glyphicon-eye-open" style="padding-left: 1em" onclick="alert('{$vo.oldip}')" title="{$vo.oldip}"></span>
+                                                                <?php endif;?>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td style="width: 280px;">
+                                                    <table style="width: 100%;">
+                                                        <tr>
+                                                            <td style="width: 330px;">{$vo.newip|substr=0,60}</td>
+                                                            <td>
+                                                                <?php if(!empty($vo['newip'])&&strlen($vo['newip'])>60) :?>
+                                                                ...<span class="glyphicon glyphicon-eye-open" style="padding-left: 1em" onclick="alert('{$vo.newip}')" title="{$vo.newip}"></span>
+                                                                <?php endif;?>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                <td>{$vo.operator}</td>
+                                                <td>{$vo.updatetime}</td>
+                                            </tr>
+                                            </volist>
+                                        </tbody>
+                                    </table>
+                                    </if>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="claaa">服务器转让</td>
+                                <td>
+                                    <if condition="$servtflist[0] neq ''">
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <th></th>
+                                            <th>旧订单ID</th>
+                                            <th>旧客户名称</th>
+                                            <th>新订单ID</th>
+                                            <th>新客户名称</th>
+                                            <th>提交人</th>
+                                            <th>提交时间</th>
+                                        </thead>
+                                        <tbody>
+                                            <volist name="servtflist" id="vo" key="k">
+                                            <tr>
+                                                <td>{$k}</td>
+                                                <td>{$vo.pre_o_nid}</td>
+                                                <td>{$vo.pre_cname}</td>
+                                                <td>{$vo.new_o_nid}</td>
+                                                <td>{$vo.new_cname}</td>
+                                                <td>{$vo.committer}</td>
+                                                <td>{$vo.commit_at}</td>
+                                            </tr>
+                                            </volist>
+                                        </tbody>
+                                    </table>
+                                    </if>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 弹窗 end-->
+<include file="Public/footer" title="pgyidc" />
