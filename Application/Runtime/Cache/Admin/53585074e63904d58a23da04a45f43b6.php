@@ -300,7 +300,7 @@ $(function(){
                 <input type="text" name="commit_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($commit_at_from); ?>">~
                 <input type="text" name="commit_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($commit_at_to); ?>">
             </div>
-            <div class="condition-panel-item" style="width: 260px;">
+            <!-- <div class="condition-panel-item" style="width: 260px;">
                 <span class="lb">受理时间</span>
                 <input type="text" name="receive_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($receive_at_from); ?>">~
                 <input type="text" name="receive_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($receive_at_to); ?>">
@@ -309,7 +309,7 @@ $(function(){
                 <span class="lb">完成时间</span>
                 <input type="text" name="complete_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($complete_at_from); ?>">~
                 <input type="text" name="complete_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($complete_at_to); ?>">
-            </div>
+            </div> -->
             <div class="condition-panel-item">
                 <span class="lb">完成结果</span>
                 <select class="form-control" name="comp_state">

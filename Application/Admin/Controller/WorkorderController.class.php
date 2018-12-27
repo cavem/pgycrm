@@ -399,7 +399,12 @@ class WorkorderController extends BaseController {
 	    		case 0:
                     $data['addip']=$ips;
 	    			$data['makesure']=$username;
-	    			$data['makesure_at']=date('Y-m-d H:i:s');
+                    $data['makesure_at']=date('Y-m-d H:i:s');
+                    if($action=="订单转让"||$action=="上架转让"){
+                        $data['receiver']=$username;
+                        $data['receive_at']=date('Y-m-d H:i:s');
+                        $data['complete_at']=date('Y-m-d H:i:s');
+                    }
                     self::talog('处理确认',$problemdesc,$id);
 	    			break;
 	    		case 1:
