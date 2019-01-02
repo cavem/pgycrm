@@ -128,10 +128,10 @@ $(function(){
                                     }
                                     $roomstr=substr($roomstr,0,strlen($roomstr)-1);
                                 </php>
-                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<php>echo $roomstr;</php>" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">
+                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<php>echo $roomstr;</php>" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">
                                     <php>echo $roomstr;</php><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i>
                                 </span>
-                                <select multiple class="form-control mulselect" style="width: 250px;height: 250px;position: absolute;display: none;margin-top: -12px;z-index:2;">
+                                <select multiple class="form-control mulselect" style="width: 250px;height: 250px;position: absolute;display: none;z-index:2;">
                                     <php>
                                         foreach($roomlist as $val){
                                             if(in_array($val,$merooms)){
@@ -170,8 +170,8 @@ $(function(){
                                     }
                                     $recvstr=substr($recvstr,0,strlen($recvstr)-1);
                                 </php>
-                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<php>echo $recvstr;</php>" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;"><php>echo $recvstr;</php><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;margin-top: -12px;">
+                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<php>echo $recvstr;</php>" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;"><php>echo $recvstr;</php><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;">
                                     <option <php>if(in_array('技术部',$merecvs)){echo 'selected';}</php>>技术部</option>
                                     <option <php>if(in_array('客服部',$merecvs)){echo 'selected';}</php>>客服部</option>
                                     <option <php>if(in_array('网络部',$merecvs)){echo 'selected';}</php>>网络部</option>
@@ -187,8 +187,8 @@ $(function(){
                         <div class="form-line w50 fl">
                             <span class="form-label" style="position: relative;bottom: 10px;">带领员工：</span>
                             <div class="form-content" style="width: 250px;">
-                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="bottom" title="" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;margin-top: -12px;">
+                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="bottom" title="" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;">
                                     <volist name="userlist" id="uservo">
                                         <option><{$uservo.dept}>{$uservo.realname}</option>
                                     </volist>

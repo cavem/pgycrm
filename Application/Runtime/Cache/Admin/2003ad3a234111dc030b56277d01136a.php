@@ -234,10 +234,10 @@ $(function(){
                             <span class="form-label" style="position: relative;bottom: 10px;">值班机房：</span>
                             <div class="form-content" style="width: 250px;">
                                 <?php $roomstr=""; foreach($merooms as $mrval){ $roomstr.=$mrval.','; } $roomstr=substr($roomstr,0,strlen($roomstr)-1); ?>
-                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<?php echo $roomstr; ?>" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">
+                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<?php echo $roomstr; ?>" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">
                                     <?php echo $roomstr; ?><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i>
                                 </span>
-                                <select multiple class="form-control mulselect" style="width: 250px;height: 250px;position: absolute;display: none;margin-top: -12px;z-index:2;">
+                                <select multiple class="form-control mulselect" style="width: 250px;height: 250px;position: absolute;display: none;z-index:2;">
                                     <?php foreach($roomlist as $val){ if(in_array($val,$merooms)){ echo "<option selected>".$val."</option>"; }else{ echo "<option>".$val."</option>"; } } ?>
                                 </select>
                                 <input name="rooms" type="hidden" value="<?php echo $roomstr; ?>">
@@ -262,8 +262,8 @@ $(function(){
                             <span class="form-label" style="position: relative;bottom: 10px;">接单部门：</span>
                             <div class="form-content" style="width: 250px;">
                                 <?php $recvstr=""; foreach($merecvs as $mreval){ $recvstr.=$mreval.','; } $recvstr=substr($recvstr,0,strlen($recvstr)-1); ?>
-                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<?php echo $recvstr; ?>" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;"><?php echo $recvstr; ?><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;margin-top: -12px;">
+                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="top" title="<?php echo $recvstr; ?>" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;"><?php echo $recvstr; ?><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;">
                                     <option <?php if(in_array('技术部',$merecvs)){echo 'selected';} ?>>技术部</option>
                                     <option <?php if(in_array('客服部',$merecvs)){echo 'selected';} ?>>客服部</option>
                                     <option <?php if(in_array('网络部',$merecvs)){echo 'selected';} ?>>网络部</option>
@@ -279,8 +279,8 @@ $(function(){
                         <div class="form-line w50 fl">
                             <span class="form-label" style="position: relative;bottom: 10px;">带领员工：</span>
                             <div class="form-content" style="width: 250px;">
-                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="bottom" title="" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;margin-top: -12px;">
+                                <span class="moreoption form-control" data-toggle="tooltip" data-placement="bottom" title="" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;">
                                     <?php if(is_array($userlist)): $i = 0; $__LIST__ = $userlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$uservo): $mod = ($i % 2 );++$i;?><option><<?php echo ($uservo["dept"]); ?>><?php echo ($uservo["realname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </select>
                                 <input name="leads" type="hidden" value="">
@@ -360,15 +360,15 @@ $(function(){
                                                                 <?php if(is_array($vo2)): foreach($vo2 as $k3=>$vo3): if(($k3 == '新工单') OR ($k3 == '领工单')): ?><li <?php if($vo3[$k3] == '1'): ?>class="mychecked"<?php endif; ?>><input type="checkbox" name="<?php echo ($k); ?>-<?php echo ($k2); ?>-<?php echo ($k3); ?>" <?php if($vo3[$k3] == '1'): ?>checked<?php endif; ?> value="1"><?php echo ($k3); ?></li><?php endif; endforeach; endif; ?>
                                                             </ul>
                                                         </div>
-                                                        <?php foreach($vo2 as $key=>$val){ $keyarr=explode("_",$key); if(!empty($keyarr[1])){ if(!array_key_exists($keyarr[0], $wolist)){ $wolist[$keyarr[0]]=array($keyarr[1]=>$val); }else{ $wolist[$keyarr[0]][$keyarr[1]]=$val; } } $n=0; if($keyarr[1]==''){ if($val==1){ $n=1; } } } ?>
+                                                        <?php foreach($vo2 as $key=>$val){ if($key!="新工单"&&$key!="领工单"){ $keyarr=explode("_",$key); if(!empty($keyarr[1])){ if(!array_key_exists($keyarr[0], $wolist)){ $wolist[$keyarr[0]]=array($keyarr[1]=>$val); }else{ $wolist[$keyarr[0]][$keyarr[1]]=$val; } }else{ if($val==1){ $wolist[$keyarr[0]]=array("0"=>$keyarr[0]); } } } } ?>
                                                         <?php if(is_array($wolist)): foreach($wolist as $k4=>$vo4): ?><div class="panel-item">
                                                                 <ul class="checkbox-wrap">
-                                                                    <?php if($n=1){ echo '<li class="mychecked haschild"><input type="checkbox" name="工单系统-我的工单-'.$k4.'" value="1" checked>'.$k4.'<i class="fa fa-caret-up"></i></li>'; }else { echo '<li class="haschild"><input type="checkbox" name="工单系统-我的工单-'.$k4.'" value="1">'.$k4.'<i class="fa fa-caret-up"></i></li>'; } ?>
+                                                                    <?php if($vo4["0"]!=""){ echo '<li class="mychecked haschild"><input type="checkbox" name="工单系统-我的工单-'.$k4.'" value="1" checked>'.$k4.'<i class="fa fa-caret-up"></i></li>'; }else { echo '<li class="haschild"><input type="checkbox" name="工单系统-我的工单-'.$k4.'" value="1">'.$k4.'<i class="fa fa-caret-up"></i></li>'; } ?>
                                                                 </ul>
                                                                 <div class="sm-checkbox-wrap">
                                                                     <ul class="smcheck-wrap">
                                                                         <?php foreach($vo4 as $k5=>$v5){ ?>
-                                                                            <li <?php if($v5=='1'){echo 'class="smchecked"';} ?>><input type="checkbox" name="工单系统-我的工单-<?php echo ($k4); ?>_<?php echo $k5 ?>" value="1" <?php if($v5=='1'){echo 'checked';} ?>><?php echo $k5 ?></li>
+                                                                            <?php if($k5!="0"){ ?><li <?php if($v5=='1'){echo 'class="smchecked"';} ?>><input type="checkbox" name="工单系统-我的工单-<?php echo ($k4); ?>_<?php echo $k5 ?>" value="1" <?php if($v5=='1'){echo 'checked';} ?>><?php echo $k5 ?></li><?php } ?>
                                                                         <?php } ?>
                                                                     </ul>
                                                                 </div>

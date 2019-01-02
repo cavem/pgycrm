@@ -124,8 +124,8 @@ $(function(){
                         <div class="form-line w50 fl">
                             <span class="form-label" style="position: relative;bottom: 10px;">值班机房：</span>
                             <div class="form-content" style="width: 250px;">
-                                <span class="moreoption form-control" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;height: 250px;position: absolute;display: none;margin-top: -12px;z-index: 2;">
+                                <span class="moreoption form-control" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;height: 250px;position: absolute;display: none;z-index: 2;">
                                     <volist name="roomlist" id="roomvo">
                                         <option>{$roomvo}</option>
                                     </volist>
@@ -151,8 +151,8 @@ $(function(){
                         <div class="form-line w50 fl">
                             <span class="form-label" style="position: relative;bottom: 10px;">接单部门：</span>
                             <div class="form-content" style="width: 250px;">
-                                <span class="moreoption form-control" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;margin-top: -12px;">
+                                <span class="moreoption form-control" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;">
                                     <option>技术部</option>
                                     <option>客服部</option>
                                     <option>网络部</option>
@@ -168,8 +168,8 @@ $(function(){
                         <div class="form-line w50 fl">
                             <span class="form-label" style="position: relative;bottom: 10px;">带领员工：</span>
                             <div class="form-content" style="width: 250px;">
-                                <span class="moreoption form-control" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;margin-top: -12px;">
+                                <span class="moreoption form-control" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;">--请选择--<i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                                <select multiple class="form-control mulselect" style="width: 250px;position: absolute;display: none;">
                                     <volist name="userlist" id="uservo">
                                         <option><{$uservo.dept}>{$uservo.realname}</option>
                                     </volist>

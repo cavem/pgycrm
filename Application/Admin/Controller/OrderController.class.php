@@ -9,6 +9,7 @@ class OrderController extends BaseController {
         $key=I('keyword/s','');
         $where=array(
             "id" => array('like','%'.$key.'%'),
+            "nid" => array('eq',$key),
             "cname" => array('like','%'.$key.'%'),
             "salesman" => array('like','%'.$key.'%'),
             "propertyof" => array('like','%'.$key.'%'),
@@ -448,7 +449,7 @@ class OrderController extends BaseController {
         }
         $str="ID,订单编号,客户名称,IP名称,订单备注,订单状态,产品类型,订单金额,付款周期,销售人员,下次付款日期\n";
         foreach($orderlst as $item){
-            $str.=$item['nid']. "," .$item['id']. "," .$item['cname']. "," .$item['ipaddr']. "," .str_replace(array("\r\n","\r","\n"),"",$item['remark']). "," .$item['status']. "," .$item['prodcat']. "," .$item['money']. "," .$item['paycycle']. "," .$item['salesman']. "," .$item['order_end_at']. "\n";
+            $str.=$item['nid']. "," .$item['id']. "," .$item['cname']. "," .$item['ipaddr']. "," .str_replace(array("\r\n","\r","\n",","),"",$item['remark']). "," .$item['status']. "," .$item['prodcat']. "," .$item['money']. "," .$item['paycycle']. "," .$item['salesman']. "," .$item['order_end_at']. "\n";
         }
         $filename="订单".date("Ymdhis").".csv";
         $this->export_filename($filename, $str);
