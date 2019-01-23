@@ -45,11 +45,13 @@ $(function(){
     })
     $('.search').click(function(){
         layer.load();
+        $('.sform').attr("action","");
         $('.sform').submit();
     })
     $('#searchbox').bind('keyup', function(event) {
         if (event.keyCode == "13") {
             layer.load();
+            $('.sform').attr("action","");
             $('.sform').submit();
         }
     })
@@ -58,7 +60,7 @@ $(function(){
         $("#searchbox").val('');
         $('.sform').submit();
     })
-    $("#pagebox" ).bind('keyup', function(event) {
+    $("#pagebox").bind('keyup', function(event) {
         if (event.keyCode == "13") {
             layer.load();
             $('.gopage').click();
@@ -94,7 +96,7 @@ tr:hover {background: transparent;}
 .pagination{margin: 0;}
 /* content-header */
 #content-header{padding: 5px 0 10px 0;margin:0 20px;margin-top:0px !important;overflow: hidden;border-bottom: 2px solid #ddd;width: initial !important;}
-.header-title{font-size: 16px;display: block;float: left;position: relative;top: 5px;}
+.header-title{font-size: 20px;font-weight: bold;display: block;float: left;position: relative;top: 5px;}
 .mysearchbox{position: relative;background: #ddd;width: 250px;height: 34px;line-height: 34px;padding: 0 24px;}
 .mysearchbox input{border: none;background: #ddd;}
 .mysearchbox input:focus{border-color: initial;box-shadow: initial;}
@@ -107,7 +109,7 @@ tr:hover {background: transparent;}
 #content {margin-left: 0 !important;}
 .panel-group{width: 60% !important;}
 }
-#content {background: #CCE8CC !important;overflow-x: scroll;}
+#content {background: #fff !important;overflow-x: scroll;}
 </style>
 <script src="/Public/DatePicker/WdatePicker.js" type="text/javascript"></script>
 <style>

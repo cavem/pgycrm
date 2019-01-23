@@ -57,7 +57,7 @@ class HapoolController extends BaseController {
         $dptlist=M('department')->field('ID,Name')->select();
         $this->assign("dptlist",$dptlist);
         //员工
-        $userlist=M('accounts')->where('nid != 1')->order("realname asc")->getField('nid,realname,dept');
+        $userlist=M('accounts')->where('nid != 1')->order("name asc")->getField('nid,realname,dept');
         $this->assign("userlist",$userlist);
         //工作
         $wklist=M('workremark')->where("ID=%d",I('id'))->find();

@@ -160,10 +160,14 @@ $(function(){
         <form class="sform" action="<?php echo U('Finan/census');?>" method="GET">
             <input type="hidden" name="p">
             <input type="hidden" name="sc" value="<?php echo ($sc); ?>">
+            
             <div class="mysearchbox fr">
                 <i class="fa fa-search" style="position: absolute;top: 11px;left: 11px;"></i>
                 <input id="searchbox" type="search" name="keyword" class="form-control" placeholder="请输入查询内容" value="<?php echo ($key); ?>">
                 <i class="fa fa-times empty"></i>
+            </div>
+            <div class="fr" style="margin-right: 20px;">
+                <span style="height: 34px;line-height: 34px;">年份：</span><input type="text" class="fr form-control" style="width: 100px;" name="year" value="<?php echo ($year); ?>" onclick="WdatePicker({dateFmt:'yyyy'});">
             </div>
         </form>
     </div>

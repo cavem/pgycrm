@@ -210,6 +210,7 @@ $(function(){
                     window.location.reload();
                 }else{
                     layer.msg('修改失败',{icon:2});
+                    window.location.reload();
                 }
             })
         }

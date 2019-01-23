@@ -664,12 +664,15 @@ tr:hover {background: transparent;}
             }
             if(body.find("input[name='newip']").length>0){
                 var newip=body.find("input[name='newip']").val();
-                if(newip==''){
+                var newipv6=body.find("textarea[name='newipv6']").val();
+                if(newip==''&&newipv6==''){
                     layer.msg('请输入现ip！',{icon:0});
                     return;
-                }else if(newip.charAt(newip.length-1)!='/'){
-                    layer.msg('ip最后请以"/"结尾！',{icon:0});
-                    return;
+                }else if(newip!=''){
+                    if(newip.charAt(newip.length-1)!='/'){
+                        layer.msg('IPv4最后请以"/"结尾！',{icon:0});
+                        return;
+                    }
                 }
             }
             if(body.find("select[name='idcname']").length>0){

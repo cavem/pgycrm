@@ -1,6 +1,14 @@
 <include file="Public/header" title="pgyidc" />
 <style>
-.panel-wrap{width: 50%;padding: 0 50px;float: left;}
+.panel-wrap{width: 100%;padding: 0 50px;float: left;}
+/* table{border: 1px solid #ddd;}
+table > tbody > tr > td {
+    border: 1px solid #ddd;
+    border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+} */
 </style>
 <script>
 $(function(){
@@ -32,97 +40,115 @@ $(function(){
 </script>
 <div id="content" class="wow fadeIn" style="padding-top:20px;">
     <div class="container-fluid">
-        <div class="panel-wrap">
+        <div class="panel-group" id="accordion">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">我的工作</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            我的工作
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                            <th class="sort" data-val="id">ID</th>
-                            <th class="sort" data-val="name">工作名称</th>
-                            <th>工作详情</th><th style="width: 100px;">工作频率</th><th>部门</th><th>负责人</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <volist name="list" id="vo">
-                            <tr>
-                            <td>{$vo.id}</td>
-                            <td>{$vo.name}</td>
-                            <td>{$vo.remarks}</td>
-                            <td>{$vo.frequency}</td>
-                            <td><php>echo $dptlist[$vo['department_id']];</php></td>
-                            <td>{$vo.userprofiles}</td>
-                            </tr>
-                            </volist>
-                        </tbody>
-                    </table>
-                    {$page}
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th class="sort" data-val="id">ID</th>
+                                <th class="sort" data-val="name">工作名称</th>
+                                <th>工作详情</th><th style="width: 100px;">工作频率</th><th style="width: 100px;">部门</th><th>负责人</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <volist name="list" id="vo">
+                                <tr>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.name}</td>
+                                <td>{$vo.remarks}</td>
+                                <td>{$vo.frequency}</td>
+                                <td><php>echo $dptlist[$vo['department_id']];</php></td>
+                                <td>{$vo.userprofiles}</td>
+                                </tr>
+                                </volist>
+                            </tbody>
+                        </table>
+                        {$page}
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel-wrap">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">我的考核</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            我的考核
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                            <th>ID</th>
-                            <th>姓名</th>
-                            <th>日期</th>
-                            <th>是否确认</th>
-                            <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <volist name="list2" id="vo">
-                            <tr>
-                            <td>{$vo.id}</td>
-                            <td>{$vo.realname}</td>
-                            <td>{$vo.assessmonth}</td>
-                            <td>
-                                <switch name="vo.isconfirm">
-                                    <case value="1"><span class="label label-success">已确认</span></case>
-                                    <case value=""><span class="label label-danger">未确认</span></case>
-                                </switch>
-                            </td>
-                            <td>
-                                <button class="btn btn-info btn-sm view"><i class="fa fa-eye"></i></button>
-                                <if condition="$vo.isconfirm eq ''">
-                                <button class="btn btn-success btn-sm check" title="确认"><i class="fa fa-check"></i></button>
-                                <else />
-                                <span class="text text-success">已确认</span>
-                                </if>
-                            </td>
-                            </volist>
-                        </tbody>
-                    </table>
-                    {$page2}
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                <th>ID</th>
+                                <th>姓名</th>
+                                <th>日期</th>
+                                <th>是否确认</th>
+                                <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <volist name="list2" id="vo">
+                                <tr>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.realname}</td>
+                                <td>{$vo.assessmonth}</td>
+                                <td>
+                                    <switch name="vo.isconfirm">
+                                        <case value="1"><span class="label label-success">已确认</span></case>
+                                        <case value=""><span class="label label-danger">未确认</span></case>
+                                    </switch>
+                                </td>
+                                <td>
+                                    <button class="btn btn-info btn-sm view"><i class="fa fa-eye"></i></button>
+                                    <if condition="$vo.isconfirm eq ''">
+                                    <button class="btn btn-success btn-sm check" title="确认"><i class="fa fa-check"></i></button>
+                                    <else />
+                                    <span class="text text-success">已确认</span>
+                                    </if>
+                                </td>
+                                </volist>
+                            </tbody>
+                        </table>
+                        {$page2}
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel-wrap">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">公司公告</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTHree">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTHree">
+                            公司公告
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    这是一个基本的面板
+                <div id="collapseTHree" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel-wrap">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">技术公告</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            技术公告
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    这是一个基本的面板
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                    </div>
                 </div>
             </div>
         </div>

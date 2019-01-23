@@ -205,8 +205,8 @@ $(function(){
         <div class="form-line fl">
             <span class="form-label" style="position: relative;bottom: 10px;">责任人：</span>
             <div class="form-content" style="width: 500px;">
-                <span class="moreoption form-control" style="display: inline-block;overflow: hidden;position: relative;line-height: 1.6;top:2px;cursor: initial;"><?php echo ($wklist["userprofiles"]); ?><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
-                <select multiple class="form-control mulselect" style="width: 500px;height: 250px;position: absolute;display: none;margin-top: -12px;">
+                <span class="moreoption form-control" style="display: block;overflow: hidden;position: relative;line-height: 1.6;top:2px;cursor: initial;"><?php echo ($wklist["userprofiles"]); ?><i class="fa fa-sort-desc fr" style="position: absolute;top: 10px;right: 5px;"></i></span>
+                <select multiple class="form-control mulselect" style="width: 500px;height: 250px;position: absolute;display: none;">
                     <?php if(is_array($userlist)): $i = 0; $__LIST__ = $userlist;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$uservo): $mod = ($i % 2 );++$i;?><option><?php echo ($uservo["realname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
                 </select>
                 <input name="UserProfiles" type="hidden" value="<?php echo ($wklist["userprofiles"]); ?>">

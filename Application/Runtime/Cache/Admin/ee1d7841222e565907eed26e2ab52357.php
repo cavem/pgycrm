@@ -229,7 +229,7 @@ $(function(){
                   <table border="0" style="width: 100%;line-height: 30px">
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td style="width: 100px">编号</td>
-                          <td style="font: 16px solid #FF0000"><?php echo ($serverinfo["servnum"]); ?></td>
+                          <td style="font: 16px solid #FF0000" colspan="3"><?php echo ($serverinfo["servnum"]); ?></td>
                       </tr>
                       <tr>
                           <td style="width:15%">客户名称</td>
@@ -262,20 +262,24 @@ $(function(){
                           <td style="width:35%"><?php echo ($serverinfo["shelfcode"]); ?></td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
-                          <td>IP地址</td>
-                          <td><?php echo ($serverinfo["serv_ip"]); ?></td>
+                          <td>IPv4地址</td>
+                          <td colspan="3"><?php echo ($serverinfo["serv_ip"]); ?></td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                           <td>IPv6地址</td>
+                           <td colspan="3"><?php echo ($serverinfo["ipv6"]); ?></td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td>带宽限制</td>
-                          <td><?php echo ($serverinfo["bandwidth"]); ?></td>
+                          <td colspan="3"><?php echo ($serverinfo["bandwidth"]); ?></td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td>配置</td>
-                          <td style="font-weight: bold;"><?php echo ($serverinfo["hwconfig"]); ?></td>
+                          <td colspan="3" style="font-weight: bold;"><?php echo ($serverinfo["hwconfig"]); ?></td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td>备注</td>
-                          <td><?php echo ($serverinfo["remarks"]); ?></td>
+                          <td colspan="3"><?php echo ($serverinfo["remarks"]); ?></td>
                       </tr>
                   </table><?php endif; ?>
                 <?php if(!empty($servtflist["0"])): ?><p style="margin-top: 10px;">服务器转让信息</p>

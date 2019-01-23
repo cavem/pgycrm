@@ -29,6 +29,7 @@ class WorktableController extends BaseController {
             $map['type2']=I("type2");
             $this->assign("type2",I("type2"));
         }
+        
         if(I("action")!=''){
             $map['action']=I("action");
             if(I("action")=='新上架'){

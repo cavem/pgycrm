@@ -264,15 +264,15 @@ input[type=checkbox], input[type=radio]{margin: 0;}
             </div>
         </div>
         <div class="form-line w50 fl">
-            <span class="form-label">费用结束日期：</span>
-            <div class="form-content" style="width: 250px;">
-                <input class="form-control" type="text" name="fee_end_at" value="<?php echo date('Y-m-d'); ?>"  onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});">
-            </div>
-        </div>
-        <div class="form-line w50 fl">
             <span class="form-label">银行到款日期：</span>
             <div class="form-content" style="width: 250px;">
                 <input class="form-control" type="text" name="bank_recv_at" value="<?php echo date('Y-m-d'); ?>"  onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});">
+            </div>
+        </div>
+        <div class="form-line w50 fl">
+            <span class="form-label">费用结束日期：</span>
+            <div class="form-content" style="width: 250px;">
+                <input class="form-control" type="text" name="fee_end_at" value="<?php echo date('Y-m-d'); ?>"  onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});">
             </div>
         </div>
         <div class="form-line fl">

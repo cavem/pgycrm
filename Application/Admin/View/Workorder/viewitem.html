@@ -124,7 +124,7 @@ $(function(){
                   <table border="0" style="width: 100%;line-height: 30px">
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td style="width: 100px">编号</td>
-                          <td style="font: 16px solid #FF0000">{$serverinfo.servnum}</td>
+                          <td style="font: 16px solid #FF0000" colspan="3">{$serverinfo.servnum}</td>
                       </tr>
                       <tr>
                           <td style="width:15%">客户名称</td>
@@ -157,20 +157,24 @@ $(function(){
                           <td style="width:35%">{$serverinfo.shelfcode}</td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
-                          <td>IP地址</td>
-                          <td>{$serverinfo.serv_ip}</td>
+                          <td>IPv4地址</td>
+                          <td colspan="3">{$serverinfo.serv_ip}</td>
+                      </tr>
+                      <tr style="border-bottom: 1px solid #D5D5D5">
+                           <td>IPv6地址</td>
+                           <td colspan="3">{$serverinfo.ipv6}</td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td>带宽限制</td>
-                          <td>{$serverinfo.bandwidth}</td>
+                          <td colspan="3">{$serverinfo.bandwidth}</td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td>配置</td>
-                          <td style="font-weight: bold;">{$serverinfo.hwconfig}</td>
+                          <td colspan="3" style="font-weight: bold;">{$serverinfo.hwconfig}</td>
                       </tr>
                       <tr style="border-bottom: 1px solid #D5D5D5">
                           <td>备注</td>
-                          <td>{$serverinfo.remarks}</td>
+                          <td colspan="3">{$serverinfo.remarks}</td>
                       </tr>
                   </table>
                 </notempty>

@@ -1,0 +1,1968 @@
+[ 2019-01-16T08:27:39+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+
+[ 2019-01-16T08:27:40+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.089520s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.089589s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.433136s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.433208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.044012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.044090s ]
+
+[ 2019-01-16T08:27:41+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+
+[ 2019-01-16T08:27:44+08:00 ] 127.0.0.1 /Login/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.2567s ]
+SQL: SELECT * FROM `accounts` WHERE `name` = 'wangfd' AND `passwd` = '17447f85470a7fad4cdc6322db232537'  [ RunTime:0.2436s ]
+SQL: SELECT * FROM `accounts` WHERE `name` = 'wangfd' AND `passwd` = '17447f85470a7fad4cdc6322db232537' LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `loginlog` [ RunTime:0.2872s ]
+SQL: INSERT INTO `loginlog` (`name`,`ipaddr`,`loginat`) VALUES ('王府的','127.0.0.1','2019-01-16 08:27:44') [ RunTime:0.1781s ]
+
+[ 2019-01-16T08:27:45+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.379965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.380037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000750s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2019-01-16T08:27:47+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.2701s ]
+SQL: SELECT `ID`,`Name` FROM `department`  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `workremark` [ RunTime:0.3413s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `workremark` WHERE `UserProfiles` LIKE '%王府的%' LIMIT 1   [ RunTime:0.0882s ]
+NOTIC: [8] Undefined variable: key D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT * FROM `workremark` WHERE `UserProfiles` LIKE '%王府的%' ORDER BY ID desc LIMIT 0,10   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `assessment` [ RunTime:0.2153s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `assessment` WHERE `RealName` = '王府的' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined variable: key D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `assessment` WHERE `RealName` = '王府的' ORDER BY ID desc LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096063s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000502s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000611s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000643s ]
+
+[ 2019-01-16T10:42:50+08:00 ] 127.0.0.1 /Public/complete.mp3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001395s ]
+ERR: 无法加载控制器:Public
+
+[ 2019-01-16T16:42:09+08:00 ] 127.0.0.1 /Workorder/myorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001101s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8] Undefined variable: servlist D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\2b4fc155eb0a3e5cecdb2c793466aa91.php 第 160 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000829s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000898s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2019-01-16T16:42:09+08:00 ] 127.0.0.1 /Workorder/num.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000690s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.1172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.1081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' ) LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的' LIMIT 1   [ RunTime:0.0069s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待确认' LIMIT 1   [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已解决' LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已验证' LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待财务确认' LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '上架位置确认' LIMIT 1   [ RunTime:0.0055s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '已解决[下转]' OR `state` = '已解决[涉硬]' OR `state` = '已下架' ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '未解决' LIMIT 1   [ RunTime:0.0057s ]
+
+[ 2019-01-16T16:42:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0172s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0166s ]
+
+[ 2019-01-16T16:42:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0081s ]
+
+[ 2019-01-16T16:42:24+08:00 ] 127.0.0.1 /Service/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000876s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.1256s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' LIMIT 1   [ RunTime:0.2250s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 86 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='本公司自用' ) LIMIT 1   [ RunTime:0.0311s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 87 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( Productkind='空闲机器' ) LIMIT 1   [ RunTime:0.0309s ]
+SQL: SHOW COLUMNS FROM `rooms` [ RunTime:0.0908s ]
+SQL: SELECT `id`,`name` FROM `rooms`  [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='福州机房' ) LIMIT 1   [ RunTime:0.0452s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东3楼大机房' ) LIMIT 1   [ RunTime:0.0309s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='河东4楼机房' ) LIMIT 1   [ RunTime:0.0314s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='移动机房' ) LIMIT 1   [ RunTime:0.0316s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='扬州' ) LIMIT 1   [ RunTime:0.0308s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='湖滨新机房' ) LIMIT 1   [ RunTime:0.0308s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='镇江机房' ) LIMIT 1   [ RunTime:0.0310s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='京东云' ) LIMIT 1   [ RunTime:0.0330s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='徐州机房（枫信）' ) LIMIT 1   [ RunTime:0.0308s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='杭州机房' ) LIMIT 1   [ RunTime:0.0311s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='厦门机房' ) LIMIT 1   [ RunTime:0.0305s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='佛山机房' ) LIMIT 1   [ RunTime:0.0309s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='财富广场机房' ) LIMIT 1   [ RunTime:0.0312s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='虚拟机房' ) LIMIT 1   [ RunTime:0.0314s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='广州机房' ) LIMIT 1   [ RunTime:0.0313s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='颐景华庭机房' ) LIMIT 1   [ RunTime:0.0314s ]
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Undefined variable: p D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+NOTIC: [8] Trying to get property of non-object D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\ServiceController.class.php 第 91 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' AND ( IDCName='速联杭州BGP' ) LIMIT 1   [ RunTime:0.0321s ]
+SQL: SHOW COLUMNS FROM `categories` [ RunTime:0.0390s ]
+SQL: SELECT * FROM `categories`  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `servers` WHERE (  `CustName` LIKE '%%' OR `ID` LIKE '%%' OR `Serv_IP` LIKE '%%' OR `ServNum` LIKE '%%' ) AND `ServState` = '在线运行' ORDER BY ID desc LIMIT 0,15   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+NOTIC: [8] Undefined variable: servstate D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 385 行.
+NOTIC: [8] Undefined variable: servstate D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 386 行.
+NOTIC: [8] Undefined variable: servstate D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 387 行.
+NOTIC: [8] Undefined variable: servstate D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 388 行.
+NOTIC: [8] Undefined variable: servstate D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 389 行.
+NOTIC: [8] Undefined variable: servstate D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 390 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 397 行.
+NOTIC: [8] Undefined variable: idcname D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 404 行.
+NOTIC: [8] Undefined variable: devicetype D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 411 行.
+NOTIC: [8] Undefined variable: devicetype D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 412 行.
+NOTIC: [8] Undefined variable: devicetype D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 413 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: productkind D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 420 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 427 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 428 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 429 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 430 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 431 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 432 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 433 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 434 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 435 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 436 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\6623c0b563fb9f68db0e646320605783.php 第 437 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028583s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000782s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2019-01-16T16:42:25+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000999s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0106s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2019-01-16T16:42:29+08:00 ] 127.0.0.1 /Custom/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000664s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `clients` [ RunTime:0.0800s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 LIMIT 1   [ RunTime:0.0412s ]
+SQL: SELECT * FROM `clients` WHERE (  `name` LIKE '%%' OR `qq` LIKE '%%' OR `tel` LIKE '%%' OR `cellphone` LIKE '%%' OR `mail` LIKE '%%' ) AND `id` <> 0 ORDER BY id desc LIMIT 0,15   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0160s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='销售部' AND isleave='false' )  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000181s ]
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+NOTIC: [8] Undefined variable: salers D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\d3fe9c83d4d4dee96d004280e3885465.php 第 353 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030459s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001885s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001975s ]
+
+[ 2019-01-16T16:42:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001003s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0129s ]
+
+[ 2019-01-16T16:42:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001334s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0082s ]
+
+[ 2019-01-16T16:42:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T16:42:59+08:00 ] 127.0.0.1 /Order/list.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000635s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0935s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' LIMIT 1   [ RunTime:0.1667s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' LIMIT 1   [ RunTime:0.0206s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='已生效' ) LIMIT 1   [ RunTime:0.0149s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='未生效' ) LIMIT 1   [ RunTime:0.0143s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='待审核' ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' AND ( status='已注销' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `orders` WHERE (  `id` LIKE '%%' OR `nid` = '' OR `cname` LIKE '%%' OR `salesman` LIKE '%%' OR `propertyof` LIKE '%%' OR `ipaddr` LIKE '%%' OR `preroom` LIKE '%%' OR `prodcat` LIKE '%%' ) AND `status` <> '已注销' ORDER BY nid desc LIMIT 0,15   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `servers` [ RunTime:0.0078s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12308 )  [ RunTime:0.0242s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12307 )  [ RunTime:0.0247s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12306 )  [ RunTime:0.0244s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12305 )  [ RunTime:0.0243s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12304 )  [ RunTime:0.0246s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12303 )  [ RunTime:0.0238s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12302 )  [ RunTime:0.0242s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12301 )  [ RunTime:0.0244s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12300 )  [ RunTime:0.0245s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12299 )  [ RunTime:0.0239s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12298 )  [ RunTime:0.0241s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12297 )  [ RunTime:0.0244s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12296 )  [ RunTime:0.0245s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12295 )  [ RunTime:0.0241s ]
+SQL: SELECT `Serv_IP` FROM `servers` WHERE ( ServState='在线运行' AND Order_ID=12294 )  [ RunTime:0.0241s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0076s ]
+SQL: SELECT `realname` FROM `accounts` WHERE ( dept='销售部' AND isleave='false' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+NOTIC: [8] Undefined variable: order_begin_at D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 340 行.
+NOTIC: [8] Undefined variable: order_end_at D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 344 行.
+NOTIC: [8] Undefined variable: status D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 350 行.
+NOTIC: [8] Undefined variable: status D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 351 行.
+NOTIC: [8] Undefined variable: status D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 352 行.
+NOTIC: [8] Undefined variable: status D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 353 行.
+NOTIC: [8] Undefined variable: status D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 354 行.
+NOTIC: [8] Undefined variable: paycycle D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 362 行.
+NOTIC: [8] Undefined variable: paycycle D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 363 行.
+NOTIC: [8] Undefined variable: paycycle D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 364 行.
+NOTIC: [8] Undefined variable: paycycle D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 365 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: prodcat D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 373 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: preroom D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 380 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+NOTIC: [8] Undefined variable: salesman D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\f41e6c212e6905b15c304f6ad6479c0f.php 第 387 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032602s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001092s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001144s ]
+
+[ 2019-01-16T17:12:44+08:00 ] 127.0.0.1 /Order/census.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `orders` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0094s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0089s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' LIMIT 1   [ RunTime:0.0071s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='月付' ) LIMIT 1   [ RunTime:0.0091s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='季付' ) LIMIT 1   [ RunTime:0.0087s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='半年付' ) LIMIT 1   [ RunTime:0.0088s ]
+SQL: SELECT SUM(money) AS tp_sum FROM `orders` WHERE `create_at` LIKE '%' AND `status` = '已生效' AND ( paycycle='年付' ) LIMIT 1   [ RunTime:0.0085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+NOTIC: [8] Undefined variable: page D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\918deb772c77a696efa1e8f019ae883d.php 第 146 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031054s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000721s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000751s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2019-01-16T17:26:45+08:00 ] 127.0.0.1 /Workorder/myorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000616s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000696s ]
+NOTIC: [8] Undefined variable: servlist D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\2b4fc155eb0a3e5cecdb2c793466aa91.php 第 160 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001632s ]
+
+[ 2019-01-16T17:26:45+08:00 ] 127.0.0.1 /Workorder/num.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' ) LIMIT 1   [ RunTime:0.0073s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的' LIMIT 1   [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待确认' LIMIT 1   [ RunTime:0.0059s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已解决' LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已验证' LIMIT 1   [ RunTime:0.0054s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待财务确认' LIMIT 1   [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '上架位置确认' LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '已解决[下转]' OR `state` = '已解决[涉硬]' OR `state` = '已下架' ) LIMIT 1   [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '未解决' LIMIT 1   [ RunTime:0.0056s ]
+
+[ 2019-01-16T17:26:50+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0092s ]
+
+[ 2019-01-16T17:26:53+08:00 ] 127.0.0.1 /Workorder/myorder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8] Undefined variable: servlist D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Runtime\Cache\Admin\2b4fc155eb0a3e5cecdb2c793466aa91.php 第 160 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020366s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000557s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000737s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2019-01-16T17:26:53+08:00 ] 127.0.0.1 /Workorder/num.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '待处理' OR `state` = '处理中' ) LIMIT 1   [ RunTime:0.0065s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '处理中' AND `receiver` = '王府的' LIMIT 1   [ RunTime:0.0063s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待确认' LIMIT 1   [ RunTime:0.0058s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已解决' LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '已验证' LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '待财务确认' LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '上架位置确认' LIMIT 1   [ RunTime:0.0061s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE ( `state` = '已解决[下转]' OR `state` = '已解决[涉硬]' OR `state` = '已下架' ) LIMIT 1   [ RunTime:0.0066s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE `state` = '未解决' LIMIT 1   [ RunTime:0.0059s ]
+
+[ 2019-01-16T17:26:58+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000651s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0095s ]
+
+[ 2019-01-16T17:27:03+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000748s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0083s ]
+
+[ 2019-01-16T17:27:08+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001346s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2019-01-16T17:27:13+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:27:18+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000626s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0080s ]
+
+[ 2019-01-16T17:27:23+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001376s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0114s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0085s ]
+
+[ 2019-01-16T17:27:28+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:27:33+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000753s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0092s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0086s ]
+
+[ 2019-01-16T17:27:38+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001343s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0086s ]
+
+[ 2019-01-16T17:27:43+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000603s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0093s ]
+
+[ 2019-01-16T17:27:48+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2019-01-16T17:27:53+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001222s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:27:58+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0176s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0093s ]
+
+[ 2019-01-16T17:28:03+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001440s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:28:08+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001371s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0086s ]
+
+[ 2019-01-16T17:28:13+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000682s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000723s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0166s ]
+
+[ 2019-01-16T17:28:18+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:28:23+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001478s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0075s ]
+
+[ 2019-01-16T17:28:28+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000671s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0081s ]
+
+[ 2019-01-16T17:28:33+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0127s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:28:38+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000587s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0122s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0080s ]
+
+[ 2019-01-16T17:28:43+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000895s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0100s ]
+
+[ 2019-01-16T17:28:48+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000722s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:28:53+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001457s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:28:58+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2019-01-16T17:29:03+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001249s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001481s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0102s ]
+
+[ 2019-01-16T17:29:08+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001382s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0155s ]
+
+[ 2019-01-16T17:29:13+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:29:18+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:29:23+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001369s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:29:28+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0163s ]
+
+[ 2019-01-16T17:29:33+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000905s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0105s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0102s ]
+
+[ 2019-01-16T17:29:38+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0149s ]
+
+[ 2019-01-16T17:29:43+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000838s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:29:48+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000703s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0091s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0118s ]
+
+[ 2019-01-16T17:29:53+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0097s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0092s ]
+
+[ 2019-01-16T17:29:58+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0147s ]
+
+[ 2019-01-16T17:30:04+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0101s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0089s ]
+
+[ 2019-01-16T17:30:09+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000773s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0084s ]
+
+[ 2019-01-16T17:30:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001210s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001385s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0154s ]
+
+[ 2019-01-16T17:30:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000781s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000874s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0103s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:30:24+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001388s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:30:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0104s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0101s ]
+
+[ 2019-01-16T17:30:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000739s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0093s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0133s ]
+
+[ 2019-01-16T17:30:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001214s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001487s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2019-01-16T17:30:44+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001335s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001417s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0091s ]
+
+[ 2019-01-16T17:30:49+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:30:54+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:30:59+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000658s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000822s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0195s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0087s ]
+
+[ 2019-01-16T17:31:04+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000659s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0085s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0087s ]
+
+[ 2019-01-16T17:31:09+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000765s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0085s ]
+
+[ 2019-01-16T17:31:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001444s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0087s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:31:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000525s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0348s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0155s ]
+
+[ 2019-01-16T17:31:24+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001254s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001332s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:31:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000845s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0132s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0158s ]
+
+[ 2019-01-16T17:31:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000886s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0163s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0119s ]
+
+[ 2019-01-16T17:31:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0156s ]
+
+[ 2019-01-16T17:31:44+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001281s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001358s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0135s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0080s ]
+
+[ 2019-01-16T17:31:49+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001196s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0168s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0126s ]
+
+[ 2019-01-16T17:31:54+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001154s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:31:59+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001400s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0088s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0111s ]
+
+[ 2019-01-16T17:32:05+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0111s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:32:09+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001434s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0355s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0164s ]
+
+[ 2019-01-16T17:32:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001594s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0151s ]
+
+[ 2019-01-16T17:32:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001692s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:32:24+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0106s ]
+
+[ 2019-01-16T17:32:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001690s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0084s ]
+
+[ 2019-01-16T17:32:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002208s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0098s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0178s ]
+
+[ 2019-01-16T17:32:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002115s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0095s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0092s ]
+
+[ 2019-01-16T17:32:44+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001058s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:32:49+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001856s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:32:54+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002076s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:32:59+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001731s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0075s ]
+
+[ 2019-01-16T17:33:04+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001800s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001839s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:33:09+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001577s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0086s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0096s ]
+
+[ 2019-01-16T17:33:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:33:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001796s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0085s ]
+
+[ 2019-01-16T17:33:24+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002156s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0081s ]
+
+[ 2019-01-16T17:33:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0185s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:33:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001927s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0152s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:33:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001792s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0096s ]
+
+[ 2019-01-16T17:33:44+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001876s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:33:49+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001940s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:33:54+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002278s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:33:59+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001726s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001768s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:34:04+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0116s ]
+
+[ 2019-01-16T17:34:09+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:34:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0075s ]
+
+[ 2019-01-16T17:34:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001035s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0075s ]
+
+[ 2019-01-16T17:34:24+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000829s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0163s ]
+
+[ 2019-01-16T17:34:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:34:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001151s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:34:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001663s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002383s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002477s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0285s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0134s ]
+
+[ 2019-01-16T17:34:44+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002042s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0096s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0086s ]
+
+[ 2019-01-16T17:34:49+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001189s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001238s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0081s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+
+[ 2019-01-16T17:34:54+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001325s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0175s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0100s ]
+
+[ 2019-01-16T17:34:59+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001233s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2019-01-16T17:35:04+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0083s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0080s ]
+
+[ 2019-01-16T17:35:09+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000674s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0075s ]
+
+[ 2019-01-16T17:35:14+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+
+[ 2019-01-16T17:35:19+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000598s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0082s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0076s ]
+
+[ 2019-01-16T17:35:24+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0099s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0092s ]
+
+[ 2019-01-16T17:35:29+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000957s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0079s ]
+
+[ 2019-01-16T17:35:34+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0089s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0087s ]
+
+[ 2019-01-16T17:35:39+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000622s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000936s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:35:44+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000816s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001237s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0116s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0119s ]
+
+[ 2019-01-16T17:35:49+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0077s ]
+
+[ 2019-01-16T17:35:54+08:00 ] 127.0.0.1 /Workorder/setiv.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000900s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent D:\phpstudy\PHPTutorial\WWW\pgycrm\ThinkPHP\Common\functions.php 第 1263 行.
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `tasks` [ RunTime:0.0084s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tasks` WHERE (  `receiver` is null OR receiver="" ) AND `state` = '待处理' AND `recvdept` = '技术部' AND `room` IN ("河东3楼小机房","河东3楼大机房","河东4楼机房","大连小鸟云机房","常州机房","虚拟机房") LIMIT 1   [ RunTime:0.0078s ]
+

@@ -142,6 +142,7 @@ input[type=checkbox], input[type=radio]{margin: 0;}
 <div class="myalert-main">
     <form class="mform">
         <input type="hidden" name="nid" value="<?php echo ($finaninfo["nid"]); ?>">
+        <input type="hidden" name="cid" value="<?php echo ($finaninfo["cid"]); ?>">
         <div class="form-line w50 fl">
             <span class="form-label">客户名称：</span>
             <div class="form-content" style="width: 250px;">
@@ -166,20 +167,7 @@ input[type=checkbox], input[type=radio]{margin: 0;}
         <div class="form-line w50 fl">
             <span class="form-label">相关销售：</span>
             <div class="form-content" style="width: 250px;">
-                <select class="form-control" name="salers">
-                    <option value="">--请选择--</option>
-                    <option <?php if($finaninfo["salesman"] == '杨龙'): ?>selected<?php endif; ?>>杨龙</option>
-                    <option <?php if($finaninfo["salesman"] == '王酥'): ?>selected<?php endif; ?>>王酥</option>
-                    <option <?php if($finaninfo["salesman"] == '杨宁'): ?>selected<?php endif; ?>>杨宁</option>
-                    <option <?php if($finaninfo["salesman"] == '孙一'): ?>selected<?php endif; ?>>孙一</option>
-                    <option <?php if($finaninfo["salesman"] == '蔡涛'): ?>selected<?php endif; ?>>蔡涛</option>
-                    <option <?php if($finaninfo["salesman"] == '何硕'): ?>selected<?php endif; ?>>何硕</option>
-                    <option <?php if($finaninfo["salesman"] == '汤瑞东'): ?>selected<?php endif; ?>>汤瑞东</option>
-                    <option <?php if($finaninfo["salesman"] == '慧慧'): ?>selected<?php endif; ?>>慧慧</option>
-                    <option <?php if($finaninfo["salesman"] == '杨总安排'): ?>selected<?php endif; ?>>杨总安排</option>
-                    <option <?php if($finaninfo["salesman"] == '公司自用'): ?>selected<?php endif; ?>>公司自用</option>
-                    <option <?php if($finaninfo["salesman"] == '客户授权'): ?>selected<?php endif; ?>>客户授权</option>
-                </select>
+                <input class="form-control" name="salesman" type="text" readonly value="<?php echo ($finaninfo["salesman"]); ?>">
             </div>
         </div>
         <div class="form-line w50 fl">

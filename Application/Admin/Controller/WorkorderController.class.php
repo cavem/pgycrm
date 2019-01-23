@@ -60,7 +60,7 @@ class WorkorderController extends BaseController {
             $map['room']  = array('exp',"IN (".$rooms.")");
         }
         $map['state']="待处理";
-        $tasks=$tasksModel->field("id,nid")->where($map)->order('nid DESC')->find();
+        $tasks=$tasksModel->field("id,nid")->where($map)->find();
         if ($tasks) {
             $data['state']="处理中";
             $data['receiver']=$username;
@@ -168,12 +168,15 @@ class WorkorderController extends BaseController {
         $this->assign("talog",$talog);
         if (!empty($tasks['svid'])) {
             //获取服务器信息
-            $serverModel=D('Servers');
+            $serverModel=M('servers');
             $serverinfo=$serverModel->where("ServNum = '%s'",$tasks['svid'])->find();
             $this->assign("serverinfo",$serverinfo);
             //获取服务器转让信息
-            $servtflist=M('server_transfer_log')->where("svnid=%d",$serverinfo['id'])->select();
-            $this->assign('servtflist',$servtflist);
+            if(!empty($serverinfo['id'])){
+                $servtflist=M('server_transfer_log')->where("svnid=%d",$serverinfo['id'])->select();
+                $this->assign('servtflist',$servtflist);
+            }
+            
         }
         $this->assign('nid',$nid);
         $this->display();
@@ -492,6 +495,7 @@ class WorkorderController extends BaseController {
                         //判断ip是否被使用
                         $newip=I('post.newip');
                         $oldip=I('post.oldip');
+                        $newipv6=I('post.newipv6');
                         if (!empty($newip)) {
                             $newiparr=explode('/',$newip);
                             $oldiparr=explode('/',$oldip);
@@ -510,10 +514,13 @@ class WorkorderController extends BaseController {
                             );
                             M('servers')->where("ServNum='%s'",I('post.servnum'))->save($servdata);
                         }
+                        if (!empty($newipv6)){
+                            M('servers')->where("ServNum='%s'",I('post.servnum'))->setField("IPv6",$newipv6);
+                        }
                         //添加更改ip记录
                         $updata=array(
-                            "OldIP" => $oldip,
-                            "NewIP" => $newip,
+                            "OldIP" => "IPv4".$oldip."\n"."IPv6".I('post.oldipv6'),
+                            "NewIP" => "IPv4".$newip."\n"."IPv6".I('post.newipv6'),
                             "UpdateTime" => date("Y-m-d H:i:s"),
                             "Operator" => C("username"),
                             "Servers_ID" => M('servers')->where("ServNum='%s'",I('post.servnum'))->getField('ID')
@@ -854,6 +861,20 @@ class WorkorderController extends BaseController {
                         "commit_at" => date("Y-m-d H:i:s")
                     );
                     M('server_transfer_log')->add($trsdata);
+                    //更改工单记录
+                    $taskdata=array(
+                        "receiver" => C("username"),
+                        "receive_at" => date("Y-m-d H:i:s"),
+                        "complete_at" => date("Y-m-d H:i:s"),
+                        "makesure" => $username,
+                        "makesure_at" => date('Y-m-d H:i:s')
+                    );
+                    if(M('tasks')->where("id='%s'",$id)->save($taskdata)){
+                        //算钱
+                        $nid=M('tasks')->where("id='%s'",$id)->getField('nid');
+                        $bnsdata=self::bonus($nid);
+                        M('tasks')->where("id='%s'",$id)->save($bnsdata);
+                    }
                 }
             //}
             echo json_encode(0);

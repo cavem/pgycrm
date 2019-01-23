@@ -56,6 +56,7 @@ class CustomController extends BaseController {
                 $paydata=array(
                     "cid" => $id,
                     "cname" => $data['name'],
+                    "year" => date("Y")
                 );
                 M('payment')->add($paydata);
 

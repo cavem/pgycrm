@@ -333,16 +333,28 @@ input[type=checkbox], input[type=radio]{margin: 0;}
                       </if>
                       <if condition="$tasks.action eq '添加IP'  OR $tasks.action eq '更换IP' OR $tasks.action eq '更换IP重装Win系统' OR $tasks.action eq '更换IP重装Linux系统' OR $tasks.action eq '新上架'">
                         <div class="layui-form-item">
-                          <label class="layui-form-label" style="width: 90px;">原IP</label>
+                          <label class="layui-form-label" style="width: 90px;">原IPv4</label>
                           <div class="layui-input-block" style="margin-left: 90px">
                             <input class="layui-input" type="text" name="oldip" value="{$serverinfo.serv_ip}">
                           </div>
                         </div>
                         <div class="layui-form-item">
-                          <label class="layui-form-label" style="width: 90px;">现IP</label>
+                          <label class="layui-form-label" style="width: 90px;">现IPv4</label>
                           <div class="layui-input-block" style="margin-left: 90px;position: relative;">
                             <input class="layui-input" type="text" name="newip">
                             <a href="javascript:;" class="btn btn-info btn-sm fr edit-ip" style="position: absolute;top: 0;right: 0;width: 38px;height: 38px;">...</a>
+                          </div>
+                        </div>
+                        <div class="layui-form-item">
+                          <label class="layui-form-label" style="width: 90px;">原IPv6</label>
+                          <div class="layui-input-block" style="margin-left: 90px">
+                            <textarea name="oldipv6" class="layui-textarea">{$serverinfo.ipv6}</textarea>
+                          </div>
+                        </div>
+                        <div class="layui-form-item">
+                          <label class="layui-form-label" style="width: 90px;">现IPv6</label>
+                          <div class="layui-input-block" style="margin-left: 90px;position: relative;">
+                            <textarea name="newipv6" class="layui-textarea"></textarea>
                           </div>
                         </div>
                       </if>

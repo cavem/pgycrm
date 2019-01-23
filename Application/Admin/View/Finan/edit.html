@@ -30,6 +30,7 @@ input[type=checkbox], input[type=radio]{margin: 0;}
 <div class="myalert-main">
     <form class="mform">
         <input type="hidden" name="nid" value="{$finaninfo.nid}">
+        <input type="hidden" name="cid" value="{$finaninfo.cid}">
         <div class="form-line w50 fl">
             <span class="form-label">客户名称：</span>
             <div class="form-content" style="width: 250px;">
@@ -54,20 +55,7 @@ input[type=checkbox], input[type=radio]{margin: 0;}
         <div class="form-line w50 fl">
             <span class="form-label">相关销售：</span>
             <div class="form-content" style="width: 250px;">
-                <select class="form-control" name="salers">
-                    <option value="">--请选择--</option>
-                    <option <if condition="$finaninfo.salesman eq '杨龙'">selected</if>>杨龙</option>
-                    <option <if condition="$finaninfo.salesman eq '王酥'">selected</if>>王酥</option>
-                    <option <if condition="$finaninfo.salesman eq '杨宁'">selected</if>>杨宁</option>
-                    <option <if condition="$finaninfo.salesman eq '孙一'">selected</if>>孙一</option>
-                    <option <if condition="$finaninfo.salesman eq '蔡涛'">selected</if>>蔡涛</option>
-                    <option <if condition="$finaninfo.salesman eq '何硕'">selected</if>>何硕</option>
-                    <option <if condition="$finaninfo.salesman eq '汤瑞东'">selected</if>>汤瑞东</option>
-                    <option <if condition="$finaninfo.salesman eq '慧慧'">selected</if>>慧慧</option>
-                    <option <if condition="$finaninfo.salesman eq '杨总安排'">selected</if>>杨总安排</option>
-                    <option <if condition="$finaninfo.salesman eq '公司自用'">selected</if>>公司自用</option>
-                    <option <if condition="$finaninfo.salesman eq '客户授权'">selected</if>>客户授权</option>
-                </select>
+                <input class="form-control" name="salesman" type="text" readonly value="{$finaninfo.salesman}">
             </div>
         </div>
         <div class="form-line w50 fl">

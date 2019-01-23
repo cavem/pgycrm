@@ -112,7 +112,15 @@ tr:hover {background: transparent;}
 #content {background: #fff !important;overflow-x: scroll;}
 </style>
 <style>
-.panel-wrap{width: 50%;padding: 0 50px;float: left;}
+.panel-wrap{width: 100%;padding: 0 50px;float: left;}
+/* table{border: 1px solid #ddd;}
+table > tbody > tr > td {
+    border: 1px solid #ddd;
+    border-top-color: rgb(221, 221, 221);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+} */
 </style>
 <script>
 $(function(){
@@ -144,89 +152,107 @@ $(function(){
 </script>
 <div id="content" class="wow fadeIn" style="padding-top:20px;">
     <div class="container-fluid">
-        <div class="panel-wrap">
+        <div class="panel-group" id="accordion">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">我的工作</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            我的工作
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                            <th class="sort" data-val="id">ID</th>
-                            <th class="sort" data-val="name">工作名称</th>
-                            <th>工作详情</th><th style="width: 100px;">工作频率</th><th>部门</th><th>负责人</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["name"]); ?></td>
-                            <td><?php echo ($vo["remarks"]); ?></td>
-                            <td><?php echo ($vo["frequency"]); ?></td>
-                            <td><?php echo $dptlist[$vo['department_id']]; ?></td>
-                            <td><?php echo ($vo["userprofiles"]); ?></td>
-                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <?php echo ($page); ?>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                <th class="sort" data-val="id">ID</th>
+                                <th class="sort" data-val="name">工作名称</th>
+                                <th>工作详情</th><th style="width: 100px;">工作频率</th><th style="width: 100px;">部门</th><th>负责人</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                <td><?php echo ($vo["id"]); ?></td>
+                                <td><?php echo ($vo["name"]); ?></td>
+                                <td><?php echo ($vo["remarks"]); ?></td>
+                                <td><?php echo ($vo["frequency"]); ?></td>
+                                <td><?php echo $dptlist[$vo['department_id']]; ?></td>
+                                <td><?php echo ($vo["userprofiles"]); ?></td>
+                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </tbody>
+                        </table>
+                        <?php echo ($page); ?>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel-wrap">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">我的考核</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            我的考核
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    <table class="table table-hover">
-                        <thead>
-                            <tr>
-                            <th>ID</th>
-                            <th>姓名</th>
-                            <th>日期</th>
-                            <th>是否确认</th>
-                            <th>操作</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?php if(is_array($list2)): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                            <td><?php echo ($vo["id"]); ?></td>
-                            <td><?php echo ($vo["realname"]); ?></td>
-                            <td><?php echo ($vo["assessmonth"]); ?></td>
-                            <td>
-                                <?php switch($vo["isconfirm"]): case "1": ?><span class="label label-success">已确认</span><?php break;?>
-                                    <?php case "": ?><span class="label label-danger">未确认</span><?php break; endswitch;?>
-                            </td>
-                            <td>
-                                <button class="btn btn-info btn-sm view"><i class="fa fa-eye"></i></button>
-                                <?php if($vo["isconfirm"] == ''): ?><button class="btn btn-success btn-sm check" title="确认"><i class="fa fa-check"></i></button>
-                                <?php else: ?>
-                                <span class="text text-success">已确认</span><?php endif; ?>
-                            </td><?php endforeach; endif; else: echo "" ;endif; ?>
-                        </tbody>
-                    </table>
-                    <?php echo ($page2); ?>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                <th>ID</th>
+                                <th>姓名</th>
+                                <th>日期</th>
+                                <th>是否确认</th>
+                                <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php if(is_array($list2)): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
+                                <td><?php echo ($vo["id"]); ?></td>
+                                <td><?php echo ($vo["realname"]); ?></td>
+                                <td><?php echo ($vo["assessmonth"]); ?></td>
+                                <td>
+                                    <?php switch($vo["isconfirm"]): case "1": ?><span class="label label-success">已确认</span><?php break;?>
+                                        <?php case "": ?><span class="label label-danger">未确认</span><?php break; endswitch;?>
+                                </td>
+                                <td>
+                                    <button class="btn btn-info btn-sm view"><i class="fa fa-eye"></i></button>
+                                    <?php if($vo["isconfirm"] == ''): ?><button class="btn btn-success btn-sm check" title="确认"><i class="fa fa-check"></i></button>
+                                    <?php else: ?>
+                                    <span class="text text-success">已确认</span><?php endif; ?>
+                                </td><?php endforeach; endif; else: echo "" ;endif; ?>
+                            </tbody>
+                        </table>
+                        <?php echo ($page2); ?>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel-wrap">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">公司公告</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseTHree">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTHree">
+                            公司公告
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    这是一个基本的面板
+                <div id="collapseTHree" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="panel-wrap">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">技术公告</h3>
+                    <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                            技术公告
+                        </a>
+                    </h4>
                 </div>
-                <div class="panel-body">
-                    这是一个基本的面板
+                <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+
+                    </div>
                 </div>
             </div>
         </div>

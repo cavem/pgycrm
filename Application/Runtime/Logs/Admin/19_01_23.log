@@ -1,0 +1,108 @@
+[ 2019-01-23T09:06:27+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000623s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000986s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+
+[ 2019-01-23T09:06:28+08:00 ] 127.0.0.1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000966s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000987s ]
+
+[ 2019-01-23T09:06:28+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000597s ]
+
+[ 2019-01-23T09:06:30+08:00 ] 127.0.0.1 /Login/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `accounts` [ RunTime:0.0526s ]
+SQL: SELECT * FROM `accounts` WHERE `name` = 'wangfd' AND `passwd` = '17447f85470a7fad4cdc6322db232537'  [ RunTime:0.0067s ]
+SQL: SELECT * FROM `accounts` WHERE `name` = 'wangfd' AND `passwd` = '17447f85470a7fad4cdc6322db232537' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `loginlog` [ RunTime:0.0280s ]
+SQL: INSERT INTO `loginlog` (`name`,`ipaddr`,`loginat`) VALUES ('王府的','127.0.0.1','2019-01-23 09:06:30') [ RunTime:0.0283s ]
+
+[ 2019-01-23T09:06:30+08:00 ] 127.0.0.1 /Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2019-01-23T09:06:31+08:00 ] 127.0.0.1 /Index/index2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002233s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\BaseController.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0723s ]
+SQL: SELECT `ID`,`Name` FROM `department`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `workremark` [ RunTime:0.1169s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `workremark` WHERE `UserProfiles` LIKE '%王府的%' LIMIT 1   [ RunTime:0.0034s ]
+NOTIC: [8] Undefined variable: key D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\IndexController.class.php 第 45 行.
+SQL: SELECT * FROM `workremark` WHERE `UserProfiles` LIKE '%王府的%' ORDER BY ID desc LIMIT 0,10   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `assessment` [ RunTime:0.1023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `assessment` WHERE `RealName` = '王府的' LIMIT 1   [ RunTime:0.0168s ]
+NOTIC: [8] Undefined variable: key D:\phpstudy\PHPTutorial\WWW\pgycrm\Application\Admin\Controller\IndexController.class.php 第 56 行.
+SQL: SELECT * FROM `assessment` WHERE `RealName` = '王府的' ORDER BY ID desc LIMIT 0,10   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046327s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002184s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002274s ]
+
+[ 2019-01-23T09:30:20+08:00 ] 127.0.0.1 /Public/complete.mp3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000727s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+ERR: 无法加载控制器:Public
+

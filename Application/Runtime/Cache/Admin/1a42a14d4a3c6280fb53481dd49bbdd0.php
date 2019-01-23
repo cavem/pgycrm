@@ -45,11 +45,13 @@ $(function(){
     })
     $('.search').click(function(){
         layer.load();
+        $('.sform').attr("action","");
         $('.sform').submit();
     })
     $('#searchbox').bind('keyup', function(event) {
         if (event.keyCode == "13") {
             layer.load();
+            $('.sform').attr("action","");
             $('.sform').submit();
         }
     })

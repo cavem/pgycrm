@@ -78,7 +78,7 @@ $(function(){
             })
             if(isneed!=0){return false};
             layer.load();
-            $.post('/Hapool/edit',formdata,function(data,status){
+            $.post('/Hapool/edit',formdata+'&ID='+id,function(data,status){
                 if(data==0){
                     layer.msg('修改成功',{icon:1});
                     window.location.reload();
