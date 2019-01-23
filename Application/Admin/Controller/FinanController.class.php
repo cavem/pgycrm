@@ -381,54 +381,55 @@ class FinanController extends BaseController {
             $this->assign("sc",$sc);
             $this->assign("key",$key);
         }else{
-            ini_set('memory_limit','3072M');
-            set_time_limit(0);
-            $cltlist=M("clients")->field("id,name,prepay")->select();
-            for($y=2017;$y<=date('Y');$y++){
-                foreach($cltlist as $val){
-                    $payment["cid"]=$val['id'];
-                    $payment["cname"]=$val['name'];
-                    $payment["prepay"]=$val['prepay'];
-                    $payment["svrnum"]=M('servers')->where("Customer_ID=%d AND ServState='%s'",$val['id'],'在线运行')->count();
-                    $payment["yfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"月付","已生效")->sum("money");
-                    $payment["jfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"季付","已生效")->sum("money");
-                    $payment["bnfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"半年付","已生效")->sum("money");
-                    $payment["nfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"年付","已生效")->sum("money");
-                    //到期未注销总额
-                    $ordinfo=M('orders')->field("money,order_end_at")->where("cid=%d AND status='%s'",$val['id'],"已生效")->select();
-                    $dqwzxze=0;
-                    foreach($ordinfo as $val2){
-                        $curdate=date("Ymd");
-                        $enddate=str_replace('-','',substr($val2["order_end_at"],0,10));
-                        if($curdate-$enddate>0){
-                            $dqwzxze+=$val2['money'];
-                        }
-                    }
-                    $payment["dqwzxze"]=$dqwzxze;
-                    //上月到期未注销总额
-                    $sydqwzxze=0;
-                    foreach($ordinfo as $val3){
-                        $enddate=str_replace('-','',substr($val3["order_end_at"],0,10));
-                        $predate=date("Ymd",strtotime("-1 month"));
-                        if($predate-$enddate>0){
-                            $sydqwzxze+=$val3['money'];
-                        }
-                    }
-                    $payment["dqwzxze"]=$sydqwzxze;
-                    //月份收入
-                    for($i=1;$i<13;$i++){
-                        if($i<10){
-                            $j="0".$i;
-                        }else{
-                            $j=$i;
-                        }
-                        $payment["m".$i]=M('finances')->where(array("cid"=>$val['id'],"bank_recv_at"=>array("like",$y.'-'.$j."%")))->sum("money");
-                    }
-                    $payment['ndze']=M('finances')->where(array("cid"=>$val['id'],"bank_recv_at"=>array("like",$y."%")))->sum("money");
-                    $payment['year']=$y;
-                    M('payment')->add($payment);
-                }
-            }
+            // ini_set('memory_limit','3072M');
+            // set_time_limit(0);
+            // $cltlist=M("clients")->field("id,name,prepay")->select();
+            // for($y=2017;$y<=date('Y');$y++){
+            //     foreach($cltlist as $val){
+            //         $payment["cid"]=$val['id'];
+            //         $payment["cname"]=$val['name'];
+            //         $payment["prepay"]=$val['prepay'];
+            //         $payment["svrnum"]=M('servers')->where("Customer_ID=%d AND ServState='%s'",$val['id'],'在线运行')->count();
+            //         $payment["yfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"月付","已生效")->sum("money");
+            //         $payment["jfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"季付","已生效")->sum("money");
+            //         $payment["bnfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"半年付","已生效")->sum("money");
+            //         $payment["nfze"]=M('orders')->where("cid=%d AND paycycle='%s' AND status='%s'",$val['id'],"年付","已生效")->sum("money");
+            //         //到期未注销总额
+            //         $ordinfo=M('orders')->field("money,order_end_at")->where("cid=%d AND status='%s'",$val['id'],"已生效")->select();
+            //         $dqwzxze=0;
+            //         foreach($ordinfo as $val2){
+            //             $curdate=date("Ymd");
+            //             $enddate=str_replace('-','',substr($val2["order_end_at"],0,10));
+            //             if($curdate-$enddate>0){
+            //                 $dqwzxze+=$val2['money'];
+            //             }
+            //         }
+            //         $payment["dqwzxze"]=$dqwzxze;
+            //         //上月到期未注销总额
+            //         $sydqwzxze=0;
+            //         foreach($ordinfo as $val3){
+            //             $enddate=str_replace('-','',substr($val3["order_end_at"],0,10));
+            //             $predate=date("Ymd",strtotime("-1 month"));
+            //             if($predate-$enddate>0){
+            //                 $sydqwzxze+=$val3['money'];
+            //             }
+            //         }
+            //         $payment["dqwzxze"]=$sydqwzxze;
+            //         //月份收入
+            //         for($i=1;$i<13;$i++){
+            //             if($i<10){
+            //                 $j="0".$i;
+            //             }else{
+            //                 $j=$i;
+            //             }
+            //             $payment["m".$i]=M('finances')->where(array("cid"=>$val['id'],"bank_recv_at"=>array("like",$y.'-'.$j."%")))->sum("money");
+            //         }
+            //         $payment['ndze']=M('finances')->where(array("cid"=>$val['id'],"bank_recv_at"=>array("like",$y."%")))->sum("money");
+            //         $payment['year']=$y;
+            //         M('payment')->add($payment);
+            //     }
+            // }
+            
         }
         $this->display();
     }

@@ -460,16 +460,16 @@ $(function(){
         <div class="condition-panel">
             <div class="condition-panel-item" style="width: 260px;">
                 <span class="lb">到款日期</span>
-                <input type="text" name="bank_recv_at_from" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($bank_recv_at_from); ?>">~
-                <input type="text" name="bank_recv_at_to" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($bank_recv_at_to); ?>">
+                <input type="text" name="bank_recv_at_from" autocomplete="off" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($bank_recv_at_from); ?>">~
+                <input type="text" name="bank_recv_at_to" autocomplete="off" class="form-control" style="width: 110px;display: inline-block;" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($bank_recv_at_to); ?>">
             </div>
             <div class="condition-panel-item">
                 <span class="lb">费用开始日期</span>
-                <input type="text" name="fee_begin_at" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($fee_begin_at); ?>">
+                <input type="text" name="fee_begin_at" autocomplete="off" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($fee_begin_at); ?>">
             </div>
             <div class="condition-panel-item">
                 <span class="lb">费用结束日期</span>
-                <input type="text" name="fee_end_at" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($fee_end_at); ?>">
+                <input type="text" name="fee_end_at" autocomplete="off" class="form-control" onclick="WdatePicker({dateFmt:'yyyy-MM-dd'});" value="<?php echo ($fee_end_at); ?>">
             </div>
             <div class="condition-panel-item">
                 <span class="lb">付款状态</span>
